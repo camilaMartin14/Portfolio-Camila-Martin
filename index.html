@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio | Camila Martín</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,8 +17,8 @@
       </a>
       <ul class="nav-links">
         <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
         <li><a href="#timeline" data-i18n="nav.timeline">Línea de tiempo</a></li>
-        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
       </ul>
       <div class="nav-actions">
         <a id="cv-download" class="btn small" href="cv.pdf" download data-i18n="nav.cv">Descargar CV</a>
@@ -46,87 +47,256 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="img-perfil.jpg" alt="Foto de perfil" class="avatar">
+        <img src="images/img-perfil.jpg" alt="Foto de perfil" class="avatar">
       </div>
     </section>
+
+
+
+
+
 
     <section id="proyectos" class="projects container">
       <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
       <div class="grid">
+<article class="card">
+
+  <div class="card-image">
+    <img src="images/Arcadia-home.png" alt="Vista previa del proyecto Arcadia">
+  </div>
+
+  <h3 class="card-title">Arcadia</h3>
+
+  <p class="card-desc">
+    E-commerce completo para venta de libros. Incluye panel administrador para 
+    gestionar el catálogo, los pedidos y las estadísticas de ventas.
+  </p>
+
+  <div class="tags">
+    <span class="chip">HTML</span>
+    <span class="chip">CSS</span>
+    <span class="chip">JavaScript</span>
+    <span class="chip">C#</span>
+    <span class="chip">ASP.NET</span>
+    <span class="chip">SQL Server</span>
+  </div>
+
+  <div class="card-actions">
+    <a href="https://arcadia-web-deploy.vercel.app/" class="btn">
+      Ver proyecto
+    </a>
+
+    <a href="https://github.com/camilaMartin14" class="link">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+</article>
+
+
         <article class="card">
-          <h3 class="card-title">Proyecto A</h3>
-          <p class="card-desc" data-i18n="projects.desc1">Landing page responsiva con animaciones sutiles.</p>
-          <div class="tags">
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-          </div>
-        </article>
+
+  <div class="card-image">
+    <img src="images/Arcadia-home.png" alt="Vista previa del proyecto Arcadia">
+  </div>
+
+  <h3 class="card-title">Arcadia</h3>
+
+  <p class="card-desc">
+    E-commerce completo para venta de libros. Incluye panel administrador para 
+    gestionar el catálogo, los pedidos y las estadísticas de ventas.
+  </p>
+
+  <div class="tags">
+    <span class="chip">HTML</span>
+    <span class="chip">CSS</span>
+    <span class="chip">JavaScript</span>
+    <span class="chip">C#</span>
+    <span class="chip">ASP.NET</span>
+    <span class="chip">SQL Server</span>
+  </div>
+
+  <div class="card-actions">
+    <a href="https://arcadia-web-deploy.vercel.app/" class="btn">
+      Ver proyecto
+    </a>
+
+    <a href="https://github.com/camilaMartin14" class="link">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+</article>
         <article class="card">
-          <h3 class="card-title">Proyecto B</h3>
-          <p class="card-desc" data-i18n="projects.desc2">SPA ligera con JS y componentes reutilizables.</p>
-          <div class="tags">
-            <span class="chip">JavaScript</span>
-            <span class="chip">UI</span>
-          </div>
-        </article>
-        <article class="card">
-          <h3 class="card-title">Proyecto C</h3>
-          <p class="card-desc" data-i18n="projects.desc3">Sistema de portfolio con modo oscuro y i18n.</p>
-          <div class="tags">
-            <span class="chip">Accesibilidad</span>
-            <span class="chip">i18n</span>
-          </div>
-          <a href="#" class="btn" data-i18n="projects.cta">Ver proyecto</a>
-        </article>
+
+  <div class="card-image">
+    <img src="images/Arcadia-home.png" alt="Vista previa del proyecto Arcadia">
+  </div>
+
+  <h3 class="card-title">Arcadia</h3>
+
+  <p class="card-desc">
+    E-commerce completo para venta de libros. Incluye panel administrador para 
+    gestionar el catálogo, los pedidos y las estadísticas de ventas.
+  </p>
+
+  <div class="tags">
+    <span class="chip">HTML</span>
+    <span class="chip">CSS</span>
+    <span class="chip">JavaScript</span>
+    <span class="chip">C#</span>
+    <span class="chip">ASP.NET</span>
+    <span class="chip">SQL Server</span>
+  </div>
+
+  <div class="card-actions">
+    <a href="https://arcadia-web-deploy.vercel.app/" class="btn">
+      Ver proyecto
+    </a>
+
+    <a href="https://github.com/camilaMartin14" class="link">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+
+</article>
       </div>
     </section>
 
-    <section id="timeline" class="timeline container">
-      <h2 class="section-title" data-i18n="timeline.title">Línea de tiempo</h2>
-      <div class="timeline-list">
-        <div class="timeline-item">
-          <div class="dot"></div>
-          <div class="content">
-            <div class="date">2023</div>
-            <div class="desc" data-i18n="timeline.item1">Inicio en desarrollo web</div>
-          </div>
+    <section id="stack" class="stack container">
+  <h2 class="section-title">Stack</h2>
+
+  <div class="stack-group">
+    <h3 class="group-title">Lenguajes</h3>
+    <div class="stack-grid">
+      <div class="stack-item">
+        <i class="devicon-csharp-plain colored"></i>
+        <span>C#</span>
+      </div>
+
+      <div class="stack-item">
+        <i class="devicon-microsoftsqlserver-plain colored"></i>
+        <span>SQL</span>
+      </div>
+
+      <div class="stack-item">
+        <i class="devicon-html5-plain colored"></i>
+        <span>HTML</span>
+      </div>
+
+      <div class="stack-item">
+        <i class="devicon-css3-plain colored"></i>
+        <span>CSS</span>
+      </div>
+
+      <div class="stack-item">
+        <i class="devicon-javascript-plain colored"></i>
+        <span>JavaScript</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stack-group">
+    <h3 class="group-title">Frameworks</h3>
+    <div class="stack-grid">
+      <div class="stack-item">
+        <i class="devicon-dot-net-plain colored"></i>
+        <span>.NET</span>
+      </div>
+
+      <div class="stack-item">
+        <i class="devicon-windows8-original colored"></i>
+        <span>WinForms</span>
+      </div>
+
+      <div class="stack-item">
+        <i class="devicon-dotnetcore-plain colored"></i>
+        <span>ASP.NET</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline" class="timeline container">
+  <h2 class="section-title" data-i18n="timeline.title">Aprendizaje</h2>
+
+  <div class="timeline-list">
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <div class="date">Julio 2025 - Actualidad</div>
+        <div class="desc">
+          Cursando el segundo cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).
         </div>
-        <div class="timeline-item">
-          <div class="dot"></div>
-          <div class="content">
-            <div class="date">2024</div>
-            <div class="desc" data-i18n="timeline.item2">Proyectos freelance y aprendizaje continuo</div>
-          </div>
+        <div class="desc">
+          En Programación II desarrollo APIs con <span class="resaltar">.NET, Entity Framework y C#</span>. Además, incorporo fundamentos sólidos de frontend con <span class="resaltar">HTML, CSS y JavaScript Vanilla</span>. Profundizo en POO avanzada, patrones de diseño, transacciones y consultas LINQ complejas.
         </div>
-        <div class="timeline-item">
-          <div class="dot"></div>
-          <div class="content">
-            <div class="date">2025</div>
-            <div class="desc" data-i18n="timeline.item3">Enfoque en accesibilidad y performance</div>
-          </div>
+        <div class="desc">
+          En Bases de Datos II trabajo con SQL Server avanzado: procedimientos almacenados, triggers, vistas, tablas temporales, consultas agregadas y subconsultas.
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <div class="date">Marzo 2025 - Julio 2025</div>
+        <div class="desc">
+          En Programación I construí aplicaciones de escritorio con <span class="resaltar">.NET Windows Forms</span>, aplicando POO desde sus bases hasta conceptos intermedios.
+        </div>
+        <div class="desc">
+          En Bases de Datos I aprendí SQL Server desde cero: normalización, definición y composición de tablas, funciones incorporadas y consultas fundamentales.
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <div class="date">Diciembre 2024 - Febrero 2025</div>
+        <div class="desc">
+          Me preparé para el ingreso a la Tecnicatura en Programación estudiando algoritmos, fundamentos de la programación estructurada y resolución de problemas.
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <div class="date">Julio 2024 - Noviembre 2024</div>
+        <div class="desc">
+          Primer acercamiento al desarrollo. Estudié backend con Java Spring Boot y bases de datos MySQL de manera autodidacta mediante cursos y contenido educativo online.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   </main>
 
-  <footer class="footer">
-        <div class="contact-links">
-          <a href="mailto:tuemail@example.com" class="link">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/camilamartindev/" class="link">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/camilaMartin14" class="link">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-    <div class="container">
-      <p data-i18n="footer.text">Hecho por Camila Martín</p>
+<footer class="footer">
+  <div class="container">
+
+    <div class="contact-links">
+      <a href="mailto:tuemail@example.com" class="link">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/camilamartindev/" class="link">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/camilaMartin14" class="link">
+        <i class="fa-brands fa-github"></i>
+      </a>
     </div>
-  </footer>
+
+    <p data-i18n="footer.text">Hecho por Camila Martín</p>
+
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/8d77e74cbe.js" crossorigin="anonymous"></script>
