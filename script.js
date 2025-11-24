@@ -67,7 +67,7 @@ function applyTranslations(lang) {
     if (text) el.textContent = text
   })
   document.documentElement.lang = lang
-  langToggle.textContent = lang === 'es' ? 'ES' : 'EN'
+  langToggle.textContent = lang === 'es' ? '🇦🇷' : '🇺🇸'
   localStorage.setItem('lang', lang)
 }
 
