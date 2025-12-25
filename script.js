@@ -4,7 +4,7 @@ const translations = {
     'nav.about': 'Sobre mí',
     'nav.projects': 'Proyectos',
     'nav.stack': 'Stack',
-    'nav.timeline': 'Línea de tiempo',
+    'nav.timeline': 'Formación Académica',
     'nav.contact': 'Contacto',
     'nav.cv': 'Descargar CV',
     'hero.subtitle': 'Desarrolladora Full-stack',

@@ -31,7 +31,7 @@
     <section id="inicio" class="hero container">
       <div class="hero-text">
         <h1 class="title"><span id="user-name">Camila Martín</span></h1>
-        <p class="subtitle" data-i18n="hero.subtitle">Desarrolladora Full-stack</p>
+        <p class="subtitle" data-i18n="hero.subtitle">Desarrolladora Full-stack orientada a backend .NET</p>
         <p class="subtitle" data-i18n="hero.location">📍Córdoba, Argentina</p>
         <div class="contact-links">
           <a href="mailto:camilamartin1408@gmail.com" class="link">
@@ -51,15 +51,15 @@
     </section>
 
     <section id="proyectos" class="projects container">
-      <h2 class="section-title" data-i18n="projects.title">Proyectos</h2>
+      <h2 class="section-title" data-i18n="projects.title">Proyectos Destacados</h2>
       <div class="grid">
         <article class="card">
           <div class="card-image">
             <img src="images/Logra-home.png" alt="Vista previa del proyecto Logra">
           </div>
           <h3 class="card-title">Logra</h3>
-          <span class="card-subtitle" data-i18n="projects.status.dev">Terminado</span>
-          <p class="card-desc">
+          <span class="card-subtitle" data-i18n="projects.status.finished">Terminado</span>
+          <p class="card-desc" data-i18n="projects.logra.desc">
             Daily planner digital para la organización personal. Permite planificar tareas diarias, registrar comidas y estados de ánimo y hacer seguimiento de las tareas diarias de forma simple e intuitiva.
           </p>
           <div class="tags">
@@ -149,61 +149,45 @@
     </section>
 
     <section id="stack" class="stack container">
-      <h2 class="section-title">Stack</h2>
-      <div class="stack-group">
-        <h3 class="group-title">Lenguajes</h3>
-        <div class="stack-grid">
-          <div class="stack-item">
-            <i class="devicon-csharp-plain colored"></i>
-            <span>C#</span>
-          </div>
-          <div class="stack-item">
-            <i class="devicon-microsoftsqlserver-plain colored"></i>
-            <span>SQL</span>
-          </div>
-          <div class="stack-item">
-            <i class="devicon-html5-plain colored"></i>
-            <span>HTML</span>
-          </div>
-          <div class="stack-item">
-            <i class="devicon-css3-plain colored"></i>
-            <span>CSS</span>
-          </div>
-          <div class="stack-item">
-            <i class="devicon-javascript-plain colored"></i>
-            <span>JavaScript</span>
+      <h2 class="section-title">Mi Stack Técnico</h2>
+      <div class="stack-layout">
+        <div class="stack-group">
+          <h3 class="group-title">Backend & DB</h3>
+          <div class="stack-grid">
+            <div class="stack-item"><i class="devicon-csharp-plain colored"></i> <span>C#</span></div>
+            <div class="stack-item"><i class="devicon-dotnetcore-plain colored"></i> <span>ASP.NET Core</span></div>
+            <div class="stack-item"><i class="devicon-microsoftsqlserver-plain colored"></i> <span>SQL Server</span></div>
           </div>
         </div>
-      </div>
-      <div class="stack-group">
-        <h3 class="group-title">Frameworks</h3>
-        <div class="stack-grid">
-          <div class="stack-item">
-            <i class="devicon-dot-net-plain colored"></i>
-            <span>.NET</span>
+        <div class="stack-group">
+          <h3 class="group-title">Frontend</h3>
+          <div class="stack-grid">
+            <div class="stack-item"><i class="devicon-html5-plain colored"></i> <span>HTML5</span></div>
+            <div class="stack-item"><i class="devicon-css3-plain colored"></i> <span>CSS3</span></div>
+            <div class="stack-item"><i class="devicon-javascript-plain colored"></i> <span>JavaScript</span></div>
           </div>
-          <div class="stack-item">
-            <i class="devicon-windows8-original colored"></i>
-            <span>WinForms</span>
-          </div>
-          <div class="stack-item">
-            <i class="devicon-dotnetcore-plain colored"></i>
-            <span>ASP.NET</span>
+        </div>
+        <div class="stack-group">
+          <h3 class="group-title">Herramientas</h3>
+          <div class="stack-grid">
+            <div class="stack-item"><i class="devicon-git-plain colored"></i> <span>Git</span></div>
+            <div class="stack-item"><i class="devicon-github-original"></i> <span>GitHub</span></div>
+            <div class="stack-item"><i class="fa-solid fa-rocket"></i> <span>Postman</span></div>
           </div>
         </div>
       </div>
     </section>
 
 <section id="timeline" class="timeline container">
-  <h2 class="section-title" data-i18n="timeline.title">Aprendizaje</h2>
+  <h2 class="section-title" data-i18n="timeline.title">Formación Académica</h2>
 
   <div class="timeline-list">
 
     <div class="timeline-item">
       <div class="dot"></div>
       <div class="content">
-        <div class="date">Diciembre 2025 – Actualidad</div>
-        <div class="desc">
+        <div class="date" data-i18n="timeline.item1.date">Diciembre 2025 – Actualidad</div>
+        <div class="desc" data-i18n="timeline.item1.desc">
           Finalicé el primer año de la Tecnicatura Universitaria en Programación (UTN) con un
           <span class="resaltar">promedio general de 9.00</span>, aprobando la totalidad de las materias.
         </div>
@@ -213,16 +197,16 @@
     <div class="timeline-item">
       <div class="dot"></div>
       <div class="content">
-        <div class="date">Julio 2025 – Noviembre 2025</div>
-        <div class="desc">
+        <div class="date" data-i18n="timeline.item2.date">Julio 2025 – Noviembre 2025</div>
+        <div class="desc" data-i18n="timeline.item2.desc1">
           Segundo cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).
         </div>
-        <div class="desc">
+        <div class="desc" data-i18n="timeline.item2.desc2">
           En <span class="resaltar">Programación II</span> desarrollo APIs con
           <span class="resaltar">.NET, C# y Entity Framework</span>, aplicando POO avanzada,
           patrones de diseño, manejo de transacciones y consultas LINQ complejas.
         </div>
-        <div class="desc">
+        <div class="desc" data-i18n="timeline.item2.desc3">
           En <span class="resaltar">Bases de Datos II</span> trabajo con
           <span class="resaltar">SQL Server avanzado</span>: procedimientos almacenados,
           triggers, vistas, tablas temporales, consultas agregadas y subconsultas.
@@ -233,16 +217,16 @@
     <div class="timeline-item">
       <div class="dot"></div>
       <div class="content">
-        <div class="date">Marzo 2025 – Julio 2025</div>
-        <div class="desc">
+        <div class="date" data-i18n="timeline.item3.date">Marzo 2025 – Julio 2025</div>
+        <div class="desc" data-i18n="timeline.item3.desc1">
           Primer cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).
         </div>
-        <div class="desc">
+        <div class="desc" data-i18n="timeline.item3.desc2">
           En <span class="resaltar">Programación I</span> construí aplicaciones de escritorio con
           <span class="resaltar">.NET Windows Forms</span>, aplicando POO desde sus fundamentos
           hasta conceptos intermedios.
         </div>
-        <div class="desc">
+        <div class="desc" data-i18n="timeline.item3.desc3">
           En <span class="resaltar">Bases de Datos I</span> adquirí una base sólida en
           <span class="resaltar">SQL Server</span>: normalización, modelado de datos,
           definición de tablas y consultas fundamentales.
@@ -253,8 +237,8 @@
     <div class="timeline-item">
       <div class="dot"></div>
       <div class="content">
-        <div class="date">Diciembre 2024 – Febrero 2025</div>
-        <div class="desc">
+        <div class="date" data-i18n="timeline.item4.date">Diciembre 2024 – Febrero 2025</div>
+        <div class="desc" data-i18n="timeline.item4.desc">
           Preparación para el ingreso a la carrera, enfocada en algoritmos,
           fundamentos de programación estructurada y resolución lógica de problemas.
         </div>
@@ -264,8 +248,8 @@
     <div class="timeline-item">
       <div class="dot"></div>
       <div class="content">
-        <div class="date">Julio 2024 – Noviembre 2024</div>
-        <div class="desc">
+        <div class="date" data-i18n="timeline.item5.date">Julio 2024 – Noviembre 2024</div>
+        <div class="desc" data-i18n="timeline.item5.desc">
           Primer acercamiento al desarrollo de software.
           Estudio autodidacta de backend con <span class="resaltar">Java Spring Boot</span>
           y bases de datos <span class="resaltar">MySQL</span> mediante cursos y material educativo online.
