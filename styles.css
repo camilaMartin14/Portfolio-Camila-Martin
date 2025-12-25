@@ -66,7 +66,7 @@ html[data-theme="dark"] {
   --header-bg: var(--soft-lilac-dark);
   --header-text: var(--silver-mist);
 
-  --footer-bg: var(#D8B5C0);
+  --footer-bg: var(--dusty-pink);
   --footer-text: var(--charcoal-base);
 
   --hover-lilac: var(--soft-lilac);
@@ -326,7 +326,7 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   padding: 20px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;                /* asegura que la imagen se recorte bien */
+  overflow: hidden;
   transition: .25s ease;
 }
 
@@ -349,6 +349,15 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
 .card-title {
   margin: 0;
   font-size: 18px;
+}
+
+.card-subtitle {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 6px;
+  margin-bottom: 8px;
 }
 
 .card-desc {
@@ -379,6 +388,34 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.demo-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.demo-btn i {
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.demo-text {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.demo-btn:hover {
+  border-color: #ff0000;
+  background: rgba(255, 0, 0, 0.05);
+  color: #ff0000;
 }
 
 /* HOVER */
@@ -516,6 +553,13 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   text-align: center;
 }
 
+.footer .section-title {
+  background: none;
+  -webkit-text-fill-color: initial;
+  color: var(--footer-text);
+  margin-bottom: 16px;
+}
+
 .footer .contact-links {
   display: flex;
   justify-content: center;
@@ -582,12 +626,10 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
 
 
 /* resaltar palabras en párrafos */
-  .resaltar {
-    color: #FFB085;
-    font-weight: bold;
-  }
-
-
+.resaltar {
+  color: #FFB085;
+  font-weight: bold;
+}
 
 
 /* responsive */

@@ -27,7 +27,8 @@ const translations = {
     'projects.desc2': 'SPA ligera con JS y componentes reutilizables.',
     'projects.desc3': 'Sistema de portfolio con modo oscuro y i18n.',
     'projects.cta': 'Ver proyecto',
-    'contact.title': 'Contacto',
+    'projects.demo': 'Demo',
+    'contact.title': 'Contactame',
     'footer.text': 'Hecho por Camila Martín'
   },
   en: {
@@ -58,7 +59,10 @@ const translations = {
     'projects.desc2': 'Lightweight JS SPA with reusable components.',
     'projects.desc3': 'Portfolio system with dark mode and i18n.',
     'projects.cta': 'View project',
-    'contact.title': 'Contact',
+    'projects.demo': 'Demo',
+    'projects.status.finished': 'Finished',
+    'projects.status.dev': 'In development',
+    'contact.title': 'Contact me',
     'footer.text': 'Built by Camila Martín'
   }
 }
