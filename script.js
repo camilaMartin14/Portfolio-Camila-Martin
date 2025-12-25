@@ -1,69 +1,118 @@
 const translations = {
   es: {
-    'nav.home': 'Inicio',
-    'nav.about': 'Sobre mí',
     'nav.projects': 'Proyectos',
     'nav.stack': 'Stack',
-    'nav.timeline': 'Formación Académica',
-    'nav.contact': 'Contacto',
+    'nav.timeline': 'Línea de tiempo',
     'nav.cv': 'Descargar CV',
-    'hero.subtitle': 'Desarrolladora Full-stack',
+
+    'hero.subtitle': 'Desarrolladora Full-stack orientada a backend .NET',
     'hero.location': '📍Córdoba, Argentina',
-    'hero.cta': 'Ver proyectos',
-    'stack.title': 'Stack',
+
+    'projects.title': 'Proyectos Destacados',
+    'projects.demo': 'Demo',
+
+    'projects.status.finished': 'Finalizado',
+    'projects.status.dev': 'En desarrollo',
+
+    'projects.logra.desc':
+      'Daily planner digital para la organización personal. Permite planificar tareas diarias, registrar comidas y estados de ánimo y hacer seguimiento de las tareas de forma simple e intuitiva.',
+
+    'stack.title': 'Mi Stack Técnico',
     'stack.languages': 'Lenguajes',
     'stack.frameworks': 'Frameworks',
     'stack.databases': 'Bases de datos',
     'stack.vcs': 'Control de versiones',
     'stack.other': 'Otros',
-    'about.title': 'Sobre mí',
-    'about.lead': 'Me apasiona crear experiencias web útiles y accesibles.',
-    'timeline.title': 'Línea de tiempo',
-    'timeline.item1': 'Inicio en desarrollo web',
-    'timeline.item2': 'Proyectos freelance y aprendizaje continuo',
-    'timeline.item3': 'Enfoque en accesibilidad y performance',
-    'projects.title': 'Proyectos',
-    'projects.desc1': 'Landing page responsiva con animaciones sutiles.',
-    'projects.desc2': 'SPA ligera con JS y componentes reutilizables.',
-    'projects.desc3': 'Sistema de portfolio con modo oscuro y i18n.',
-    'projects.cta': 'Ver proyecto',
-    'projects.demo': 'Demo',
-    'contact.title': 'Contactame',
-    'footer.text': 'Hecho por Camila Martín'
+
+    'timeline.title': 'Formación Académica',
+
+    'timeline.item1.date': 'Diciembre 2025 – Actualidad',
+    'timeline.item1.desc':
+      'Finalicé el primer año de la Tecnicatura Universitaria en Programación (UTN) con un <span class="resaltar">promedio general de 9.00</span>, aprobando la totalidad de las materias.',
+
+    'timeline.item2.date': 'Julio 2025 – Noviembre 2025',
+    'timeline.item2.desc1':
+      'Segundo cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).',
+    'timeline.item2.desc2':
+      'En <span class="resaltar">Programación II</span> desarrollo APIs con <span class="resaltar">.NET, C# y Entity Framework</span>, aplicando POO avanzada, patrones de diseño, manejo de transacciones y consultas LINQ complejas.',
+    'timeline.item2.desc3':
+      'En <span class="resaltar">Bases de Datos II</span> trabajo con <span class="resaltar">SQL Server avanzado</span>: procedimientos almacenados, triggers, vistas, tablas temporales, consultas agregadas y subconsultas.',
+
+    'timeline.item3.date': 'Marzo 2025 – Julio 2025',
+    'timeline.item3.desc1':
+      'Primer cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).',
+    'timeline.item3.desc2':
+      'En <span class="resaltar">Programación I</span> construí aplicaciones de escritorio con <span class="resaltar">.NET Windows Forms</span>, aplicando POO desde sus fundamentos hasta conceptos intermedios.',
+    'timeline.item3.desc3':
+      'En <span class="resaltar">Bases de Datos I</span> adquirí una base sólida en <span class="resaltar">SQL Server</span>: normalización, modelado de datos, definición de tablas y consultas fundamentales.',
+
+    'timeline.item4.date': 'Diciembre 2024 – Febrero 2025',
+    'timeline.item4.desc':
+      'Preparación para el ingreso a la carrera, enfocada en algoritmos, fundamentos de programación estructurada y resolución lógica de problemas.',
+
+    'timeline.item5.date': 'Julio 2024 – Noviembre 2024',
+    'timeline.item5.desc':
+      'Primer acercamiento al desarrollo de software. Estudio autodidacta de backend con <span class="resaltar">Java Spring Boot</span> y bases de datos <span class="resaltar">MySQL</span> mediante cursos y material educativo online.',
+
+    'contact.title': 'Contactame'
   },
+
   en: {
-    'nav.home': 'Home',
-    'nav.about': 'About',
     'nav.projects': 'Projects',
     'nav.stack': 'Stack',
     'nav.timeline': 'Timeline',
-    'nav.contact': 'Contact',
     'nav.cv': 'Download CV',
-    'hero.subtitle': 'Full-stack Developer',
+
+    'hero.subtitle': 'Full-stack Developer focused on .NET backend',
     'hero.location': '📍Córdoba, Argentina',
-    'hero.cta': 'View projects',
-    'stack.title': 'Stack',
+
+    'projects.title': 'Featured Projects',
+    'projects.demo': 'Demo',
+
+    'projects.status.finished': 'Finished',
+    'projects.status.dev': 'In development',
+
+    'projects.logra.desc':
+      'Digital daily planner for personal organization. It allows task planning, meal tracking, mood logging and simple task follow-up.',
+
+    'stack.title': 'My Tech Stack',
     'stack.languages': 'Languages',
     'stack.frameworks': 'Frameworks',
     'stack.databases': 'Databases',
     'stack.vcs': 'Version Control',
     'stack.other': 'Other',
-    'about.title': 'About',
-    'about.lead': 'I enjoy building useful and accessible web experiences.',
-    'timeline.title': 'Timeline',
-    'timeline.item1': 'Start in web development',
-    'timeline.item2': 'Freelance projects and continuous learning',
-    'timeline.item3': 'Focus on accessibility and performance',
-    'projects.title': 'Projects',
-    'projects.desc1': 'Responsive landing page with subtle animations.',
-    'projects.desc2': 'Lightweight JS SPA with reusable components.',
-    'projects.desc3': 'Portfolio system with dark mode and i18n.',
-    'projects.cta': 'View project',
-    'projects.demo': 'Demo',
-    'projects.status.finished': 'Finished',
-    'projects.status.dev': 'In development',
-    'contact.title': 'Contact me',
-    'footer.text': 'Built by Camila Martín'
+
+    'timeline.title': 'Academic Background',
+
+    'timeline.item1.date': 'December 2025 – Present',
+    'timeline.item1.desc':
+      'Completed the first year of the University Technical Degree in Programming (UTN) with a <span class="resaltar">GPA of 9.00</span>, passing all subjects.',
+
+    'timeline.item2.date': 'July 2025 – November 2025',
+    'timeline.item2.desc1':
+      'Second semester of the University Technical Degree in Programming (UTN).',
+    'timeline.item2.desc2':
+      'In <span class="resaltar">Programming II</span>, I develop APIs using <span class="resaltar">.NET, C# and Entity Framework</span>, applying advanced OOP, design patterns, transactions and complex LINQ queries.',
+    'timeline.item2.desc3':
+      'In <span class="resaltar">Databases II</span>, I work with <span class="resaltar">advanced SQL Server features</span>: stored procedures, triggers, views, temporary tables, aggregated queries and subqueries.',
+
+    'timeline.item3.date': 'March 2025 – July 2025',
+    'timeline.item3.desc1':
+      'First semester of the University Technical Degree in Programming (UTN).',
+    'timeline.item3.desc2':
+      'In <span class="resaltar">Programming I</span>, I built desktop applications using <span class="resaltar">.NET Windows Forms</span>, applying OOP from fundamentals to intermediate concepts.',
+    'timeline.item3.desc3':
+      'In <span class="resaltar">Databases I</span>, I gained a solid foundation in <span class="resaltar">SQL Server</span>: normalization, data modeling, table definitions and core queries.',
+
+    'timeline.item4.date': 'December 2024 – February 2025',
+    'timeline.item4.desc':
+      'Preparation for entering the degree, focused on algorithms, structured programming fundamentals and logical problem solving.',
+
+    'timeline.item5.date': 'July 2024 – November 2024',
+    'timeline.item5.desc':
+      'First approach to software development. Self-taught backend study with <span class="resaltar">Java Spring Boot</span> and <span class="resaltar">MySQL</span> databases through courses and online learning material.',
+
+    'contact.title': 'Contact me'
   }
 }
 
@@ -82,7 +131,7 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n')
     const text = dict[key]
-    if (text) el.textContent = text
+    if (text) el.innerHTML = text
   })
   document.documentElement.lang = lang
   langToggle.textContent = lang === 'es' ? '🇦🇷' : '🇺🇸'
