@@ -1,1 +1,24 @@
-# Portfolio-Camila-Martin
+# Portfolio — Camila Martín
+
+🌐 [Ver portfolio](https://portfolio-camila-martin.vercel.app/)
+
+
+Desarrolladora Full Stack con foco en .NET y SQL Server. Experiencia en desarrollo de aplicaciones web con arquitectura en capas, APIs REST y bases de datos relacionales.
+
+## Tecnologías principales
+- .NET / C#
+- SQL Server
+- HTML, CSS, JavaScript
+- JWT, arquitectura en capas
+
+## Proyectos destacados
+
+### Logra — Organización Personal
+Aplicación orientada a la planificación diaria y seguimiento de hábitos.
+  🔗 Repo | 🌐 [Deploy](https://logra-psi.vercel.app/)
+
+### Arcadia — E-commerce de Libros
+Aplicación web para la gestión de un catálogo de libros y pedidos.
+🔗 Repo | 🌐 [Deploy](https://arcadia-mu-five.vercel.app/)
+
+
