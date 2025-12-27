@@ -1,6 +1,6 @@
 const translations = {
   es: {
-    'nav.projects': 'Proyectos',
+    'nav.projects': 'Proyectos Destacados',
     'nav.stack': 'Stack',
     'nav.timeline': 'Línea de tiempo',
     'nav.cv': 'Descargar CV',
@@ -66,7 +66,7 @@ const translations = {
   },
 
   en: {
-    'nav.projects': 'Projects',
+    'nav.projects': 'Featured Projects',
     'nav.stack': 'Stack',
     'nav.timeline': 'Academic Background',
     'nav.cv': 'Download CV',
