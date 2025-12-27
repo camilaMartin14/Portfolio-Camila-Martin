@@ -14,6 +14,8 @@ const translations = {
     'projects.status.finished': 'Finalizado',
     'projects.status.dev': 'En desarrollo',
 
+    'stack.tools': 'Herramientas',
+
     'projects.logra.desc':
       'Daily planner digital para la organización personal. Permite planificar tareas diarias, registrar comidas y estados de ánimo y hacer seguimiento de las tareas de forma simple e intuitiva.',
 
@@ -77,6 +79,8 @@ const translations = {
 
     'projects.status.finished': 'Completed',
     'projects.status.dev': 'In development',
+
+    'stack.tools': 'Tools',
 
     'projects.logra.desc':
       'Digital daily planner for personal organization. It allows task planning, meal tracking, mood logging and simple task follow-up.',
