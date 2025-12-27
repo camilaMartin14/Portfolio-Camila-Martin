@@ -75,7 +75,7 @@ const translations = {
     'projects.title': 'Featured Projects',
     'projects.demo': 'Demo',
 
-    'projects.status.finished': 'Finished',
+    'projects.status.finished': 'Completed',
     'projects.status.dev': 'In development',
 
     'projects.logra.desc':
