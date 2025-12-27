@@ -485,6 +485,10 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   color: var(--accent);
 }
 
+.stack-item i.devicon-angular-plain.colored {
+  color: #dd0031;
+}
+
 /* Hover */
 .stack-item:hover {
   background: var(--hover-lilac);

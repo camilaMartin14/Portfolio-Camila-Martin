@@ -2,7 +2,7 @@ const translations = {
   es: {
     'nav.projects': 'Proyectos Destacados',
     'nav.stack': 'Stack',
-    'nav.timeline': 'Línea de tiempo',
+    'nav.timeline': 'Formación Académica',
     'nav.cv': 'Descargar CV',
 
     'hero.subtitle': 'Desarrolladora Full-stack orientada a backend .NET',
