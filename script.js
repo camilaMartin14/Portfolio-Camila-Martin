@@ -158,7 +158,7 @@ function applyTranslations(lang) {
     if (lang === 'es') {
       cvBtn.href = 'resumes/Camila Martín - CV - Español.pdf'
     } else {
-      cvBtn.href = 'resumes/Camila Martín - English CV.pdf'
+      cvBtn.href = 'resumes/Camila Martín - CV - English.pdf'
     }
   }
 }
