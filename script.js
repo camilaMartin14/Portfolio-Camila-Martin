@@ -17,6 +17,12 @@ const translations = {
     'projects.logra.desc':
       'Daily planner digital para la organización personal. Permite planificar tareas diarias, registrar comidas y estados de ánimo y hacer seguimiento de las tareas de forma simple e intuitiva.',
 
+    'projects.arcadia.desc':
+      'E-commerce completo para venta de libros. Incluye panel administrador para gestionar el catálogo, los pedidos y las estadísticas de ventas.',
+
+    'projects.tucredito.desc':
+      'Aplicación de seguimiento de préstamos personales, con control de clientes, cuotas, pagos, morosidad y estado general de la deuda.',
+
     'stack.title': 'Mi Stack Técnico',
     'stack.languages': 'Lenguajes',
     'stack.frameworks': 'Frameworks',
@@ -60,7 +66,7 @@ const translations = {
   en: {
     'nav.projects': 'Projects',
     'nav.stack': 'Stack',
-    'nav.timeline': 'Timeline',
+    'nav.timeline': 'Academic Timeline',
     'nav.cv': 'Download CV',
 
     'hero.subtitle': 'Full-stack Developer focused on .NET backend',
@@ -74,6 +80,12 @@ const translations = {
 
     'projects.logra.desc':
       'Digital daily planner for personal organization. It allows task planning, meal tracking, mood logging and simple task follow-up.',
+
+    'projects.arcadia.desc':
+      'Complete e-commerce for selling books. Includes an admin panel to manage the catalog, orders, and sales statistics.',
+
+    'projects.tucredito.desc':
+      'Personal loan tracking application, with control over clients, installments, payments, delinquency, and overall debt status.',
 
     'stack.title': 'My Tech Stack',
     'stack.languages': 'Languages',
