@@ -136,6 +136,15 @@ function applyTranslations(lang) {
   document.documentElement.lang = lang
   langToggle.textContent = lang === 'es' ? '🇦🇷' : '🇺🇸'
   localStorage.setItem('lang', lang)
+
+  const cvBtn = document.getElementById('cv-download')
+  if (cvBtn) {
+    if (lang === 'es') {
+      cvBtn.href = 'resumes/Camila Martín - CV - Español.pdf'
+    } else {
+      cvBtn.href = 'resumes/Camila Martín - English CV.pdf'
+    }
+  }
 }
 
 themeToggle.addEventListener('click', () => {
@@ -169,20 +178,4 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   })
 })
 
-const cvBtn = document.getElementById('cv-download')
-if (cvBtn) {
-  cvBtn.addEventListener('click', async (e) => {
-    const proto = location.protocol
-    if (proto === 'http:' || proto === 'https:') {
-      try {
-        const res = await fetch('cv.pdf', { method: 'HEAD' })
-        if (!res.ok) {
-          e.preventDefault()
-          alert(document.documentElement.lang === 'es'
-            ? 'No se encontró cv.pdf. Colócalo en la carpeta del proyecto.'
-            : 'cv.pdf not found. Place it in the project folder.')
-        }
-      } catch (_) { /* ignore and let default download happen */ }
-    }
-  })
-}
+
