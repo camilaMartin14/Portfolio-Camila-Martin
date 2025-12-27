@@ -68,7 +68,7 @@ const translations = {
   en: {
     'nav.projects': 'Projects',
     'nav.stack': 'Stack',
-    'nav.timeline': 'Academic Timeline',
+    'nav.timeline': 'Academic Background',
     'nav.cv': 'Download CV',
 
     'hero.subtitle': 'Full-stack Developer focused on .NET backend',
