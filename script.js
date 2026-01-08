@@ -39,30 +39,30 @@ const translations = {
     'modal.carousel.dotAlt': 'Ir a la captura {index}',
 
     'modal.logra.problem':
-      'Centraliza la planificación diaria en una única aplicación, facilitando la organización personal, la gestión del tiempo y el seguimiento de hábitos cotidianos. El objetivo es brindar una visión clara del día a día y ayudar a detectar patrones que impactan en la productividad y el bienestar.',
-    'modal.logra.features.1': 'Planificación y gestión de tareas diarias, con seguimiento por fecha, estado y categorías personalizables.',
-    'modal.logra.features.2': 'Gestión de notas estilo post-it, organizables por categorías, permitiendo agrupar ideas, recordatorios y apuntes rápidos de forma visual e intuitiva.',
-    'modal.logra.features.3': 'Registro de comidas, orientado al control y la organización alimentaria diaria.',
-    'modal.logra.features.4': 'Seguimiento del estado de ánimo, permitiendo identificar tendencias y patrones a lo largo del tiempo.',
-    'modal.logra.features.5': 'Persistencia de datos mediante backend y base de datos, garantizando almacenamiento seguro y consistente de la información.',
+      'Centraliza la <strong>planificación diaria</strong> en una única aplicación, facilitando la <strong>organización personal</strong>, la gestión del tiempo y el seguimiento de <strong>hábitos</strong> cotidianos. El objetivo es brindar una <strong>visión clara</strong> del día a día y ayudar a detectar patrones que impactan en la <strong>productividad y el bienestar</strong>.',
+    'modal.logra.features.1': '<strong>Planificación y gestión de tareas</strong> diarias, con seguimiento por fecha, estado y categorías personalizables.',
+    'modal.logra.features.2': 'Gestión de <strong>notas estilo post-it</strong>, organizables por categorías, permitiendo agrupar ideas, recordatorios y apuntes rápidos de forma visual e intuitiva.',
+    'modal.logra.features.3': '<strong>Registro de comidas</strong>, orientado al control y la organización alimentaria diaria.',
+    'modal.logra.features.4': '<strong>Seguimiento del estado de ánimo</strong>, permitiendo identificar tendencias y patrones a lo largo del tiempo.',
+    'modal.logra.features.5': '<strong>Persistencia de datos</strong> mediante backend y base de datos, garantizando almacenamiento seguro y consistente de la información.',
     'modal.logra.extra': 'Estado: finalizado. Alcance: aplicación web con backend y base de datos.',
 
     'modal.arcadia.problem':
-      'Resuelve la necesidad de vender libros online con un catálogo administrable y una gestión clara de pedidos.',
-    'modal.arcadia.features.1': 'Catálogo de libros con navegación y detalle de producto.',
-    'modal.arcadia.features.2': 'Carrito de compras para gestionar productos seleccionados.',
-    'modal.arcadia.features.3': 'Panel administrador para gestionar el catálogo.',
-    'modal.arcadia.features.4': 'Gestión de pedidos para controlar el proceso de compra.',
-    'modal.arcadia.features.5': 'Estadísticas de ventas para seguimiento del negocio.',
+      'Brinda una <strong>solución integral</strong> para la <strong>venta online</strong> de libros, centralizando la gestión del catálogo y el control de pedidos en una <strong>plataforma administrable</strong>. Facilita la <strong>administración del negocio</strong> y el seguimiento de las ventas de forma clara y ordenada.',
+    'modal.arcadia.features.1': '<strong>Catálogo de libros</strong> con navegación intuitiva y vista de detalle del producto.',
+    'modal.arcadia.features.2': '<strong>Carrito de compras</strong>, que permite seleccionar y gestionar los productos antes de confirmar la compra.',
+    'modal.arcadia.features.3': '<strong>Panel administrador</strong> para la gestión completa del catálogo de libros.',
+    'modal.arcadia.features.4': '<strong>Gestión de pedidos</strong>, orientada al seguimiento del estado de compra y procesamiento de órdenes.',
+    'modal.arcadia.features.5': '<strong>Estadísticas de ventas</strong>, para el análisis y monitoreo del rendimiento del negocio.',
     'modal.arcadia.extra': 'Estado: finalizado. Incluye panel administrador y métricas.',
 
     'modal.tucredito.problem':
-      'Proyecto en desarrollo orientado a organizar préstamos personales y visualizar el estado de la deuda de forma simple.',
-    'modal.tucredito.features.1': 'Alta y gestión de clientes.',
-    'modal.tucredito.features.2': 'Registro de préstamos y cuotas.',
-    'modal.tucredito.features.3': 'Registro de pagos y control de saldos.',
-    'modal.tucredito.features.4': 'Seguimiento de morosidad y vencimientos.',
-    'modal.tucredito.features.5': 'Vista general del estado de la deuda.',
+      'Aplicación en desarrollo <strong>orientada a prestamistas</strong> para organizar y gestionar préstamos personales, permitiendo visualizar de forma clara el <strong>estado de las deudas</strong>, los pagos realizados y los saldos pendientes, reduciendo errores y facilitando el <strong>control financiero</strong>.',
+    'modal.tucredito.features.1': '<strong>Alta y gestión de clientes</strong>, con información centralizada.',
+    'modal.tucredito.features.2': '<strong>Registro de préstamos y cuotas</strong>, con detalle de montos y vencimientos.',
+    'modal.tucredito.features.3': '<strong>Registro de pagos</strong>, con actualización automática de saldos.',
+    'modal.tucredito.features.4': '<strong>Seguimiento de morosidad</strong> y vencimientos, para un mejor control del cobro.',
+    'modal.tucredito.features.5': '<strong>Vista general del estado de la deuda</strong>, que brinda una visión rápida y ordenada de la situación financiera.',
     'modal.tucredito.extra': 'Estado: en desarrollo. El alcance y las funcionalidades pueden cambiar.',
 
     'stack.title': 'Mi Stack Técnico',
@@ -125,13 +125,13 @@ const translations = {
     'stack.tools': 'Tools',
 
     'projects.logra.desc':
-      'Digital daily planner for personal organization. It allows task planning, meal tracking, mood logging and simple task follow-up.',
+      'Digital daily planner oriented towards personal organization and <strong>habit</strong> tracking. It allows planning daily tasks, logging meals, moods, and categorized post-it notes, offering a <strong>clear view</strong> of the day-to-day to improve personal <strong>productivity and well-being</strong> in a simple and intuitive way.',
 
     'projects.arcadia.desc':
-      'Complete e-commerce for selling books. Includes an admin panel to manage the catalog, orders, and sales statistics.',
+      'Complete e-commerce for book sales, developed with a <strong>comprehensive approach</strong>. It includes an admin panel to manage the catalog, orders, and clients, as well as visualize sales statistics, facilitating <strong>decision-making</strong> and business administration.',
 
     'projects.tucredito.desc':
-      'Project in development: personal loan tracking application, with control over clients, installments, payments, delinquency, and overall debt status.',
+      'Application <strong>oriented to lenders</strong> for the management and tracking of personal loans. It allows managing clients, installments, payments, and debt status, with delinquency control and a <strong>clear view of the overall financial status</strong>, facilitating <strong>organized and reliable management</strong> of credits.',
 
     'modal.statusLabel': 'Status',
     'modal.problemTitle': 'Problem it solves',
@@ -145,30 +145,30 @@ const translations = {
     'modal.carousel.dotAlt': 'Go to screenshot {index}',
 
     'modal.logra.problem':
-      'Centralizes daily planning in a single application, facilitating personal organization, time management, and daily habit tracking. The goal is to provide a clear view of the day-to-day and help detect patterns that impact productivity and well-being.',
-    'modal.logra.features.1': 'Planning and management of daily tasks, with tracking by date, status, and customizable categories.',
-    'modal.logra.features.2': 'Management of post-it style notes, organizable by categories, allowing ideas, reminders, and quick notes to be grouped in a visual and intuitive way.',
-    'modal.logra.features.3': 'Meal logging, oriented towards daily dietary control and organization.',
-    'modal.logra.features.4': 'Mood tracking, allowing identification of trends and patterns over time.',
-    'modal.logra.features.5': 'Data persistence via backend and database, ensuring secure and consistent information storage.',
+      'Centralizes <strong>daily planning</strong> in a single application, facilitating <strong>personal organization</strong>, time management, and <strong>daily habit</strong> tracking. The goal is to provide a <strong>clear view</strong> of the day-to-day and help detect patterns that impact <strong>productivity and well-being</strong>.',
+    'modal.logra.features.1': '<strong>Planning and management of daily tasks</strong>, with tracking by date, status, and customizable categories.',
+    'modal.logra.features.2': 'Management of <strong>post-it style notes</strong>, organizable by categories, allowing ideas, reminders, and quick notes to be grouped in a visual and intuitive way.',
+    'modal.logra.features.3': '<strong>Meal logging</strong>, oriented towards daily dietary control and organization.',
+    'modal.logra.features.4': '<strong>Mood tracking</strong>, allowing identification of trends and patterns over time.',
+    'modal.logra.features.5': '<strong>Data persistence</strong> via backend and database, ensuring secure and consistent information storage.',
     'modal.logra.extra': 'Status: completed. Scope: web app with backend and database.',
 
     'modal.arcadia.problem':
-      'Solves the need to sell books online with a manageable catalog and clear order tracking.',
-    'modal.arcadia.features.1': 'Book catalog with navigation and product detail.',
-    'modal.arcadia.features.2': 'Shopping cart to manage selected products.',
-    'modal.arcadia.features.3': 'Admin panel to manage the catalog.',
-    'modal.arcadia.features.4': 'Order management to track the purchase flow.',
-    'modal.arcadia.features.5': 'Sales statistics for business monitoring.',
+      'Provides a <strong>comprehensive solution</strong> for <strong>online book sales</strong>, centralizing catalog management and order control in a <strong>manageable platform</strong>. Facilitates <strong>business administration</strong> and sales tracking in a clear and organized way.',
+    'modal.arcadia.features.1': '<strong>Book catalog</strong> with intuitive navigation and product detail view.',
+    'modal.arcadia.features.2': '<strong>Shopping cart</strong>, allowing product selection and management before purchase confirmation.',
+    'modal.arcadia.features.3': '<strong>Admin panel</strong> for complete book catalog management.',
+    'modal.arcadia.features.4': '<strong>Order management</strong>, oriented towards purchase status tracking and order processing.',
+    'modal.arcadia.features.5': '<strong>Sales statistics</strong>, for business performance analysis and monitoring.',
     'modal.arcadia.extra': 'Status: completed. Includes admin panel and metrics.',
 
     'modal.tucredito.problem':
-      'Project in development focused on organizing personal loans and seeing overall debt status at a glance.',
-    'modal.tucredito.features.1': 'Create and manage clients.',
-    'modal.tucredito.features.2': 'Register loans and installments.',
-    'modal.tucredito.features.3': 'Register payments and track balances.',
-    'modal.tucredito.features.4': 'Track delinquency and due dates.',
-    'modal.tucredito.features.5': 'Overview of overall debt status.',
+      'Application in development <strong>oriented to lenders</strong> for organizing and managing personal loans, allowing clear visualization of <strong>debt status</strong>, payments made, and outstanding balances, reducing errors and facilitating <strong>financial control</strong>.',
+    'modal.tucredito.features.1': '<strong>Client registration and management</strong>, with centralized information.',
+    'modal.tucredito.features.2': '<strong>Registration of loans and installments</strong>, with details on amounts and due dates.',
+    'modal.tucredito.features.3': '<strong>Payment registration</strong>, with automatic balance updates.',
+    'modal.tucredito.features.4': '<strong>Delinquency and due date tracking</strong>, for better collection control.',
+    'modal.tucredito.features.5': '<strong>Overview of debt status</strong>, providing a quick and organized view of the financial situation.',
     'modal.tucredito.extra': 'Status: in development. Scope and features may change.',
 
     'stack.title': 'My Tech Stack',
@@ -322,8 +322,8 @@ function setupProjectModal() {
       tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
       extraKey: 'modal.logra.extra',
       images: ['images/L1.png', 'images/L2.png', 'images/L3.png', 'images/L4.png'],
-      demoUrl: '#',
-      repoUrl: '#'
+      demoUrl: 'https://logra-psi.vercel.app/',
+      repoUrl: 'https://github.com/camilaMartin14/Logra--Daily-Planner'
     },
     arcadia: {
       title: 'Arcadia',
@@ -339,8 +339,8 @@ function setupProjectModal() {
       tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
       extraKey: 'modal.arcadia.extra',
       images: ['images/A1.png', 'images/A (1).png', 'images/A (2).png', 'images/A (3).png', 'images/A (4).png', 'images/A (5).png'],
-      demoUrl: '#',
-      repoUrl: '#'
+      demoUrl: 'https://arcadia-mu-five.vercel.app/',
+      repoUrl: 'https://github.com/camilaMartin14/Arcadia-Web'
     },
     tucredito: {
       title: 'Tu Crédito',
@@ -356,8 +356,8 @@ function setupProjectModal() {
       tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
       extraKey: 'modal.tucredito.extra',
       images: ['images/app-in-development.png'],
-      demoUrl: null,
-      repoUrl: '#'
+      demoUrl: 'https://tu-credito.vercel.app/',
+      repoUrl: 'https://github.com/camilaMartin14/Tu-Credito'
     }
   }
 
