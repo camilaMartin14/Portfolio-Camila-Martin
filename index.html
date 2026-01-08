@@ -55,7 +55,7 @@
       <div class="grid">
         <article class="card">
           <div class="card-image">
-            <img src="images/Logra-home.png" alt="Vista previa del proyecto Logra">
+            <img src="images/L1.png" alt="Vista previa del proyecto Logra">
           </div>
           <h2 class="card-title">Logra</h2>
           <span class="card-subtitle" data-i18n="projects.status.finished">Terminado</span>
@@ -71,22 +71,13 @@
             <span class="chip">SQL Server</span>
           </div>
           <div class="card-actions">
-            <a href="https://logra-psi.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer">
-              Ver proyecto
-            </a>
-            <a href="https://youtu.be/8V0C4eUF11A" class="demo-btn" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-youtube"></i>
-              <span class="demo-text" data-i18n="projects.demo">Demo</span>
-            </a>
-            <a href="https://github.com/camilaMartin14/Logra--Daily-Planner" class="link" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i>
-            </a>
+            <button type="button" class="btn small view-more-btn" data-project="logra" data-i18n="projects.seeMore">Ver más</button>
           </div>
         </article>
 
         <article class="card">
           <div class="card-image">
-            <img src="images/Arcadia-home.png" alt="Vista previa del proyecto Arcadia">
+            <img src="images/A1.png" alt="Vista previa del proyecto Arcadia">
           </div>
           <h2 class="card-title">Arcadia</h2>
           <span class="card-subtitle" data-i18n="projects.status.finished">Terminado</span>
@@ -102,16 +93,7 @@
             <span class="chip">SQL Server</span>
           </div>
           <div class="card-actions">
-            <a href="https://arcadia-mu-five.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer">
-              Ver proyecto
-            </a>
-            <a href="https://youtu.be/bO237c2I9fk" class="demo-btn" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-youtube"></i>
-              <span class="demo-text" data-i18n="projects.demo">Demo</span>
-            </a>
-            <a href="https://github.com/camilaMartin14/Arcadia-Web.git" class="link" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i>
-            </a>
+            <button type="button" class="btn small view-more-btn" data-project="arcadia" data-i18n="projects.seeMore">Ver más</button>
           </div>
         </article>
 
@@ -134,12 +116,7 @@
             <span class="chip">SQL Server</span>
           </div>
           <div class="card-actions">
-            <a href="https://tu-credito.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer">
-              Ver proyecto
-            </a>
-            <a href="https://github.com/camilaMartin14/Tu-Credito" class="link" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i>
-            </a>
+            <button type="button" class="btn small view-more-btn" data-project="tucredito" data-i18n="projects.seeMore">Ver más</button>
           </div>
         </article>
       </div>
@@ -273,6 +250,57 @@
       </div>
     </div>
   </footer>
+
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <h3 id="project-modal-title" class="modal-title"></h3>
+          <div class="modal-meta">
+            <span data-i18n="modal.statusLabel">Estado</span>: <span id="project-modal-status" class="card-subtitle"></span>
+          </div>
+        </div>
+        <button type="button" class="icon-btn modal-close" data-modal-close data-i18n-aria="modal.close">✕</button>
+      </div>
+
+      <div class="modal-grid">
+        <div class="modal-media">
+          <div class="carousel">
+            <button type="button" class="icon-btn carousel-btn" data-carousel-prev data-i18n-aria="modal.carousel.prev">‹</button>
+            <div class="carousel-viewport">
+              <img id="project-modal-image" class="carousel-image" src="" alt="">
+            </div>
+            <button type="button" class="icon-btn carousel-btn" data-carousel-next data-i18n-aria="modal.carousel.next">›</button>
+          </div>
+          <div id="project-modal-dots" class="carousel-dots"></div>
+          <div id="project-modal-actions" class="modal-actions"></div>
+        </div>
+
+        <div class="modal-content">
+          <div class="modal-section">
+            <h4 class="modal-section-title" data-i18n="modal.problemTitle">Problema que resuelve</h4>
+            <p id="project-modal-problem" class="modal-text"></p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title" data-i18n="modal.featuresTitle">Funcionalidades principales</h4>
+            <ul id="project-modal-features" class="modal-list"></ul>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title" data-i18n="modal.techTitle">Tecnologías</h4>
+            <div id="project-modal-tech" class="tags"></div>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title" data-i18n="modal.moreTitle">Información adicional</h4>
+            <p id="project-modal-extra" class="modal-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/8d77e74cbe.js" crossorigin="anonymous"></script>
