@@ -45,6 +45,7 @@ section[id] {
 
   --hover-lilac: var(--pale-violet);
   --subtitle-hover: var(--soft-peach);
+  --hover-tech-text: #d97706;
 }
 
 
@@ -77,6 +78,7 @@ html[data-theme="dark"] {
 
   --hover-lilac: var(--soft-lilac);
   --subtitle-hover: var(--soft-lilac);
+  --hover-tech-text: var(--sunset-orange);
 
   --about-title-dark: #FFD2A6;
 }
@@ -492,6 +494,12 @@ html[data-theme="dark"] .about-title {
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0,0,0,.15);
   background-color: var(--hover-lilac);
+}
+
+.card:hover .chip {
+  background-color: var(--hover-tech-bg);
+  color: #fff;
+  border-color: var(--hover-tech-bg);
 }
 
 
