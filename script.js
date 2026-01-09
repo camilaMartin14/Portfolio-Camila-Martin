@@ -1,12 +1,20 @@
 const translations = {
   es: {
     'nav.projects': 'Proyectos Destacados',
+    'nav.about': 'Sobre mí',
     'nav.stack': 'Stack',
     'nav.timeline': 'Formación Académica',
     'nav.cv': 'Descargar CV',
 
     'hero.subtitle': 'Desarrolladora Full-stack orientada a backend .NET',
     'hero.location': '📍Córdoba, Argentina',
+
+    'about.title': 'Sobre mí',
+    'about.text1': 'Desarrolladora <span class="resaltar">.NET</span> en formación, cursando segundo año de la carrera de Programación.',
+    'about.text2': 'Trabajo principalmente con <span class="resaltar">C#</span>, <span class="resaltar">ASP.NET Core</span>, <span class="resaltar">Entity Framework</span> y <span class="resaltar">SQL Server</span>.',
+    'about.text3': 'Actualmente me encuentro aprendiendo <span class="resaltar">Angular</span> y <span class="resaltar">TypeScript</span> de forma autodidacta, con el objetivo de complementar mi perfil backend y avanzar hacia un enfoque <span class="resaltar">full stack</span>.',
+    'about.text4': 'Me enfoco en construir aplicaciones claras, mantenibles y bien estructuradas, aplicando buenas prácticas y <span class="resaltar">arquitectura en capas</span>.',
+    'about.text5': 'Desarrollo proyectos personales para seguir fortaleciendo mi base técnica y profesional.',
 
     'projects.title': 'Proyectos Destacados',
     'projects.demo': 'Demo',
@@ -107,12 +115,20 @@ const translations = {
 
   en: {
     'nav.projects': 'Featured Projects',
+    'nav.about': 'About me',
     'nav.stack': 'Stack',
     'nav.timeline': 'Academic Background',
     'nav.cv': 'Download CV',
 
     'hero.subtitle': 'Full-stack Developer focused on .NET backend',
     'hero.location': '📍Córdoba, Argentina',
+
+    'about.title': 'About me',
+    'about.text1': '<span class="resaltar">.NET</span> Developer in training, currently in the second year of the Programming degree.',
+    'about.text2': 'I work mainly with <span class="resaltar">C#</span>, <span class="resaltar">ASP.NET Core</span>, <span class="resaltar">Entity Framework</span>, and <span class="resaltar">SQL Server</span>.',
+    'about.text3': 'I am currently learning <span class="resaltar">Angular</span> and <span class="resaltar">TypeScript</span> on my own, with the goal of complementing my backend profile and moving towards a <span class="resaltar">full stack</span> approach.',
+    'about.text4': 'I focus on building clear, maintainable, and well-structured applications, applying best practices and <span class="resaltar">layered architecture</span>.',
+    'about.text5': 'I develop personal projects to continue strengthening my technical and professional base.',
 
     'projects.title': 'Featured Projects',
     'projects.demo': 'Demo',
@@ -276,9 +292,31 @@ function init() {
   setTheme(savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light'))
   applyTranslations(savedLang ? savedLang : 'es')
   setupProjectModal()
+  setupScrollAnimations()
+  setupConfetti()
 }
 
 document.addEventListener('DOMContentLoaded', init)
+
+function setupScrollAnimations() {
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible-scroll')
+        observer.unobserve(entry.target)
+      }
+    })
+  }, observerOptions)
+
+  document.querySelectorAll('.hidden-scroll').forEach(el => {
+    observer.observe(el)
+  })
+}
 
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', e => {
@@ -321,7 +359,7 @@ function setupProjectModal() {
       ],
       tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
       extraKey: 'modal.logra.extra',
-      images: ['images/L1.png', 'images/L2.png', 'images/L3.png', 'images/L4.png'],
+      images: ['images/L1.png', 'images/L2.png', 'images/L3.png', 'images/L4.png', 'images/L5.png'],
       demoUrl: 'https://logra-psi.vercel.app/',
       repoUrl: 'https://github.com/camilaMartin14/Logra--Daily-Planner'
     },
@@ -338,7 +376,7 @@ function setupProjectModal() {
       ],
       tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
       extraKey: 'modal.arcadia.extra',
-      images: ['images/A1.png', 'images/A (1).png', 'images/A (2).png', 'images/A (3).png', 'images/A (4).png', 'images/A (5).png'],
+      images: ['images/A3.png', 'images/A2.png', 'images/A1.png', 'images/A4.png', 'images/A5.png', 'images/A6.png', 'images/A7.png'],
       demoUrl: 'https://arcadia-mu-five.vercel.app/',
       repoUrl: 'https://github.com/camilaMartin14/Arcadia-Web'
     },
@@ -431,7 +469,7 @@ function setupProjectModal() {
       techEl.appendChild(span)
     })
 
-    // Actions (Demo/Repo)
+    
     const actionsEl = document.getElementById('project-modal-actions')
     if (actionsEl) {
       actionsEl.innerHTML = ''
@@ -515,4 +553,26 @@ function setupProjectModal() {
   }
 }
 
+function setupConfetti() {
+  const cvBtn = document.getElementById('cv-download')
+  if (cvBtn) {
+    cvBtn.addEventListener('mousedown', (e) => {
+      
+      const rect = cvBtn.getBoundingClientRect()
+      
+      const x = (rect.left + rect.width / 2) / window.innerWidth
+      const y = (rect.top + rect.height / 2) / window.innerHeight
 
+      
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x, y },
+        zIndex: 9999,
+        startVelocity: 60, 
+        gravity: 1.2,      
+        scalar: 0.9        
+      })
+    })
+  }
+}
