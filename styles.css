@@ -387,14 +387,14 @@ html[data-theme="dark"] .about-title {
 
 
 .card {
-  background: var(--card-bg);
+  background-color: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: .25s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, background-color 1.2s ease;
 }
 
 
@@ -489,9 +489,9 @@ html[data-theme="dark"] .about-title {
 
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0,0,0,.22);
-  background: var(--hover-lilac);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  background-color: var(--hover-lilac);
 }
 
 
