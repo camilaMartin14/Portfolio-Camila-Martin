@@ -294,9 +294,31 @@ function init() {
   setupProjectModal()
   setupScrollAnimations()
   setupConfetti()
+  setupMobileMenu()
 }
 
 document.addEventListener('DOMContentLoaded', init)
+
+function setupMobileMenu() {
+  const menuBtn = document.getElementById('menu-toggle')
+  const navLinks = document.querySelector('.nav-links')
+
+  if (!menuBtn || !navLinks) return
+
+  menuBtn.addEventListener('click', () => {
+    const isActive = navLinks.classList.toggle('active')
+    menuBtn.innerHTML = isActive 
+      ? '<i class="fa-solid fa-xmark"></i>' 
+      : '<i class="fa-solid fa-bars"></i>'
+  })
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active')
+      menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+    })
+  })
+}
 
 function setupScrollAnimations() {
   const observerOptions = {

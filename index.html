@@ -24,8 +24,11 @@
       <div class="nav-actions">
         <a id="cv-download" class="btn small" href="resumes/CV Camila Martín - 2026.pdf" download data-i18n="nav.cv">Descargar CV</a>
         <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">🌙</button>
-        <button id="lang-toggle" class="icon-btn" aria-label="Cambiar idioma">ES</button>
+        <button id="lang-toggle" class="icon-btn" aria-label="Cambiar idioma">🇦🇷</button>
       </div>
+      <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
   </header>
 
@@ -56,7 +59,6 @@
       <div class="about-card hidden-scroll">
         <div class="about-header">
           <h2 class="section-title about-title" data-i18n="about.title">Sobre mí</h2>
-          <i class="fa-solid fa-id-card about-icon"></i>
         </div>
         <p class="about-text" data-i18n="about.text1"></p>
         <p class="about-text" data-i18n="about.text2"></p>
@@ -66,9 +68,16 @@
       </div>
     </section>
 
-    <section id="proyectos" class="projects container">
-      <h2 class="section-title hidden-scroll" data-i18n="projects.title">Proyectos Destacados</h2>
-      <div class="grid">
+    <!-- Projects Section -->
+    <div class="wave-divider-top">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <h2 class="section-title hidden-scroll" data-i18n="projects.title">Proyectos Destacados</h2>
+        <div class="grid">
         <article class="card hidden-scroll">
           <div class="card-image">
             <img src="images/L1.png" alt="Vista previa del proyecto Logra">
@@ -136,9 +145,10 @@
           </div>
         </article>
       </div>
+      </div>
     </section>
 
-    <div class="wave-divider-top">
+    <div class="wave-stack">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
       </svg>
@@ -177,13 +187,14 @@
       </div>
     </section>
 
-    <div class="wave-divider-bottom">
+    <div class="wave-divider-top">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
       </svg>
     </div>
 
-<section id="timeline" class="timeline container">
+<section id="timeline" class="timeline">
+  <div class="container">
   <h2 class="section-title hidden-scroll" data-i18n="timeline.title">Formación Académica</h2>
 
   <div class="timeline-list">
@@ -262,6 +273,7 @@
       </div>
     </div>
 
+  </div>
   </div>
 </section>
 
