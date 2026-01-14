@@ -23,20 +23,23 @@ const translations = {
 
     'projects.status.finished': 'Finalizado',
     'projects.status.dev': 'En desarrollo',
+    'projects.logra.date': 'Dic 2025 - Ene 2026',
+    'projects.arcadia.date': 'Sep 2025 - Dic 2025',
+    'projects.tucredito.date': 'Ene 2026 - Actualidad',
 
     'stack.tools': 'Herramientas',
 
     'projects.logra.desc':
-      'Daily planner digital orientado a la organización personal y el seguimiento de <strong>hábitos</strong>. Permite planificar tareas diarias, registrar comidas, estados de ánimo y notas tipo post-it categorizadas, ofreciendo una <strong>visión clara</strong> del día a día para mejorar la <strong>productividad y bienestar</strong> personal de forma simple e intuitiva.',
+      'Plataforma de productividad minimalista diseñada para organizar tu día y gestionar <strong>hábitos</strong>. Construida con <strong>arquitectura limpia en .NET 8</strong> y un frontend ligero en <strong>Vanilla JS (SPA)</strong>, transforma intenciones en acciones.',
 
     'projects.arcadia.desc':
-      'E-commerce completo para la venta de libros, desarrollado con un <strong>enfoque integral</strong>. Incluye un panel administrador que permite gestionar catálogo, pedidos y clientes, además de visualizar estadísticas de ventas, facilitando la <strong>toma de decisiones</strong> y la administración del negocio.',
+      'E-commerce integral para el mundo editorial que centraliza la venta de libros. Desarrollado con <strong>.NET y SQL Server</strong>, gestiona desde el <strong>catálogo navegable</strong> hasta el seguimiento de pedidos, aportando visibilidad y control al negocio.',
 
     'projects.tucredito.desc':
-      'Aplicación <strong>orientada a prestamistas</strong> para la gestión y seguimiento de préstamos personales. Permite administrar clientes, cuotas, pagos y estados de deuda, con control de morosidad y una <strong>visión clara del estado financiero</strong> general, facilitando una <strong>gestión ordenada y confiable</strong> de los créditos.',
+      'API backend para la <strong>gestión integral de préstamos y prestatarios</strong>. Implementa autenticación con <strong>JWT</strong>, auditoría de datos y consumo de APIs externas (BCRA y cotización de monedas) para ofrecer una <strong>visión confiable y en tiempo real</strong> del riesgo y de la cartera.',
 
     'modal.statusLabel': 'Estado',
-    'modal.problemTitle': 'Problema que resuelve',
+    'modal.problemTitle': 'Sobre el proyecto',
     'modal.featuresTitle': 'Funcionalidades principales',
     'modal.techTitle': 'Tecnologías',
     'modal.moreTitle': 'Información adicional',
@@ -47,31 +50,37 @@ const translations = {
     'modal.carousel.dotAlt': 'Ir a la captura {index}',
 
     'modal.logra.problem':
-      'Centraliza la <strong>planificación diaria</strong> en una única aplicación, facilitando la <strong>organización personal</strong>, la gestión del tiempo y el seguimiento de <strong>hábitos</strong> cotidianos. El objetivo es brindar una <strong>visión clara</strong> del día a día y ayudar a detectar patrones que impactan en la <strong>productividad y el bienestar</strong>.',
-    'modal.logra.features.1': '<strong>Planificación y gestión de tareas</strong> diarias, con seguimiento por fecha, estado y categorías personalizables.',
-    'modal.logra.features.2': 'Gestión de <strong>notas estilo post-it</strong>, organizables por categorías, permitiendo agrupar ideas, recordatorios y apuntes rápidos de forma visual e intuitiva.',
-    'modal.logra.features.3': '<strong>Registro de comidas</strong>, orientado al control y la organización alimentaria diaria.',
-    'modal.logra.features.4': '<strong>Seguimiento del estado de ánimo</strong>, permitiendo identificar tendencias y patrones a lo largo del tiempo.',
-    'modal.logra.features.5': '<strong>Persistencia de datos</strong> mediante backend y base de datos, garantizando almacenamiento seguro y consistente de la información.',
-    'modal.logra.extra': 'Estado: finalizado. Alcance: aplicación web con backend y base de datos.',
+      'Nace de la necesidad de combinar planificación diaria y bienestar personal sin la complejidad de herramientas empresariales. Resuelve la dispersión mental transformando intenciones en acciones mediante una interfaz fluida y una arquitectura backend robusta que garantiza la <strong>sincronización y seguridad de los datos</strong>.',
+    'modal.logra.features.1': '<strong>Planificación Diaria y Hábitos</strong>: Vista enfocada en el día actual con navegación intuitiva y categorización visual por colores.',
+    'modal.logra.features.2': '<strong>Interacción Fluida (Drag & Drop)</strong>: Reorganización nativa de tareas y notas para una experiencia de usuario ágil y moderna.',
+    'modal.logra.features.3': '<strong>Backend Robusto (.NET 8)</strong>: API RESTful con Clean Architecture, Patrón Repositorio y optimización de consultas (solución a N+1).',
+    'modal.logra.features.4': '<strong>Frontend Ligero (Vanilla JS)</strong>: SPA sin frameworks pesados, utilizando Módulos ES6+ y gestión de estado centralizada.',
+    'modal.logra.features.5': '<strong>Seguridad y Rendimiento</strong>: Autenticación JWT, validación de datos y proyección a DTOs para máxima eficiencia.',
+    'modal.logra.extra': 'Estado: finalizado. Full Stack (.NET + Vanilla JS) desplegado y funcional.',
 
     'modal.arcadia.problem':
-      'Brinda una <strong>solución integral</strong> para la <strong>venta online</strong> de libros, centralizando la gestión del catálogo y el control de pedidos en una <strong>plataforma administrable</strong>. Facilita la <strong>administración del negocio</strong> y el seguimiento de las ventas de forma clara y ordenada.',
-    'modal.arcadia.features.1': '<strong>Catálogo de libros</strong> con navegación intuitiva y vista de detalle del producto.',
-    'modal.arcadia.features.2': '<strong>Carrito de compras</strong>, que permite seleccionar y gestionar los productos antes de confirmar la compra.',
-    'modal.arcadia.features.3': '<strong>Panel administrador</strong> para la gestión completa del catálogo de libros.',
-    'modal.arcadia.features.4': '<strong>Gestión de pedidos</strong>, orientada al seguimiento del estado de compra y procesamiento de órdenes.',
-    'modal.arcadia.features.5': '<strong>Estadísticas de ventas</strong>, para el análisis y monitoreo del rendimiento del negocio.',
-    'modal.arcadia.extra': 'Estado: finalizado. Incluye panel administrador y métricas.',
+      'Centraliza el catálogo de libros en un único lugar y estandariza la toma de pedidos, evitando inconsistencias de stock. Aporta visibilidad al negocio mediante métricas clave, resolviendo la gestión manual y desordenada del flujo de ventas.',
+    'modal.arcadia.features.1': '<strong>Catálogo y Filtros</strong>: Búsqueda avanzada y fichas detalladas pensadas para el usuario final.',
+    'modal.arcadia.features.2': '<strong>Gestión de Pedidos</strong>: Control transaccional del ciclo de vida de la compra y seguimiento de estados.',
+    'modal.arcadia.features.3': '<strong>Panel Administrativo (ABMC)</strong>: Gestión completa de libros, autores y editoriales con validaciones.',
+    'modal.arcadia.features.4': '<strong>Seguridad y Auth</strong>: Registro, login seguro y autorización basada en roles mediante JWT.',
+    'modal.arcadia.features.5': '<strong>Dashboard de Métricas</strong>: Visualización de datos de ventas para decisiones informadas.',
+    'modal.arcadia.extra': 'Roadmap: Integración con MinIO para portadas, perfiles de usuario y mejoras en transaccionalidad.',
 
     'modal.tucredito.problem':
-      'Aplicación en desarrollo <strong>orientada a prestamistas</strong> para organizar y gestionar préstamos personales, permitiendo visualizar de forma clara el <strong>estado de las deudas</strong>, los pagos realizados y los saldos pendientes, reduciendo errores y facilitando el <strong>control financiero</strong>.',
-    'modal.tucredito.features.1': '<strong>Alta y gestión de clientes</strong>, con información centralizada.',
-    'modal.tucredito.features.2': '<strong>Registro de préstamos y cuotas</strong>, con detalle de montos y vencimientos.',
-    'modal.tucredito.features.3': '<strong>Registro de pagos</strong>, con actualización automática de saldos.',
-    'modal.tucredito.features.4': '<strong>Seguimiento de morosidad</strong> y vencimientos, para un mejor control del cobro.',
-    'modal.tucredito.features.5': '<strong>Vista general del estado de la deuda</strong>, que brinda una visión rápida y ordenada de la situación financiera.',
-    'modal.tucredito.extra': 'Estado: en desarrollo. El alcance y las funcionalidades pueden cambiar.',
+      'API backend en desarrollo orientada a pequeñas financieras y prestamistas que necesitan centralizar la gestión de créditos y prestatarios en un sistema único, <strong>auditable y seguro</strong>. Automatiza el ciclo completo del préstamo — desde la evaluación de riesgo hasta la cancelación — reduciendo planillas manuales, reprocesos y errores operativos.',
+    'modal.tucredito.features.1':
+      '<strong>Gestión integral de prestatarios y créditos</strong>, con datos personales, financieros y estados de préstamo.',
+    'modal.tucredito.features.2':
+      '<strong>Autenticación y autorización con JWT</strong>, más almacenamiento seguro de contraseñas mediante hashing.',
+    'modal.tucredito.features.3':
+      '<strong>Auditoría avanzada</strong> de operaciones sensibles (Préstamo, Pago, Prestatario, Garante) usando interceptores de Entity Framework.',
+    'modal.tucredito.features.4':
+      '<strong>Integración con servicios externos</strong>: consulta de situación crediticia en BCRA y cotización de dólar (oficial, blue, etc.) en tiempo real.',
+    'modal.tucredito.features.5':
+      '<strong>Gestión de documentación en MinIO</strong>, almacenando pagarés y archivos asociados de forma segura y desacoplada de la base de datos.',
+    'modal.tucredito.extra':
+      'Estado: en desarrollo activo. Actualmente está desplegado como API backend; la interfaz web administrativa se encuentra en rediseño.',
 
     'stack.title': 'Mi Stack Técnico',
     'stack.languages': 'Lenguajes',
@@ -137,20 +146,23 @@ const translations = {
 
     'projects.status.finished': 'Completed',
     'projects.status.dev': 'In development',
+    'projects.logra.date': 'Dec 2025 - Jan 2026',
+    'projects.arcadia.date': 'Sep 2025 - Dec 2025',
+    'projects.tucredito.date': 'Jan 2026 - Present',
 
     'stack.tools': 'Tools',
 
     'projects.logra.desc':
-      'Digital daily planner oriented towards personal organization and <strong>habit</strong> tracking. It allows planning daily tasks, logging meals, moods, and categorized post-it notes, offering a <strong>clear view</strong> of the day-to-day to improve personal <strong>productivity and well-being</strong> in a simple and intuitive way.',
+      'Minimalist productivity platform designed to organize your day and manage <strong>habits</strong>. Built with <strong>clean architecture in .NET 8</strong> and a lightweight <strong>Vanilla JS (SPA)</strong> frontend, transforming intentions into actions.',
 
     'projects.arcadia.desc':
-      'Complete e-commerce for book sales, developed with a <strong>comprehensive approach</strong>. It includes an admin panel to manage the catalog, orders, and clients, as well as visualize sales statistics, facilitating <strong>decision-making</strong> and business administration.',
+      'Comprehensive e-commerce for the publishing world that centralizes book sales. Developed with <strong>.NET and SQL Server</strong>, it manages everything from the <strong>browsable catalog</strong> to order tracking, providing visibility and control to the business.',
 
     'projects.tucredito.desc':
-      'Application <strong>oriented to lenders</strong> for the management and tracking of personal loans. It allows managing clients, installments, payments, and debt status, with delinquency control and a <strong>clear view of the overall financial status</strong>, facilitating <strong>organized and reliable management</strong> of credits.',
+      'Backend API for <strong>end-to-end management of loans and borrowers</strong>. It implements <strong>JWT</strong> authentication, data auditing, and external API consumption (BCRA and currency rates) to provide a <strong>reliable, real-time view</strong> of risk and portfolio status.',
 
     'modal.statusLabel': 'Status',
-    'modal.problemTitle': 'Problem it solves',
+    'modal.problemTitle': 'About the project',
     'modal.featuresTitle': 'Key features',
     'modal.techTitle': 'Technologies',
     'modal.moreTitle': 'Additional info',
@@ -161,31 +173,37 @@ const translations = {
     'modal.carousel.dotAlt': 'Go to screenshot {index}',
 
     'modal.logra.problem':
-      'Centralizes <strong>daily planning</strong> in a single application, facilitating <strong>personal organization</strong>, time management, and <strong>daily habit</strong> tracking. The goal is to provide a <strong>clear view</strong> of the day-to-day and help detect patterns that impact <strong>productivity and well-being</strong>.',
-    'modal.logra.features.1': '<strong>Planning and management of daily tasks</strong>, with tracking by date, status, and customizable categories.',
-    'modal.logra.features.2': 'Management of <strong>post-it style notes</strong>, organizable by categories, allowing ideas, reminders, and quick notes to be grouped in a visual and intuitive way.',
-    'modal.logra.features.3': '<strong>Meal logging</strong>, oriented towards daily dietary control and organization.',
-    'modal.logra.features.4': '<strong>Mood tracking</strong>, allowing identification of trends and patterns over time.',
-    'modal.logra.features.5': '<strong>Data persistence</strong> via backend and database, ensuring secure and consistent information storage.',
-    'modal.logra.extra': 'Status: completed. Scope: web app with backend and database.',
+      'Born from the need to combine daily planning and personal well-being without the complexity of enterprise tools. It solves mental clutter by transforming intentions into actions through a fluid interface and a robust backend architecture that ensures <strong>data synchronization and security</strong>.',
+    'modal.logra.features.1': '<strong>Daily Planning & Habits</strong>: Focus view on the current day with intuitive navigation and visual color categorization.',
+    'modal.logra.features.2': '<strong>Fluid Interaction (Drag & Drop)</strong>: Native task and note reordering for an agile and modern user experience.',
+    'modal.logra.features.3': '<strong>Robust Backend (.NET 8)</strong>: RESTful API with Clean Architecture, Repository Pattern, and query optimization (N+1 solution).',
+    'modal.logra.features.4': '<strong>Lightweight Frontend (Vanilla JS)</strong>: SPA without heavy frameworks, using ES6+ Modules and centralized state management.',
+    'modal.logra.features.5': '<strong>Security & Performance</strong>: JWT authentication, data validation, and DTO projection for maximum efficiency.',
+    'modal.logra.extra': 'Status: completed. Full Stack (.NET + Vanilla JS) deployed and functional.',
 
     'modal.arcadia.problem':
-      'Provides a <strong>comprehensive solution</strong> for <strong>online book sales</strong>, centralizing catalog management and order control in a <strong>manageable platform</strong>. Facilitates <strong>business administration</strong> and sales tracking in a clear and organized way.',
-    'modal.arcadia.features.1': '<strong>Book catalog</strong> with intuitive navigation and product detail view.',
-    'modal.arcadia.features.2': '<strong>Shopping cart</strong>, allowing product selection and management before purchase confirmation.',
-    'modal.arcadia.features.3': '<strong>Admin panel</strong> for complete book catalog management.',
-    'modal.arcadia.features.4': '<strong>Order management</strong>, oriented towards purchase status tracking and order processing.',
-    'modal.arcadia.features.5': '<strong>Sales statistics</strong>, for business performance analysis and monitoring.',
-    'modal.arcadia.extra': 'Status: completed. Includes admin panel and metrics.',
+      'Centralizes the book catalog in a single place and standardizes order taking, avoiding stock inconsistencies. It brings visibility to the business through key metrics, resolving the messy and manual management of sales flows.',
+    'modal.arcadia.features.1': '<strong>Catalog & Filters</strong>: Advanced search and detailed product pages designed for the end user.',
+    'modal.arcadia.features.2': '<strong>Order Management</strong>: Transactional control of the purchase lifecycle and status tracking.',
+    'modal.arcadia.features.3': '<strong>Admin Panel (CRUD)</strong>: Complete management of books, authors, and publishers with validations.',
+    'modal.arcadia.features.4': '<strong>Security & Auth</strong>: Registration, secure login, and role-based authorization using JWT.',
+    'modal.arcadia.features.5': '<strong>Metrics Dashboard</strong>: Visualization of sales data for informed decision-making.',
+    'modal.arcadia.extra': 'Roadmap: Integration with MinIO for covers, user profiles, and transactional improvements.',
 
     'modal.tucredito.problem':
-      'Application in development <strong>oriented to lenders</strong> for organizing and managing personal loans, allowing clear visualization of <strong>debt status</strong>, payments made, and outstanding balances, reducing errors and facilitating <strong>financial control</strong>.',
-    'modal.tucredito.features.1': '<strong>Client registration and management</strong>, with centralized information.',
-    'modal.tucredito.features.2': '<strong>Registration of loans and installments</strong>, with details on amounts and due dates.',
-    'modal.tucredito.features.3': '<strong>Payment registration</strong>, with automatic balance updates.',
-    'modal.tucredito.features.4': '<strong>Delinquency and due date tracking</strong>, for better collection control.',
-    'modal.tucredito.features.5': '<strong>Overview of debt status</strong>, providing a quick and organized view of the financial situation.',
-    'modal.tucredito.extra': 'Status: in development. Scope and features may change.',
+      'Backend API in development aimed at small lenders and financial businesses that need to centralize loan and borrower management in a single, <strong>auditable and secure</strong> system. It automates the full loan lifecycle — from risk assessment to payoff — reducing manual spreadsheets, rework, and operational errors.',
+    'modal.tucredito.features.1':
+      '<strong>End-to-end management of borrowers and loans</strong>, including personal, financial data and loan status.',
+    'modal.tucredito.features.2':
+      '<strong>JWT-based authentication and authorization</strong>, plus secure password storage through hashing.',
+    'modal.tucredito.features.3':
+      '<strong>Advanced auditing</strong> of sensitive operations (Loan, Payment, Borrower, Guarantor) using Entity Framework interceptors.',
+    'modal.tucredito.features.4':
+      '<strong>External integrations</strong>: real-time BCRA credit report queries and dollar exchange rates (official, blue, etc.).',
+    'modal.tucredito.features.5':
+      '<strong>Document management with MinIO</strong>, storing promissory notes and related files securely and decoupled from the database.',
+    'modal.tucredito.extra':
+      'Status: in active development. Currently deployed as a backend API; the admin web interface is being redesigned.',
 
     'stack.title': 'My Tech Stack',
     'stack.languages': 'Languages',
@@ -379,7 +397,7 @@ function setupProjectModal() {
         'modal.logra.features.4',
         'modal.logra.features.5'
       ],
-      tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
+      tech: ['.NET 8 Web API', 'C#', 'SQL Server', 'Entity Framework Core', 'Vanilla JS (ES6+)', 'CSS3', 'JWT'],
       extraKey: 'modal.logra.extra',
       images: ['images/L1.png', 'images/L2.png', 'images/L3.png', 'images/L4.png', 'images/L5.png'],
       demoUrl: 'https://logra-psi.vercel.app/',
@@ -396,7 +414,7 @@ function setupProjectModal() {
         'modal.arcadia.features.4',
         'modal.arcadia.features.5'
       ],
-      tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
+      tech: ['.NET Web API', 'SQL Server', 'JWT', 'HTML', 'CSS', 'JavaScript'],
       extraKey: 'modal.arcadia.extra',
       images: ['images/A3.png', 'images/A2.png', 'images/A1.png', 'images/A4.png', 'images/A5.png', 'images/A6.png', 'images/A7.png'],
       demoUrl: 'https://arcadia-mu-five.vercel.app/',
@@ -413,7 +431,7 @@ function setupProjectModal() {
         'modal.tucredito.features.4',
         'modal.tucredito.features.5'
       ],
-      tech: ['HTML', 'CSS', 'JavaScript', 'C#', 'ASP.NET', 'SQL Server'],
+      tech: ['.NET 8 Web API', 'C#', 'Entity Framework Core', 'SQL Server', 'JWT', 'MinIO', 'External APIs'],
       extraKey: 'modal.tucredito.extra',
       images: ['images/app-in-development.png'],
       demoUrl: 'https://tu-credito.vercel.app/',
