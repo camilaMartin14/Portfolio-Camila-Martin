@@ -46,12 +46,14 @@ section[id] {
   --hover-lilac: var(--pale-violet);
   --subtitle-hover: var(--soft-peach);
   --hover-tech-text: #d97706;
+  --hover-tech-bg: var(--sunset-orange);
+  --hover-tech-text-color: #fff;
+  --sunset-orange: #ffb892;
 }
 
-
 html[data-theme="dark"] {
+  --hover-tech-text-color: #000;
   --charcoal-base: #2A2F34;
-  --sunset-orange: #FFB085;
   --dusty-pink: #EBC8D6;
   --silver-mist: #EBEBEB;
   --soft-lilac: #C8B6E3;
@@ -79,6 +81,7 @@ html[data-theme="dark"] {
   --hover-lilac: var(--soft-lilac);
   --subtitle-hover: var(--soft-lilac);
   --hover-tech-text: var(--sunset-orange);
+  --hover-tech-bg: var(--sunset-orange);
 
   --about-title-dark: #FFD2A6;
 }
@@ -505,7 +508,7 @@ html[data-theme="dark"] .about-title {
 
 .card:hover .chip {
   background-color: var(--hover-tech-bg);
-  color: #fff;
+  color: var(--hover-tech-text-color);
   border-color: var(--hover-tech-bg);
 }
 
@@ -784,6 +787,12 @@ html[data-theme="dark"] .view-more-btn:hover {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
+}
+
+html[data-theme="dark"] .card:hover .view-more-btn:not(:hover) {
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), var(--card-bg);
+  border-color: var(--soft-lilac);
+  color: var(--text);
 }
 
 
