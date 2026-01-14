@@ -433,7 +433,7 @@ function setupProjectModal() {
       ],
       tech: ['.NET 8 Web API', 'C#', 'Entity Framework Core', 'SQL Server', 'JWT', 'MinIO', 'External APIs'],
       extraKey: 'modal.tucredito.extra',
-      images: ['images/app-in-development.png'],
+      images: ['images/T1.jpg', 'images/T2.jpg'],
       demoUrl: 'https://tu-credito.vercel.app/',
       repoUrl: 'https://github.com/camilaMartin14/Tu-Credito'
     }
