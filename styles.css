@@ -741,10 +741,16 @@ html[data-theme="dark"] .about-title {
   .stack-grid { grid-template-columns: 1fr 1fr }
 }
 
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 @media (max-width: 768px) {
   .menu-toggle { display: block }
 
-  .nav-links {
+  .nav-menu {
     position: fixed;
     top: 72px;
     left: 0;
@@ -761,7 +767,19 @@ html[data-theme="dark"] .about-title {
     z-index: 40;
   }
 
-  .nav-links.active { transform: translateY(0) }
+  .nav-menu.active { transform: translateY(0) }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .nav-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1195,4 +1213,286 @@ html[data-theme="dark"] .card:hover .project-date {
 /* Ensure smooth transition for inner card elements */
 .card-title, .card-desc, .project-date {
   transition: color 0.3s ease;
+}
+
+/* --- Mobile Improvements --- */
+@media (max-width: 768px) {
+  /* Header Simplificado */
+  .header {
+    height: 60px;
+  }
+  
+  .nav {
+    height: 60px;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: var(--header-bg);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-150%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 40;
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+  
+  .nav-menu.active { transform: translateY(0) }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* High Priority: Hero Compacto y Jerarquizado */
+  .hero {
+    padding: 30px 0 20px; /* Menos altura inicial */
+    gap: 15px;
+    min-height: auto;
+  }
+  
+  .hero-photo {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    order: -1; /* Foto arriba si se prefiere, pero el usuario pidió Nombre -> Rol -> CTA. 
+                  En diseño visual, a veces Foto -> Nombre es mejor. 
+                  Pero "Mejor jerarquía: nombre -> rol -> CTA/contacto".
+                  Vamos a respetar el orden del HTML (Texto primero) o forzarlo.
+                  En HTML está Texto primero, luego Foto.
+                  En mobile (max-width: 900px) hay un order: -1 para foto.
+                  Vamos a quitar ese order -1 para que el texto salga primero como pide el usuario.
+               */
+    order: 0; 
+  }
+
+  .hero .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero .hero-text .title {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    order: 1;
+  }
+  
+  .hero .hero-text .subtitle {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0 10px;
+    order: 2;
+  }
+
+  .hero .contact-links {
+    order: 3;
+    margin-top: 10px;
+  }
+  
+  .hero-photo .avatar {
+    width: 130px;
+    height: 130px;
+    border-width: 3px;
+    margin-bottom: 10px;
+  }
+
+  /* Targets táctiles mejorados (44px min) */
+  .contact-links {
+    gap: 24px;
+  }
+
+  .contact-links .link {
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-links .link i {
+    font-size: 28px;
+  }
+
+  /* Cards optimizadas para scroll */
+  .card {
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .card-image img {
+    height: 160px; /* Imagen menos alta */
+  }
+  
+  .card-content {
+    padding: 12px 4px 4px;
+    gap: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+  }
+  
+  .card-actions {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch; /* Full width */
+    margin-top: 15px;
+  }
+  
+  .view-more-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px; /* Más fácil de tocar */
+    font-size: 1rem;
+    min-height: 48px;
+  }
+  
+  .project-date {
+    text-align: center;
+    order: 2;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    padding: 5px;
+  }
+  
+  /* Textos respirables */
+  .about-text, .card-desc, .timeline-item .desc, .modal-text, .modal-list {
+    line-height: 1.75;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  .about-card {
+    padding: 24px 20px;
+  }
+
+  /* Timeline improvements */
+  .timeline-item {
+    gap: 15px;
+    padding-bottom: 25px;
+    grid-template-columns: 20px 1fr; /* Más espacio para texto */
+  }
+  
+  .timeline-list::before {
+    left: 9px; 
+  }
+  
+  .timeline-item .dot {
+    width: 14px;
+    height: 14px;
+    left: 2px;
+  }
+
+  /* Stack visual */
+  .stack-group {
+    margin-bottom: 30px; /* Separación vertical de grupos */
+  }
+
+  .stack-grid {
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .stack-item {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    gap: 10px;
+    min-height: 90px;
+  }
+  
+  .stack-item i {
+    font-size: 36px; /* Íconos protagonistas */
+    width: auto;
+    margin-bottom: 5px;
+  }
+  
+  .stack-item span {
+    font-size: 0.9rem;
+  }
+
+  /* Modal Mobile Adjustments */
+  .modal {
+    padding: 0;
+  }
+  
+  .modal-panel {
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    transform: none !important; 
+  }
+  
+  .modal-header {
+    padding: 16px;
+  }
+  
+  .modal-title {
+    font-size: 24px;
+  }
+  
+  .carousel-viewport {
+    min-height: 200px;
+  }
+  
+  .modal-media {
+    padding: 16px;
+  }
+  
+  .modal-close {
+    padding: 10px; /* Target táctil */
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .hero-text .title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .stack-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles pequeños */
+  }
+  
+  .hero-photo .avatar {
+    width: 120px;
+    height: 120px;
+  }
 }

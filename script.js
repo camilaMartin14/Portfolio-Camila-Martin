@@ -319,20 +319,20 @@ document.addEventListener('DOMContentLoaded', init)
 
 function setupMobileMenu() {
   const menuBtn = document.getElementById('menu-toggle')
-  const navLinks = document.querySelector('.nav-links')
+  const navMenu = document.getElementById('nav-menu')
 
-  if (!menuBtn || !navLinks) return
+  if (!menuBtn || !navMenu) return
 
   menuBtn.addEventListener('click', () => {
-    const isActive = navLinks.classList.toggle('active')
+    const isActive = navMenu.classList.toggle('active')
     menuBtn.innerHTML = isActive 
       ? '<i class="fa-solid fa-xmark"></i>' 
       : '<i class="fa-solid fa-bars"></i>'
   })
 
-  navLinks.querySelectorAll('a').forEach(link => {
+  navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      navLinks.classList.remove('active')
+      navMenu.classList.remove('active')
       menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
     })
   })
