@@ -46,7 +46,7 @@ section[id] {
   --hover-lilac: var(--pale-violet);
   --subtitle-hover: var(--soft-peach);
   --hover-tech-text: #ffbd76;
-  --hover-tech-bg: var(--sunset-orange);
+  --hover-tech-bg: #ffd3b3;
   --hover-tech-text-color: #fff;
   --sunset-orange: #ffb892;
 }
@@ -81,7 +81,7 @@ html[data-theme="dark"] {
   --hover-lilac: var(--soft-lilac);
   --subtitle-hover: var(--soft-lilac);
   --hover-tech-text: var(--sunset-orange);
-  --hover-tech-bg: var(--sunset-orange);
+  --hover-tech-bg: #ffd3b3;
 
   --about-title-dark: #FFD2A6;
 }
