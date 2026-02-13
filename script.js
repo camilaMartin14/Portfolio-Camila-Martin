@@ -25,7 +25,7 @@ const translations = {
     'projects.status.dev': 'En desarrollo',
     'projects.logra.date': 'Dic 2025 - Ene 2026',
     'projects.arcadia.date': 'Sep 2025 - Dic 2025',
-    'projects.tucredito.date': 'Ene 2026 - Actualidad',
+    'projects.tucredito.date': 'Ene 2026 - Feb 2026',
 
     'stack.tools': 'Herramientas',
 
@@ -36,7 +36,7 @@ const translations = {
       'E-commerce integral para el mundo editorial que centraliza la venta de libros. Desarrollado con <strong>.NET y SQL Server</strong>, gestiona desde el <strong>catálogo navegable</strong> hasta el seguimiento de pedidos, aportando visibilidad y control al negocio.',
 
     'projects.tucredito.desc':
-      'API backend para la <strong>gestión integral de préstamos y prestatarios</strong>. Implementa autenticación con <strong>JWT</strong>, auditoría de datos y consumo de APIs externas (BCRA y cotización de monedas) para ofrecer una <strong>visión confiable y en tiempo real</strong> del riesgo y de la cartera.',
+      'Plataforma moderna de <strong>gestión de préstamos</strong> con Dashboard ejecutivo y evaluación crediticia. Construida con <strong>.NET 10</strong> y <strong>React 18</strong>, ofrece simulación de créditos, integración con BCRA y gestión documental segura con <strong>MinIO</strong>.',
 
     'modal.statusLabel': 'Estado',
     'modal.problemTitle': 'Sobre el proyecto',
@@ -68,19 +68,19 @@ const translations = {
     'modal.arcadia.extra': 'Roadmap: Integración con MinIO para portadas, perfiles de usuario y mejoras en transaccionalidad.',
 
     'modal.tucredito.problem':
-      'API backend en desarrollo orientada a pequeñas financieras y prestamistas que necesitan centralizar la gestión de créditos y prestatarios en un sistema único, <strong>auditable y seguro</strong>. Automatiza el ciclo completo del préstamo — desde la evaluación de riesgo hasta la cancelación — reduciendo planillas manuales, reprocesos y errores operativos.',
+      'Transforma la gestión de préstamos con una plataforma <strong>moderna, segura y escalable</strong>. Centraliza la salud de la cartera en un Dashboard en tiempo real, automatiza alertas de morosidad y digitaliza legajos, eliminando el riesgo operativo de las planillas manuales.',
     'modal.tucredito.features.1':
-      '<strong>Gestión integral de prestatarios y créditos</strong>, con datos personales, financieros y estados de préstamo.',
+      '<strong>Dashboard Ejecutivo en Tiempo Real</strong>: Visualiza KPIs financieros (Capital, Interés, Morosidad) y gráficos interactivos de evolución.',
     'modal.tucredito.features.2':
-      '<strong>Autenticación y autorización con JWT</strong>, más almacenamiento seguro de contraseñas mediante hashing.',
+      '<strong>Gestión 360° de Prestatarios</strong>: Perfil digital completo con integración directa a BCRA para evaluación crediticia y digitalización de documentos.',
     'modal.tucredito.features.3':
-      '<strong>Auditoría avanzada</strong> de operaciones sensibles (Préstamo, Pago, Prestatario, Garante) usando interceptores de Entity Framework.',
+      '<strong>Motor de Préstamos Flexible</strong>: Simulador de créditos (Francés, Alemán, Americano), operaciones multi-moneda y control de cobranzas.',
     'modal.tucredito.features.4':
-      '<strong>Integración con servicios externos</strong>: consulta de situación crediticia en BCRA y cotización de dólar (oficial, blue, etc.) en tiempo real.',
+      '<strong>Seguridad Bancaria</strong>: Auditoría inmutable, autenticación robusta JWT y arquitectura Clean desacoplada.',
     'modal.tucredito.features.5':
-      '<strong>Gestión de documentación en MinIO</strong>, almacenando pagarés y archivos asociados de forma segura y desacoplada de la base de datos.',
+      '<strong>Gestión Documental Segura</strong>: Almacenamiento de DNI, recibos y garantías utilizando MinIO (S3 Compatible).',
     'modal.tucredito.extra':
-      'Estado: en desarrollo activo. Actualmente está desplegado como API backend; la interfaz web administrativa se encuentra en rediseño.',
+      'Demo disponible: Usuario <strong>demo</strong> / Contraseña <strong>demo</strong>. Despliegue en Vercel y Backend en .NET 10.',
 
     'stack.title': 'Mi Stack Técnico',
     'stack.languages': 'Lenguajes',
@@ -148,7 +148,7 @@ const translations = {
     'projects.status.dev': 'In development',
     'projects.logra.date': 'Dec 2025 - Jan 2026',
     'projects.arcadia.date': 'Sep 2025 - Dec 2025',
-    'projects.tucredito.date': 'Jan 2026 - Present',
+    'projects.tucredito.date': 'Jan 2026 - Feb 2026',
 
     'stack.tools': 'Tools',
 
@@ -159,7 +159,7 @@ const translations = {
       'Comprehensive e-commerce for the publishing world that centralizes book sales. Developed with <strong>.NET and SQL Server</strong>, it manages everything from the <strong>browsable catalog</strong> to order tracking, providing visibility and control to the business.',
 
     'projects.tucredito.desc':
-      'Backend API for <strong>end-to-end management of loans and borrowers</strong>. It implements <strong>JWT</strong> authentication, data auditing, and external API consumption (BCRA and currency rates) to provide a <strong>reliable, real-time view</strong> of risk and portfolio status.',
+      'Modern <strong>loan management platform</strong> with Executive Dashboard and credit evaluation. Built with <strong>.NET 10</strong> and <strong>React 18</strong>, featuring loan simulation, BCRA integration, and secure document management with <strong>MinIO</strong>.',
 
     'modal.statusLabel': 'Status',
     'modal.problemTitle': 'About the project',
@@ -191,19 +191,19 @@ const translations = {
     'modal.arcadia.extra': 'Roadmap: Integration with MinIO for covers, user profiles, and transactional improvements.',
 
     'modal.tucredito.problem':
-      'Backend API in development aimed at small lenders and financial businesses that need to centralize loan and borrower management in a single, <strong>auditable and secure</strong> system. It automates the full loan lifecycle — from risk assessment to payoff — reducing manual spreadsheets, rework, and operational errors.',
+      'Transforms loan management with a <strong>modern, secure, and scalable</strong> platform. Visualize portfolio health on a Real-time Dashboard, know your customers with full digital profiles, and adapt financing with a flexible engine.',
     'modal.tucredito.features.1':
-      '<strong>End-to-end management of borrowers and loans</strong>, including personal, financial data and loan status.',
+      '<strong>Executive Dashboard</strong>: Financial KPIs, interactive charts, and automatic delinquency alerts.',
     'modal.tucredito.features.2':
-      '<strong>JWT-based authentication and authorization</strong>, plus secure password storage through hashing.',
+      '<strong>360° Borrower Management</strong>: Complete digital profile with direct BCRA integration for credit evaluation and document digitization.',
     'modal.tucredito.features.3':
-      '<strong>Advanced auditing</strong> of sensitive operations (Loan, Payment, Borrower, Guarantor) using Entity Framework interceptors.',
+      '<strong>Flexible Loan Engine</strong>: Credit simulator (French, German, American), multi-currency operations, and collection control.',
     'modal.tucredito.features.4':
-      '<strong>External integrations</strong>: real-time BCRA credit report queries and dollar exchange rates (official, blue, etc.).',
+      '<strong>Banking Security</strong>: Immutable auditing, robust JWT authentication, and decoupled Clean Architecture.',
     'modal.tucredito.features.5':
-      '<strong>Document management with MinIO</strong>, storing promissory notes and related files securely and decoupled from the database.',
+      '<strong>Secure Document Management</strong>: Storage of IDs, receipts, and guarantees using MinIO (S3 Compatible).',
     'modal.tucredito.extra':
-      'Status: in active development. Currently deployed as a backend API; the admin web interface is being redesigned.',
+      'Demo available: User <strong>demo</strong> / Password <strong>demo</strong>. Deployed on Vercel with .NET 10 Backend.',
 
     'stack.title': 'My Tech Stack',
     'stack.languages': 'Languages',
@@ -422,7 +422,7 @@ function setupProjectModal() {
     },
     tucredito: {
       title: 'Tu Crédito',
-      statusKey: 'projects.status.dev',
+      statusKey: 'projects.status.finished',
       problemKey: 'modal.tucredito.problem',
       featuresKeys: [
         'modal.tucredito.features.1',
@@ -431,9 +431,9 @@ function setupProjectModal() {
         'modal.tucredito.features.4',
         'modal.tucredito.features.5'
       ],
-      tech: ['.NET 8 Web API', 'C#', 'Entity Framework Core', 'SQL Server', 'JWT', 'MinIO', 'External APIs'],
+      tech: ['.NET 10 Web API', 'React 18', 'TypeScript', 'SQL Server', 'Tailwind CSS', 'MinIO', 'JWT'],
       extraKey: 'modal.tucredito.extra',
-      images: ['images/T1.jpg', 'images/T2.jpg'],
+      images: ['images/TC1.png', 'images/TC2.png', 'images/TC3.png', 'images/TC4.png', 'images/TC5.png'],
       demoUrl: 'https://tu-credito.vercel.app/',
       repoUrl: 'https://github.com/camilaMartin14/Tu-Credito'
     }
