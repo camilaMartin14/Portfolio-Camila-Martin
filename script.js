@@ -2,6 +2,7 @@ const translations = {
   es: {
     'nav.projects': 'Proyectos Destacados',
     'nav.about': 'Sobre mí',
+    'nav.experience': 'Experiencia Laboral',
     'nav.stack': 'Stack',
     'nav.timeline': 'Formación Académica',
     'nav.cv': 'Descargar CV',
@@ -10,12 +11,20 @@ const translations = {
     'hero.location': '📍Córdoba, Argentina',
 
     'about.title': 'Sobre mí',
-    'about.text1': 'Desarrolladora <span class="resaltar">.NET</span> en formación, cursando segundo año de la carrera de Programación.',
-    'about.text2': 'Trabajo principalmente con <span class="resaltar">C#</span>, <span class="resaltar">ASP.NET Core</span>, <span class="resaltar">Entity Framework</span> y <span class="resaltar">SQL Server</span>.',
-    'about.text3': 'Actualmente me encuentro aprendiendo <span class="resaltar">Angular</span> y <span class="resaltar">TypeScript</span> de forma autodidacta, con el objetivo de complementar mi perfil backend y avanzar hacia un enfoque <span class="resaltar">full stack</span>.',
-    'about.text4': 'Me enfoco en construir aplicaciones claras, mantenibles y bien estructuradas, aplicando buenas prácticas y <span class="resaltar">arquitectura en capas</span>.',
-    'about.text5': 'Desarrollo proyectos personales para seguir fortaleciendo mi base técnica y profesional.',
-
+    'about.text1':
+      'Estudiante de 2º año de la Tecnicatura Universitaria en Programación (UTN).',
+    'about.text2':
+      'Actualmente formo parte del equipo de <span class="resaltar">Mercado Libre</span>, donde diseño e implemento soluciones escalables utilizando <span class="resaltar">Go</span>, bajo arquitecturas de <span class="resaltar">microservicios</span> y principios de <span class="resaltar">Domain-Driven Design (DDD)</span>.',
+    'about.text3':
+      'En paralelo, fortalezco mi perfil técnico mediante proyectos en el ecosistema <span class="resaltar">.NET</span> (<span class="resaltar">C#</span>, <span class="resaltar">ASP.NET Core</span>, <span class="resaltar">Entity Framework</span> y <span class="resaltar">SQL Server</span>).',
+    'about.text5':
+      'Mi enfoque principal es el desarrollo de software robusto y mantenible, priorizando siempre el <span class="resaltar">código limpio</span> y buenas prácticas de <span class="resaltar">arquitectura</span>.',
+    'current.title': 'Experiencia Laboral',
+    'current.role': 'Software Backend Developer Jr',
+    'current.company': 'Mercado Libre',
+    'current.location': 'Híbrido · Córdoba, Argentina · Marzo 2026 – Actualidad',
+    'current.bullet1': 'Desarrollo de microservicios en <strong>Go</strong> con Gin framework.',
+    'current.bullet2': 'Arquitectura de microservicios bajo principios <strong>DDD</strong>.',
     'projects.title': 'Proyectos Destacados',
     'projects.demo': 'Demo',
     'projects.repo': 'Repositorio',
@@ -125,6 +134,7 @@ const translations = {
   en: {
     'nav.projects': 'Featured Projects',
     'nav.about': 'About me',
+    'nav.experience': 'Work Experience',
     'nav.stack': 'Stack',
     'nav.timeline': 'Academic Background',
     'nav.cv': 'Download CV',
@@ -133,11 +143,15 @@ const translations = {
     'hero.location': '📍Córdoba, Argentina',
 
     'about.title': 'About me',
-    'about.text1': '<span class="resaltar">.NET</span> Developer in training, currently in the second year of the Programming degree.',
-    'about.text2': 'I work mainly with <span class="resaltar">C#</span>, <span class="resaltar">ASP.NET Core</span>, <span class="resaltar">Entity Framework</span>, and <span class="resaltar">SQL Server</span>.',
-    'about.text3': 'I am currently learning <span class="resaltar">Angular</span> and <span class="resaltar">TypeScript</span> on my own, with the goal of complementing my backend profile and moving towards a <span class="resaltar">full stack</span> approach.',
-    'about.text4': 'I focus on building clear, maintainable, and well-structured applications, applying best practices and <span class="resaltar">layered architecture</span>.',
-    'about.text5': 'I develop personal projects to continue strengthening my technical and professional base.',
+    'about.summary':
+      '.NET backend developer focused on building simple, robust and maintainable solutions, with a strong interest in clean APIs, consistent data and collaborative teamwork.',
+    'current.title': 'Work Experience',
+    'current.role': 'Software Backend Developer Jr',
+    'current.company': 'Mercado Libre',
+    'current.location': 'Hybrid · Córdoba, Argentina · March 2026 – Present',
+    'current.bullet1': 'Go microservices development with Gin framework',
+    'current.bullet2': 'Distributed architecture with DDD principles',
+    'current.bullet3': 'Cross-functional collaboration in agile teams',
 
     'projects.title': 'Featured Projects',
     'projects.demo': 'Demo',
@@ -325,6 +339,7 @@ function setupMobileMenu() {
 
   menuBtn.addEventListener('click', () => {
     const isActive = navMenu.classList.toggle('active')
+    document.body.classList.toggle('menu-open', isActive)
     menuBtn.innerHTML = isActive 
       ? '<i class="fa-solid fa-xmark"></i>' 
       : '<i class="fa-solid fa-bars"></i>'
@@ -333,6 +348,7 @@ function setupMobileMenu() {
   navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('active')
+      document.body.classList.remove('menu-open')
       menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
     })
   })
@@ -378,7 +394,6 @@ function setupProjectModal() {
   const problemEl = document.getElementById('project-modal-problem')
   const featuresEl = document.getElementById('project-modal-features')
   const techEl = document.getElementById('project-modal-tech')
-  const extraEl = document.getElementById('project-modal-extra')
 
   const imageEl = document.getElementById('project-modal-image')
   const dotsEl = document.getElementById('project-modal-dots')
@@ -398,7 +413,6 @@ function setupProjectModal() {
         'modal.logra.features.5'
       ],
       tech: ['.NET 8 Web API', 'C#', 'SQL Server', 'Entity Framework Core', 'Vanilla JS (ES6+)', 'CSS3', 'JWT'],
-      extraKey: 'modal.logra.extra',
       images: ['images/L1.png', 'images/L2.png', 'images/L3.png', 'images/L4.png', 'images/L5.png'],
       demoUrl: 'https://logra-psi.vercel.app/',
       repoUrl: 'https://github.com/camilaMartin14/Logra--Daily-Planner'
@@ -415,7 +429,6 @@ function setupProjectModal() {
         'modal.arcadia.features.5'
       ],
       tech: ['.NET Web API', 'SQL Server', 'JWT', 'HTML', 'CSS', 'JavaScript'],
-      extraKey: 'modal.arcadia.extra',
       images: ['images/A3.png', 'images/A2.png', 'images/A1.png', 'images/A4.png', 'images/A5.png', 'images/A6.png', 'images/A7.png'],
       demoUrl: 'https://arcadia-mu-five.vercel.app/',
       repoUrl: 'https://github.com/camilaMartin14/Arcadia-Web'
@@ -432,7 +445,6 @@ function setupProjectModal() {
         'modal.tucredito.features.5'
       ],
       tech: ['.NET 10 Web API', 'React 18', 'TypeScript', 'SQL Server', 'Tailwind CSS', 'MinIO', 'JWT'],
-      extraKey: 'modal.tucredito.extra',
       images: ['images/TC1.png', 'images/TC2.png', 'images/TC3.png', 'images/TC4.png', 'images/TC5.png'],
       demoUrl: 'https://tu-credito.vercel.app/',
       repoUrl: 'https://github.com/camilaMartin14/Tu-Credito'
@@ -492,7 +504,6 @@ function setupProjectModal() {
     titleEl.textContent = project.title
     statusEl.setAttribute('data-i18n', project.statusKey)
     problemEl.setAttribute('data-i18n', project.problemKey)
-    extraEl.setAttribute('data-i18n', project.extraKey)
 
     featuresEl.innerHTML = ''
     project.featuresKeys.forEach(key => {

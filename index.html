@@ -34,6 +34,7 @@
         <ul class="nav-links">
           <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
           <li><a href="#proyectos" data-i18n="nav.projects">Proyectos Destacados</a></li>
+          <li><a href="#trabajo-actual" data-i18n="nav.experience">Experiencia Laboral</a></li>
           <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
           <li><a href="#timeline" data-i18n="nav.timeline">Formación Académica</a></li>
         </ul>
@@ -73,15 +74,14 @@
     </section>
 
     <section id="sobre-mi" class="about container">
+      <h2 class="section-title about-title hidden-scroll" data-i18n="about.title">Sobre mí</h2>
       <div class="about-card hidden-scroll">
-        <div class="about-header">
-          <h2 class="section-title about-title" data-i18n="about.title">Sobre mí</h2>
+        <div class="about-content">
+          <p class="about-text" data-i18n="about.text1"></p>
+          <p class="about-text" data-i18n="about.text2"></p>
+          <p class="about-text" data-i18n="about.text3"></p>
+          <p class="about-text" data-i18n="about.text5"></p>
         </div>
-        <p class="about-text" data-i18n="about.text1"></p>
-        <p class="about-text" data-i18n="about.text2"></p>
-        <p class="about-text" data-i18n="about.text3"></p>
-        <p class="about-text" data-i18n="about.text4"></p>
-        <p class="about-text" data-i18n="about.text5"></p>
       </div>
     </section>
 
@@ -116,8 +116,18 @@
             <span class="chip">APIs externas</span>
           </div>
           <div class="card-actions">
-            <button type="button" class="btn small view-more-btn" data-project="tucredito" data-i18n="projects.seeMore">Ver más</button>
-            <span class="project-date" data-i18n="projects.tucredito.date">Ene 2026 - Actualidad</span>
+            <div class="action-buttons-top">
+              <a href="https://tu-credito.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
+                <i class="fa-solid fa-desktop"></i>
+              </a>
+              <a href="https://github.com/camilaMartin14/Tu-Credito" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="action-row-bottom">
+              <button type="button" class="btn small view-more-btn" data-project="tucredito" data-i18n="projects.seeMore">Ver más</button>
+              <span class="project-date" data-i18n="projects.tucredito.date">Ene 2026 - Actualidad</span>
+            </div>
           </div>
         </article>
 
@@ -139,8 +149,18 @@
             <span class="chip">CSS3</span>
           </div>
           <div class="card-actions">
-            <button type="button" class="btn small view-more-btn" data-project="logra" data-i18n="projects.seeMore">Ver más</button>
-            <span class="project-date" data-i18n="projects.logra.date">Dic 2025 - Ene 2026</span>
+            <div class="action-buttons-top">
+              <a href="https://logra-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
+                <i class="fa-solid fa-desktop"></i>
+              </a>
+              <a href="https://github.com/camilaMartin14/Logra--Daily-Planner" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="action-row-bottom">
+              <button type="button" class="btn small view-more-btn" data-project="logra" data-i18n="projects.seeMore">Ver más</button>
+              <span class="project-date" data-i18n="projects.logra.date">Dic 2025 - Ene 2026</span>
+            </div>
           </div>
         </article>
 
@@ -161,10 +181,51 @@
             <span class="chip">HTML/CSS</span>
           </div>
           <div class="card-actions">
-            <button type="button" class="btn small view-more-btn" data-project="arcadia" data-i18n="projects.seeMore">Ver más</button>
-            <span class="project-date" data-i18n="projects.arcadia.date">Sep 2025 - Dic 2025</span>
+            <div class="action-buttons-top">
+              <a href="https://arcadia-mu-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
+                <i class="fa-solid fa-desktop"></i>
+              </a>
+              <a href="https://github.com/camilaMartin14/Arcadia-Web" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="action-row-bottom">
+              <button type="button" class="btn small view-more-btn" data-project="arcadia" data-i18n="projects.seeMore">Ver más</button>
+              <span class="project-date" data-i18n="projects.arcadia.date">Sep 2025 - Dic 2025</span>
+            </div>
           </div>
         </article>
+      </div>
+      </div>
+    </section>
+
+    <div class="wave-divider-bottom">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <section id="trabajo-actual" class="current-role container">
+      <h2 class="section-title experience-title hidden-scroll" data-i18n="current.title">Experiencia laboral</h2>
+      <div class="experience-card hidden-scroll">
+        <div class="experience-content">
+          <div class="experience-body">
+          <h3 class="experience-role" data-i18n="current.role">Software Backend Developer Jr</h3>
+          <p class="experience-company meli-company" data-i18n="current.company">Mercado Libre</p>
+          <p class="experience-location" data-i18n="current.location">Híbrido · Córdoba, Argentina · Marzo 2026 – Actualidad</p>
+          <ul class="experience-list">
+            <li data-i18n="current.bullet1"></li>
+            <li data-i18n="current.bullet2"></li>
+          </ul>
+          <div class="tags experience-tags">
+            <span class="chip">Go (Gin, Goroutines)</span>
+            <span class="chip">Microservices Architecture</span>
+            <span class="chip">Domain-Driven Design</span>
+          </div>
+        </div>
+        <div class="experience-logo">
+          <img src="images/MELI-logo.jpg" alt="Logo de Mercado Libre" class="meli-logo">
+        </div>
       </div>
       </div>
     </section>
@@ -185,6 +246,12 @@
               <div class="stack-item hidden-scroll"><i class="devicon-csharp-plain colored"></i> <span>C#</span></div>
               <div class="stack-item hidden-scroll"><i class="devicon-dotnetcore-plain colored"></i> <span>ASP.NET Core</span></div>
               <div class="stack-item hidden-scroll"><i class="devicon-microsoftsqlserver-plain colored"></i> <span>SQL Server</span></div>
+              <div class="stack-item hidden-scroll">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+                     alt="Logo de Go"
+                     style="height: 1.4em; vertical-align: middle; margin-right: 0.25rem;">
+                <span>Go / Golang</span>
+              </div>
             </div>
           </div>
           <div class="stack-group">
@@ -194,7 +261,6 @@
               <div class="stack-item hidden-scroll"><i class="devicon-css3-plain colored"></i> <span>CSS3</span></div>
               <div class="stack-item hidden-scroll"><i class="devicon-javascript-plain colored"></i> <span>JavaScript</span></div>
               <div class="stack-item hidden-scroll"><i class="devicon-typescript-plain colored"></i> <span>TypeScript</span></div>
-              <div class="stack-item hidden-scroll"><i class="devicon-angular-plain colored"></i> <span>Angular</span></div>
             </div>
           </div>
           <div class="stack-group">
@@ -209,12 +275,12 @@
       </div>
     </section>
 
-    <div class="wave-divider-top">
+    <div class="wave-stack-bottom">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
       </svg>
     </div>
-
+    
 <section id="timeline" class="timeline">
   <div class="container">
   <h2 class="section-title hidden-scroll" data-i18n="timeline.title">Formación Académica</h2>
@@ -303,7 +369,7 @@
 
   <footer class="footer">
     <div class="container">
-      <h6 class="section-title" data-i18n="contact.title">Contactame</h6>
+      <h6 class="section-title hidden-scroll" data-i18n="contact.title">Contactame</h6>
       <div class="contact-links">
         <a href="mailto:camilamartin1403@gmail.com" class="link">
           <i class="fa-solid fa-envelope"></i>
@@ -339,6 +405,11 @@
           </div>
           <div id="project-modal-dots" class="carousel-dots"></div>
           <div id="project-modal-actions" class="modal-actions"></div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title" data-i18n="modal.techTitle">Tecnologías</h4>
+            <div id="project-modal-tech" class="tags"></div>
+          </div>
         </div>
 
         <div class="modal-content">
@@ -350,16 +421,6 @@
           <div class="modal-section">
             <h4 class="modal-section-title" data-i18n="modal.featuresTitle">Funcionalidades principales</h4>
             <ul id="project-modal-features" class="modal-list"></ul>
-          </div>
-
-          <div class="modal-section">
-            <h4 class="modal-section-title" data-i18n="modal.techTitle">Tecnologías</h4>
-            <div id="project-modal-tech" class="tags"></div>
-          </div>
-
-          <div class="modal-section">
-            <h4 class="modal-section-title" data-i18n="modal.moreTitle">Información adicional</h4>
-            <p id="project-modal-extra" class="modal-text"></p>
           </div>
         </div>
       </div>
