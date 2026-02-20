@@ -184,7 +184,9 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
 .icon-btn:hover { background: rgba(255,255,255,.06) }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 14px;
   border-radius: 10px;
   border: 1px solid var(--border);
@@ -431,7 +433,7 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
 
 .about-title {
   margin: 0 0 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .about-card {
