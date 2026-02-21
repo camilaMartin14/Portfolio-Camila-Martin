@@ -4,6 +4,9 @@ const translations = {
     'nav.about': 'Sobre mí',
     'nav.experience': 'Experiencia Laboral',
     'nav.stack': 'Stack',
+    'nav.formation': 'Formación',
+    'nav.academic': 'Académica',
+    'nav.certificates': 'Certificados',
     'nav.timeline': 'Formación Académica',
     'nav.cv': 'Descargar CV',
 
@@ -136,6 +139,9 @@ const translations = {
     'nav.about': 'About me',
     'nav.experience': 'Work Experience',
     'nav.stack': 'Stack',
+    'nav.formation': 'Education',
+    'nav.academic': 'Academic',
+    'nav.certificates': 'Certificates',
     'nav.timeline': 'Academic Background',
     'nav.cv': 'Download CV',
 
@@ -327,6 +333,8 @@ function init() {
   setupScrollAnimations()
   setupConfetti()
   setupMobileMenu()
+  setupCertificatesCarousel()
+  setupImageModal()
 }
 
 document.addEventListener('DOMContentLoaded', init)
@@ -626,4 +634,142 @@ function setupConfetti() {
       })
     })
   }
+}
+
+function setupCertificatesCarousel() {
+  const container = document.querySelector('.cert-carousel-container')
+  if (!container) return
+
+  const track = container.querySelector('.cert-carousel-track')
+  const prevBtn = container.querySelector('.cert-prev-btn')
+  const nextBtn = container.querySelector('.cert-next-btn')
+  
+  if (!track || !prevBtn || !nextBtn) return
+
+  let currentIndex = 0
+  
+  function getVisibleItems() {
+    if (window.matchMedia('(max-width: 400px)').matches) return 1
+    if (window.matchMedia('(max-width: 600px)').matches) return 2
+    if (window.matchMedia('(max-width: 900px)').matches) return 3
+    return 5
+  }
+
+  function updateCarousel() {
+    const visibleItems = getVisibleItems()
+    const totalItems = track.children.length
+    const maxIndex = Math.max(0, totalItems - visibleItems)
+
+    const card = track.querySelector('.cert-card')
+    if (!card) return
+    
+    const cardWidth = card.getBoundingClientRect().width
+    const gap = 20 // consistent with CSS
+    const moveAmount = cardWidth + gap
+
+    const translateX = -(currentIndex * moveAmount)
+    track.style.transform = `translateX(${translateX}px)`
+  }
+
+  prevBtn.addEventListener('click', () => {
+    const visibleItems = getVisibleItems()
+    const totalItems = track.children.length
+    const maxIndex = Math.max(0, totalItems - visibleItems)
+
+    currentIndex--
+    if (currentIndex < 0) {
+      currentIndex = maxIndex // Go to end
+    }
+    updateCarousel()
+  })
+
+  nextBtn.addEventListener('click', () => {
+    const visibleItems = getVisibleItems()
+    const totalItems = track.children.length
+    const maxIndex = Math.max(0, totalItems - visibleItems)
+
+    currentIndex++
+    if (currentIndex > maxIndex) {
+      currentIndex = 0 // Go to start
+    }
+    updateCarousel()
+  })
+
+  window.addEventListener('resize', () => {
+    // Reset index on resize to avoid weird offsets if needed, or just update
+    updateCarousel()
+  })
+  
+  // Initial update
+  // Wait for layout
+  setTimeout(updateCarousel, 100)
+}
+
+
+function setupImageModal() {
+  const modal = document.getElementById('image-modal')
+  const fullImage = document.getElementById('modal-full-image')
+  const closeBtn = document.querySelector('.modal-close-image')
+  const backdrop = document.querySelector('.modal-backdrop[data-image-modal-close]')
+  
+  if (!modal || !fullImage) return
+
+  const openModal = (src) => {
+    fullImage.src = src
+    modal.classList.add('is-open')
+    modal.setAttribute('aria-hidden', 'false')
+    document.body.style.overflow = 'hidden'
+  }
+
+  const closeModal = () => {
+    modal.classList.remove('is-open')
+    modal.setAttribute('aria-hidden', 'true')
+    document.body.style.overflow = ''
+    setTimeout(() => {
+      fullImage.src = ''
+    }, 300)
+  }
+
+  // Add click event to all certificate images (excluding PDFs)
+  const certImages = document.querySelectorAll('.cert-card .cert-img-wrapper img')
+  certImages.forEach(img => {
+    
+    const wrapper = img.closest('.cert-img-wrapper')
+    if (wrapper) {
+      wrapper.style.cursor = 'zoom-in'
+      wrapper.addEventListener('click', (e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        openModal(img.src)
+      })
+    }
+    
+    // Also add to image itself just in case
+    img.style.cursor = 'zoom-in'
+    img.addEventListener('click', (e) => {
+      e.preventDefault() 
+      e.stopPropagation()
+      openModal(img.src)
+    })
+  })
+
+  // Close events
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      closeModal()
+    })
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) closeModal()
+    })
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+      closeModal()
+    }
+  })
 }

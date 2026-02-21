@@ -36,7 +36,13 @@
           <li><a href="#proyectos" data-i18n="nav.projects">Proyectos Destacados</a></li>
           <li><a href="#trabajo-actual" data-i18n="nav.experience">Experiencia Laboral</a></li>
           <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
-          <li><a href="#timeline" data-i18n="nav.timeline">Formación Académica</a></li>
+          <li class="dropdown-item">
+            <a href="#timeline" class="dropdown-trigger" data-i18n="nav.formation">Formación</a>
+            <ul class="dropdown-menu">
+              <li><a href="#timeline" data-i18n="nav.academic">Académica</a></li>
+              <li><a href="#certificados" data-i18n="nav.certificates">Certificados</a></li>
+            </ul>
+          </li>
         </ul>
         <div class="nav-actions">
           <a id="cv-download" class="btn small" href="resumes/CV Camila Martín - 2026.pdf" download data-i18n="nav.cv">Descargar CV</a>
@@ -365,6 +371,79 @@
   </div>
 </section>
 
+    <div class="wave-certificados">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <section id="certificados" class="certificados">
+      <div class="container">
+        <h2 class="section-title hidden-scroll">Certificados</h2>
+        <div class="cert-carousel-container">
+          <button class="cert-prev-btn" aria-label="Anterior certificado"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="cert-carousel-track-container">
+            <ul class="cert-carousel-track">
+              <!-- Image Item: C1 English -->
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/C1-English-EF-SET-Certificate_page-0001.jpg" alt="C1 English Certificate" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">C1 English EF SET</p>
+              </li>
+              
+              <!-- Image Item: C# Basic -->
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/csharp-basic-hackerrank_page-0001.jpg" alt="C# Basic HackerRank" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">C# Basic HackerRank</p>
+              </li>
+
+              <!-- Image Items -->
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/dotnet-advanced-linkedin-learning.jpeg" alt=".NET Advanced" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">.NET Advanced</p>
+              </li>
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/dotnet-fundamentals.jpeg" alt=".NET Fundamentals" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">.NET Fundamentals</p>
+              </li>
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/spring-boot-essential.jpeg" alt="SpringBoot Essentials" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">SpringBoot Essentials</p>
+              </li>
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/spring-boot-apis-todocode.png" alt="SpringBoot APIs" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">SpringBoot APIs</p>
+              </li>
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/git-github-introduction-todocode.png" alt="GitHub Introduction TodoCode" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">GitHub Introduction</p>
+              </li>
+              <li class="cert-card">
+                <div class="cert-img-wrapper">
+                  <img src="images/relational-databases-with-mysql.png" alt="Relational Databases with MySQL" class="cert-img" loading="lazy">
+                </div>
+                <p class="cert-title">Relational Databases</p>
+              </li>
+            </ul>
+          </div>
+          <button class="cert-next-btn" aria-label="Siguiente certificado"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -424,6 +503,15 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Image Modal for Certificates -->
+  <div id="image-modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-image-modal-close></div>
+    <div class="modal-content-image">
+      <button type="button" class="icon-btn modal-close-image" data-image-modal-close aria-label="Cerrar">✕</button>
+      <img id="modal-full-image" src="" alt="Certificado Full Size">
     </div>
   </div>
 
