@@ -100,108 +100,120 @@
     <section id="proyectos" class="projects">
       <div class="container">
         <h2 class="section-title hidden-scroll" data-i18n="projects.title">Proyectos Destacados</h2>
-        <div class="grid">
-        <article class="card hidden-scroll">
-          <div class="card-image">
-            <img src="images/TC1.png" alt="Vista previa del proyecto Tu Crédito">
-          </div>
-          <h2 class="card-title">Tu Crédito</h2>
-          <span class="card-subtitle" data-i18n="projects.status.finished">Finalizado</span>
-          <p class="card-desc" data-i18n="projects.tucredito.desc">
-            API backend para la gestión integral de préstamos y prestatarios, con seguridad JWT,
-            auditoría de datos e integraciones externas (BCRA y cotización de monedas) para una
-            visión confiable y en tiempo real de la cartera.
-          </p>
-          <div class="tags">
-            <span class="chip">.NET 8 Web API</span>
-            <span class="chip">C#</span>
-            <span class="chip">Entity Framework Core</span>
-            <span class="chip">SQL Server</span>
-            <span class="chip">JWT</span>
-            <span class="chip">MinIO</span>
-            <span class="chip">APIs externas</span>
-          </div>
-          <div class="card-actions">
-            <div class="action-buttons-top">
-              <a href="https://tu-credito.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
-                <i class="fa-solid fa-desktop"></i>
-              </a>
-              <a href="https://github.com/camilaMartin14/Tu-Credito" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <div class="action-row-bottom">
-              <button type="button" class="btn small view-more-btn" data-project="tucredito" data-i18n="projects.seeMore">Ver más</button>
-              <span class="project-date" data-i18n="projects.tucredito.date">Ene 2026 - Actualidad</span>
-            </div>
-          </div>
-        </article>
+        <div class="project-carousel-container">
+          <button class="project-prev-btn" aria-label="Anterior proyecto"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="project-carousel-track-container">
+            <ul class="project-carousel-track">
+              <li class="project-card">
+                <article class="card">
+                  <div class="card-image">
+                    <img src="images/TC1.png" alt="Vista previa del proyecto Tu Crédito">
+                  </div>
+                  <h2 class="card-title">Tu Crédito</h2>
+                  <span class="card-subtitle" data-i18n="projects.status.finished">Finalizado</span>
+                  <p class="card-desc" data-i18n="projects.tucredito.desc">
+                    API backend para la gestión integral de préstamos y prestatarios, con seguridad JWT,
+                    auditoría de datos e integraciones externas (BCRA y cotización de monedas) para una
+                    visión confiable y en tiempo real de la cartera.
+                  </p>
+                  <div class="tags">
+                    <span class="chip">.NET 8 Web API</span>
+                    <span class="chip">C#</span>
+                    <span class="chip">Entity Framework Core</span>
+                    <span class="chip">SQL Server</span>
+                    <span class="chip">JWT</span>
+                    <span class="chip">MinIO</span>
+                    <span class="chip">APIs externas</span>
+                  </div>
+                  <div class="card-actions">
+                    <div class="action-buttons-top">
+                      <a href="https://tu-credito.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
+                        <i class="fa-solid fa-desktop"></i>
+                      </a>
+                      <a href="https://github.com/camilaMartin14/Tu-Credito" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <div class="action-row-bottom">
+                      <button type="button" class="btn small view-more-btn" data-project="tucredito" data-i18n="projects.seeMore">Ver más</button>
+                      <span class="project-date" data-i18n="projects.tucredito.date">Ene 2026 - Actualidad</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
 
-        <article class="card hidden-scroll">
-          <div class="card-image">
-            <img src="images/L1.png" alt="Vista previa del proyecto Logra">
-          </div>
-          <h2 class="card-title">Logra</h2>
-          <span class="card-subtitle" data-i18n="projects.status.finished">Terminado</span>
-          <p class="card-desc" data-i18n="projects.logra.desc">
-            Plataforma de productividad minimalista diseñada para organizar tu día y gestionar hábitos. Construida con arquitectura limpia en .NET 8 y un frontend ligero en Vanilla JS (SPA), transforma intenciones en acciones.
-          </p>
-          <div class="tags">
-            <span class="chip">.NET 8</span>
-            <span class="chip">C#</span>
-            <span class="chip">SQL Server</span>
-            <span class="chip">EF Core</span>
-            <span class="chip">Vanilla JS</span>
-            <span class="chip">CSS3</span>
-          </div>
-          <div class="card-actions">
-            <div class="action-buttons-top">
-              <a href="https://logra-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
-                <i class="fa-solid fa-desktop"></i>
-              </a>
-              <a href="https://github.com/camilaMartin14/Logra--Daily-Planner" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <div class="action-row-bottom">
-              <button type="button" class="btn small view-more-btn" data-project="logra" data-i18n="projects.seeMore">Ver más</button>
-              <span class="project-date" data-i18n="projects.logra.date">Dic 2025 - Ene 2026</span>
-            </div>
-          </div>
-        </article>
+              <li class="project-card">
+                <article class="card">
+                  <div class="card-image">
+                    <img src="images/L1.png" alt="Vista previa del proyecto Logra">
+                  </div>
+                  <h2 class="card-title">Logra</h2>
+                  <span class="card-subtitle" data-i18n="projects.status.finished">Terminado</span>
+                  <p class="card-desc" data-i18n="projects.logra.desc">
+                    Plataforma de productividad minimalista diseñada para organizar tu día y gestionar hábitos. Construida con arquitectura limpia en .NET 8 y un frontend ligero en Vanilla JS (SPA), transforma intenciones en acciones.
+                  </p>
+                  <div class="tags">
+                    <span class="chip">.NET 8</span>
+                    <span class="chip">C#</span>
+                    <span class="chip">SQL Server</span>
+                    <span class="chip">EF Core</span>
+                    <span class="chip">Vanilla JS</span>
+                    <span class="chip">CSS3</span>
+                  </div>
+                  <div class="card-actions">
+                    <div class="action-buttons-top">
+                      <a href="https://logra-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
+                        <i class="fa-solid fa-desktop"></i>
+                      </a>
+                      <a href="https://github.com/camilaMartin14/Logra--Daily-Planner" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <div class="action-row-bottom">
+                      <button type="button" class="btn small view-more-btn" data-project="logra" data-i18n="projects.seeMore">Ver más</button>
+                      <span class="project-date" data-i18n="projects.logra.date">Dic 2025 - Ene 2026</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
 
-        <article class="card hidden-scroll">
-          <div class="card-image">
-            <img src="images/A1.png" alt="Vista previa del proyecto Arcadia">
+              <li class="project-card">
+                <article class="card">
+                  <div class="card-image">
+                    <img src="images/A1.png" alt="Vista previa del proyecto Arcadia">
+                  </div>
+                  <h2 class="card-title">Arcadia</h2>
+                  <span class="card-subtitle" data-i18n="projects.status.finished">Terminado</span>
+                  <p class="card-desc" data-i18n="projects.arcadia.desc">
+                    E-commerce integral para el mundo editorial que centraliza la venta de libros. Desarrollado con .NET y SQL Server, gestiona desde el catálogo navegable hasta el seguimiento de pedidos, aportando visibilidad y control al negocio.
+                  </p>
+                  <div class="tags">
+                    <span class="chip">.NET Web API</span>
+                    <span class="chip">SQL Server</span>
+                    <span class="chip">JWT</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">HTML/CSS</span>
+                  </div>
+                  <div class="card-actions">
+                    <div class="action-buttons-top">
+                      <a href="https://arcadia-mu-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
+                        <i class="fa-solid fa-desktop"></i>
+                      </a>
+                      <a href="https://github.com/camilaMartin14/Arcadia-Web" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <div class="action-row-bottom">
+                      <button type="button" class="btn small view-more-btn" data-project="arcadia" data-i18n="projects.seeMore">Ver más</button>
+                      <span class="project-date" data-i18n="projects.arcadia.date">Sep 2025 - Dic 2025</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
           </div>
-          <h2 class="card-title">Arcadia</h2>
-          <span class="card-subtitle" data-i18n="projects.status.finished">Terminado</span>
-          <p class="card-desc" data-i18n="projects.arcadia.desc">
-            E-commerce integral para el mundo editorial que centraliza la venta de libros. Desarrollado con .NET y SQL Server, gestiona desde el catálogo navegable hasta el seguimiento de pedidos, aportando visibilidad y control al negocio.
-          </p>
-          <div class="tags">
-            <span class="chip">.NET Web API</span>
-            <span class="chip">SQL Server</span>
-            <span class="chip">JWT</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">HTML/CSS</span>
-          </div>
-          <div class="card-actions">
-            <div class="action-buttons-top">
-              <a href="https://arcadia-mu-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
-                <i class="fa-solid fa-desktop"></i>
-              </a>
-              <a href="https://github.com/camilaMartin14/Arcadia-Web" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Repositorio" data-tooltip="Repositorio">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-            <div class="action-row-bottom">
-              <button type="button" class="btn small view-more-btn" data-project="arcadia" data-i18n="projects.seeMore">Ver más</button>
-              <span class="project-date" data-i18n="projects.arcadia.date">Sep 2025 - Dic 2025</span>
-            </div>
-          </div>
-        </article>
-      </div>
+          <button class="project-next-btn" aria-label="Siguiente proyecto"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
       </div>
     </section>
 

@@ -334,6 +334,7 @@ function init() {
   setupConfetti()
   setupMobileMenu()
   setupCertificatesCarousel()
+  setupProjectsCarousel()
   setupImageModal()
 }
 
@@ -701,9 +702,79 @@ function setupCertificatesCarousel() {
   })
   
   // Initial update
-  // Wait for layout
   setTimeout(updateCarousel, 100)
 }
+
+function setupProjectsCarousel() {
+  const container = document.querySelector('.project-carousel-container')
+  if (!container) return
+
+  const track = container.querySelector('.project-carousel-track')
+  const prevBtn = container.querySelector('.project-prev-btn')
+  const nextBtn = container.querySelector('.project-next-btn')
+  
+  if (!track || !prevBtn || !nextBtn) return
+
+  let currentIndex = 0
+  
+  function getVisibleItems() {
+    if (window.matchMedia('(max-width: 600px)').matches) return 1
+    if (window.matchMedia('(max-width: 900px)').matches) return 2
+    return 3
+  }
+
+  function updateCarousel() {
+    const visibleItems = getVisibleItems()
+    const totalItems = track.children.length
+    const maxIndex = Math.max(0, totalItems - visibleItems)
+
+    const card = track.querySelector('.project-card')
+    if (!card) return
+    
+    const cardWidth = card.getBoundingClientRect().width
+    const gap = 20 // consistent with CSS
+    const moveAmount = cardWidth + gap
+
+    // Clamp index
+    if (currentIndex > maxIndex) currentIndex = maxIndex
+    if (currentIndex < 0) currentIndex = 0
+
+    const translateX = -(currentIndex * moveAmount)
+    track.style.transform = `translateX(${translateX}px)`
+  }
+
+  prevBtn.addEventListener('click', () => {
+    const visibleItems = getVisibleItems()
+    const totalItems = track.children.length
+    const maxIndex = Math.max(0, totalItems - visibleItems)
+
+    currentIndex--
+    if (currentIndex < 0) {
+      currentIndex = maxIndex // Go to end
+    }
+    updateCarousel()
+  })
+
+  nextBtn.addEventListener('click', () => {
+    const visibleItems = getVisibleItems()
+    const totalItems = track.children.length
+    const maxIndex = Math.max(0, totalItems - visibleItems)
+
+    currentIndex++
+    if (currentIndex > maxIndex) {
+      currentIndex = 0 // Go to start
+    }
+    updateCarousel()
+  })
+
+  window.addEventListener('resize', () => {
+    updateCarousel()
+  })
+  
+  // Initial update
+  setTimeout(updateCarousel, 100)
+}
+
 
 
 function setupImageModal() {

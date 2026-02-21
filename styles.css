@@ -2209,6 +2209,89 @@ html[data-theme="dark"] .card:hover .project-date {
   }
 }
 
+/* Projects Carousel */
+.project-carousel-container {
+  position: relative;
+  margin-top: 30px;
+  padding: 0 60px;
+}
+
+.project-carousel-track-container {
+  overflow: hidden;
+  margin: 0 -10px; /* Counteract padding */
+  padding: 10px; /* Space for shadows */
+}
+
+.project-carousel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-card {
+  flex: 0 0 calc((100% - 40px) / 3); /* 3 items visible */
+  position: relative;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .card {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/* Navigation Buttons for Projects */
+.project-prev-btn,
+.project-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 5;
+}
+
+.project-prev-btn { left: 0; }
+.project-next-btn { right: 0; }
+
+.project-prev-btn:hover,
+.project-next-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Responsive Breakpoints for Projects */
+@media (max-width: 900px) {
+  .project-card {
+    flex: 0 0 calc((100% - 20px) / 2); /* 2 items */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-carousel-container {
+    padding: 0 40px;
+  }
+  .project-card {
+    flex: 0 0 100%; /* 1 item */
+    margin-right: 20px; /* Keep margin for spacing even in single view if looping? or remove? */
+  }
+}
+
+
 /* Image Modal Specifics */
 .modal-content-image {
   position: relative;
