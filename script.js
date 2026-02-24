@@ -38,6 +38,7 @@ const translations = {
     'projects.logra.date': 'Dic 2025 - Ene 2026',
     'projects.arcadia.date': 'Sep 2025 - Dic 2025',
     'projects.tucredito.date': 'Ene 2026 - Feb 2026',
+    'projects.rssp.date': '2026 - Actualidad',
 
     'stack.tools': 'Herramientas',
 
@@ -49,6 +50,9 @@ const translations = {
 
     'projects.tucredito.desc':
       'Plataforma moderna de <strong>gestión de préstamos</strong> con Dashboard ejecutivo y evaluación crediticia. Construida con <strong>.NET 10</strong> y <strong>React 18</strong>, ofrece simulación de créditos, integración con BCRA y gestión documental segura con <strong>MinIO</strong>.',
+
+    'projects.rssp.desc':
+      'Plataforma de <strong>simulación quirúrgica renal</strong> en 3D que ofrece un entorno inmersivo y libre de riesgos donde cirujanos y residentes pueden practicar habilidades psicomotoras con <strong>feedback inmediato</strong> sobre precisión, exactitud y eficiencia antes de llegar al paciente real.',
 
     'modal.statusLabel': 'Estado',
     'modal.problemTitle': 'Sobre el proyecto',
@@ -93,6 +97,19 @@ const translations = {
       '<strong>Gestión Documental Segura</strong>: Almacenamiento de DNI, recibos y garantías utilizando MinIO (S3 Compatible).',
     'modal.tucredito.extra':
       'Demo disponible: Usuario <strong>demo</strong> / Contraseña <strong>demo</strong>. Despliegue en Vercel y Backend en .NET 10.',
+
+    'modal.rssp.problem':
+      'Plataforma de simulación quirúrgica renal que crea un entorno inmersivo y libre de riesgos para entrenar procedimientos complejos. Permite a cirujanos y residentes perfeccionar habilidades psicomotoras sobre modelos 3D reactivos, con medición objetiva de desempeño clínico.',
+    'modal.rssp.features.1':
+      '<strong>Inmersión total</strong>: Interacción con tejidos y herramientas en un entorno 3D reactivo diseñado para cirugía renal.',
+    'modal.rssp.features.2':
+      '<strong>Feedback instantáneo</strong>: Cada movimiento genera métricas de precisión, exactitud y eficiencia durante la sesión.',
+    'modal.rssp.features.3':
+      '<strong>Gamificación clínica</strong>: Desafíos diseñados para entrenar estabilidad manual, ablación de tumores y control del instrumento.',
+    'modal.rssp.features.4':
+      '<strong>Motor de análisis</strong>: Backend en .NET 10 que registra sesiones, eventos y KPIs para evaluar el progreso a lo largo del tiempo.',
+    'modal.rssp.extra':
+      'Estado: en desarrollo. Demo técnica orientada al entrenamiento y evaluación de competencias quirúrgicas renales.',
 
     'stack.title': 'Mi Stack Técnico',
     'stack.languages': 'Lenguajes',
@@ -169,6 +186,7 @@ const translations = {
     'projects.logra.date': 'Dec 2025 - Jan 2026',
     'projects.arcadia.date': 'Sep 2025 - Dec 2025',
     'projects.tucredito.date': 'Jan 2026 - Feb 2026',
+    'projects.rssp.date': '2026 - Present',
 
     'stack.tools': 'Tools',
 
@@ -180,6 +198,9 @@ const translations = {
 
     'projects.tucredito.desc':
       'Modern <strong>loan management platform</strong> with Executive Dashboard and credit evaluation. Built with <strong>.NET 10</strong> and <strong>React 18</strong>, featuring loan simulation, BCRA integration, and secure document management with <strong>MinIO</strong>.',
+
+    'projects.rssp.desc':
+      '3D <strong>renal surgical simulation platform</strong> that provides an immersive, risk-free environment where surgeons and residents can practice psychomotor skills with <strong>instant feedback</strong> on precision, accuracy, and efficiency before operating on real patients.',
 
     'modal.statusLabel': 'Status',
     'modal.problemTitle': 'About the project',
@@ -224,6 +245,19 @@ const translations = {
       '<strong>Secure Document Management</strong>: Storage of IDs, receipts, and guarantees using MinIO (S3 Compatible).',
     'modal.tucredito.extra':
       'Demo available: User <strong>demo</strong> / Password <strong>demo</strong>. Deployed on Vercel with .NET 10 Backend.',
+
+    'modal.rssp.problem':
+      'Renal surgical simulation platform that creates an immersive, risk-free environment for training complex procedures. Surgeons and residents refine psychomotor skills on reactive 3D models with objective measurement of clinical performance.',
+    'modal.rssp.features.1':
+      '<strong>Total immersion</strong>: Interaction with tissues and instruments in a reactive 3D environment designed for renal surgery.',
+    'modal.rssp.features.2':
+      '<strong>Instant feedback</strong>: Every movement is translated into precision, accuracy, and efficiency metrics during the session.',
+    'modal.rssp.features.3':
+      '<strong>Clinical gamification</strong>: Scenarios and challenges focused on training hand stability, tumor ablation, and instrument control.',
+    'modal.rssp.features.4':
+      '<strong>Analytics engine</strong>: .NET 10 backend logging sessions, events, and KPIs to track trainee progress over time.',
+    'modal.rssp.extra':
+      'Status: in development. Technical demo focused on training and assessing renal surgical competencies.',
 
     'stack.title': 'My Tech Stack',
     'stack.languages': 'Languages',
@@ -394,7 +428,7 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   })
 })
 
-function setupProjectModal() {
+  function setupProjectModal() {
   const modal = document.getElementById('project-modal')
   if (!modal) return
 
@@ -410,6 +444,29 @@ function setupProjectModal() {
   const nextBtn = modal.querySelector('[data-carousel-next]')
 
   const projects = {
+    rssp: {
+      title: 'Renal Surgical Simulation Platform',
+      statusKey: 'projects.status.dev',
+      problemKey: 'modal.rssp.problem',
+      featuresKeys: [
+        'modal.rssp.features.1',
+        'modal.rssp.features.2',
+        'modal.rssp.features.3',
+        'modal.rssp.features.4'
+      ],
+      tech: [
+        'React 18',
+        'Vite',
+        'Three.js / R3F',
+        'Recharts',
+        'TailwindCSS',
+        '.NET 10 Web API',
+        'Entity Framework Core',
+        'SQL Server',
+        'Clean Architecture'
+      ],
+      images: ['images/RS1.jpg', 'images/RS2.jpg', 'images/RS3.jpg', 'images/RS4.jpg', 'images/RS5.jpg', 'images/RS6.jpg']
+    },
     logra: {
       title: 'Logra',
       statusKey: 'projects.status.finished',
