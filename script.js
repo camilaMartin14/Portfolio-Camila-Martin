@@ -139,6 +139,15 @@ const translations = {
     'timeline.item5.desc':
       'Primer acercamiento al desarrollo de software. Estudio autodidacta de backend con <span class="resaltar">Java Spring Boot</span> y bases de datos <span class="resaltar">MySQL</span> mediante cursos y material educativo online.',
 
+    'certificates.c1': 'C1 English EF SET',
+    'certificates.csharp': 'C# Basic HackerRank',
+    'certificates.dotnet.adv': '.NET Advanced',
+    'certificates.dotnet.fund': '.NET Fundamentals',
+    'certificates.springboot.ess': 'SpringBoot Essentials',
+    'certificates.springboot.api': 'SpringBoot APIs',
+    'certificates.github': 'Introducción a GitHub',
+    'certificates.sql': 'Bases de Datos Relacionales',
+
     'contact.title': 'Contactame'
   },
 
@@ -282,6 +291,15 @@ const translations = {
     'timeline.item5.date': 'July 2024 – November 2024',
     'timeline.item5.desc':
       'First approach to software development. Self-taught backend study with <span class="resaltar">Java Spring Boot</span> and <span class="resaltar">MySQL</span> databases through courses and online learning material.',
+
+    'certificates.c1': 'C1 English EF SET',
+    'certificates.csharp': 'C# Basic HackerRank',
+    'certificates.dotnet.adv': '.NET Advanced',
+    'certificates.dotnet.fund': '.NET Fundamentals',
+    'certificates.springboot.ess': 'SpringBoot Essentials',
+    'certificates.springboot.api': 'SpringBoot APIs',
+    'certificates.github': 'GitHub Introduction',
+    'certificates.sql': 'Relational Databases',
 
     'contact.title': 'Contact me'
   }

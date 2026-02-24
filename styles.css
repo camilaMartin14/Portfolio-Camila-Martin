@@ -2134,6 +2134,22 @@ html[data-theme="dark"] .card:hover .project-date {
   min-height: 180px; /* Ensure consistent height */
   overflow: hidden; /* For shine effect */
   margin-right: 20px; /* Gap */
+  animation: float 6s ease-in-out infinite;
+}
+
+.cert-card:nth-child(2n) {
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.cert-card:nth-child(3n) {
+  animation-duration: 5.5s;
+  animation-delay: 2s;
+}
+
+.cert-card:nth-child(5n) {
+  animation-duration: 6.5s;
+  animation-delay: 0.5s;
 }
 
 /* Shine effect for cert cards */
@@ -2217,7 +2233,7 @@ html[data-theme="dark"] .card:hover .project-date {
 
 /* Hover effects */
 .cert-card:hover {
-  transform: translateY(-5px);
+  animation-play-state: paused;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   border-color: var(--accent);
   background-color: var(--hover-lilac); /* Lila hover background */
