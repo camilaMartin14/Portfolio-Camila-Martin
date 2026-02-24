@@ -55,7 +55,6 @@ const translations = {
       'Plataforma de <strong>simulación quirúrgica renal</strong> en 3D que ofrece un entorno inmersivo y libre de riesgos donde cirujanos y residentes pueden practicar habilidades psicomotoras con <strong>feedback inmediato</strong> sobre precisión, exactitud y eficiencia antes de llegar al paciente real.',
 
     'modal.statusLabel': 'Estado',
-    'modal.problemTitle': 'Sobre el proyecto',
     'modal.featuresTitle': 'Funcionalidades principales',
     'modal.techTitle': 'Tecnologías',
     'modal.moreTitle': 'Información adicional',
@@ -65,8 +64,6 @@ const translations = {
     'modal.carousel.imageAlt': 'Captura {index} de {project}',
     'modal.carousel.dotAlt': 'Ir a la captura {index}',
 
-    'modal.logra.problem':
-      'Nace de la necesidad de combinar planificación diaria y bienestar personal sin la complejidad de herramientas empresariales. Resuelve la dispersión mental transformando intenciones en acciones mediante una interfaz fluida y una arquitectura backend robusta que garantiza la <strong>sincronización y seguridad de los datos</strong>.',
     'modal.logra.features.1': '<strong>Planificación Diaria y Hábitos</strong>: Vista enfocada en el día actual con navegación intuitiva y categorización visual por colores.',
     'modal.logra.features.2': '<strong>Interacción Fluida (Drag & Drop)</strong>: Reorganización nativa de tareas y notas para una experiencia de usuario ágil y moderna.',
     'modal.logra.features.3': '<strong>Backend Robusto (.NET 8)</strong>: API RESTful con Clean Architecture, Patrón Repositorio y optimización de consultas (solución a N+1).',
@@ -74,8 +71,6 @@ const translations = {
     'modal.logra.features.5': '<strong>Seguridad y Rendimiento</strong>: Autenticación JWT, validación de datos y proyección a DTOs para máxima eficiencia.',
     'modal.logra.extra': 'Estado: finalizado. Full Stack (.NET + Vanilla JS) desplegado y funcional.',
 
-    'modal.arcadia.problem':
-      'Centraliza el catálogo de libros en un único lugar y estandariza la toma de pedidos, evitando inconsistencias de stock. Aporta visibilidad al negocio mediante métricas clave, resolviendo la gestión manual y desordenada del flujo de ventas.',
     'modal.arcadia.features.1': '<strong>Catálogo y Filtros</strong>: Búsqueda avanzada y fichas detalladas pensadas para el usuario final.',
     'modal.arcadia.features.2': '<strong>Gestión de Pedidos</strong>: Control transaccional del ciclo de vida de la compra y seguimiento de estados.',
     'modal.arcadia.features.3': '<strong>Panel Administrativo (ABMC)</strong>: Gestión completa de libros, autores y editoriales con validaciones.',
@@ -83,8 +78,6 @@ const translations = {
     'modal.arcadia.features.5': '<strong>Dashboard de Métricas</strong>: Visualización de datos de ventas para decisiones informadas.',
     'modal.arcadia.extra': 'Roadmap: Integración con MinIO para portadas, perfiles de usuario y mejoras en transaccionalidad.',
 
-    'modal.tucredito.problem':
-      'Transforma la gestión de préstamos con una plataforma <strong>moderna, segura y escalable</strong>. Centraliza la salud de la cartera en un Dashboard en tiempo real, automatiza alertas de morosidad y digitaliza legajos, eliminando el riesgo operativo de las planillas manuales.',
     'modal.tucredito.features.1':
       '<strong>Dashboard Ejecutivo en Tiempo Real</strong>: Visualiza KPIs financieros (Capital, Interés, Morosidad) y gráficos interactivos de evolución.',
     'modal.tucredito.features.2':
@@ -98,8 +91,6 @@ const translations = {
     'modal.tucredito.extra':
       'Demo disponible: Usuario <strong>demo</strong> / Contraseña <strong>demo</strong>. Despliegue en Vercel y Backend en .NET 10.',
 
-    'modal.rssp.problem':
-      'Plataforma de simulación quirúrgica renal que crea un entorno inmersivo y libre de riesgos para entrenar procedimientos complejos. Permite a cirujanos y residentes perfeccionar habilidades psicomotoras sobre modelos 3D reactivos, con medición objetiva de desempeño clínico.',
     'modal.rssp.features.1':
       '<strong>Inmersión total</strong>: Interacción con tejidos y herramientas en un entorno 3D reactivo diseñado para cirugía renal.',
     'modal.rssp.features.2':
@@ -209,7 +200,6 @@ const translations = {
       '3D <strong>renal surgical simulation platform</strong> that provides an immersive, risk-free environment where surgeons and residents can practice psychomotor skills with <strong>instant feedback</strong> on precision, accuracy, and efficiency before operating on real patients.',
 
     'modal.statusLabel': 'Status',
-    'modal.problemTitle': 'About the project',
     'modal.featuresTitle': 'Key features',
     'modal.techTitle': 'Technologies',
     'modal.moreTitle': 'Additional info',
@@ -218,9 +208,6 @@ const translations = {
     'modal.carousel.next': 'Next',
     'modal.carousel.imageAlt': 'Screenshot {index} of {project}',
     'modal.carousel.dotAlt': 'Go to screenshot {index}',
-
-    'modal.logra.problem':
-      'Born from the need to combine daily planning and personal well-being without the complexity of enterprise tools. It solves mental clutter by transforming intentions into actions through a fluid interface and a robust backend architecture that ensures <strong>data synchronization and security</strong>.',
     'modal.logra.features.1': '<strong>Daily Planning & Habits</strong>: Focus view on the current day with intuitive navigation and visual color categorization.',
     'modal.logra.features.2': '<strong>Fluid Interaction (Drag & Drop)</strong>: Native task and note reordering for an agile and modern user experience.',
     'modal.logra.features.3': '<strong>Robust Backend (.NET 8)</strong>: RESTful API with Clean Architecture, Repository Pattern, and query optimization (N+1 solution).',
@@ -228,8 +215,6 @@ const translations = {
     'modal.logra.features.5': '<strong>Security & Performance</strong>: JWT authentication, data validation, and DTO projection for maximum efficiency.',
     'modal.logra.extra': 'Status: completed. Full Stack (.NET + Vanilla JS) deployed and functional.',
 
-    'modal.arcadia.problem':
-      'Centralizes the book catalog in a single place and standardizes order taking, avoiding stock inconsistencies. It brings visibility to the business through key metrics, resolving the messy and manual management of sales flows.',
     'modal.arcadia.features.1': '<strong>Catalog & Filters</strong>: Advanced search and detailed product pages designed for the end user.',
     'modal.arcadia.features.2': '<strong>Order Management</strong>: Transactional control of the purchase lifecycle and status tracking.',
     'modal.arcadia.features.3': '<strong>Admin Panel (CRUD)</strong>: Complete management of books, authors, and publishers with validations.',
@@ -237,8 +222,6 @@ const translations = {
     'modal.arcadia.features.5': '<strong>Metrics Dashboard</strong>: Visualization of sales data for informed decision-making.',
     'modal.arcadia.extra': 'Roadmap: Integration with MinIO for covers, user profiles, and transactional improvements.',
 
-    'modal.tucredito.problem':
-      'Transforms loan management with a <strong>modern, secure, and scalable</strong> platform. Visualize portfolio health on a Real-time Dashboard, know your customers with full digital profiles, and adapt financing with a flexible engine.',
     'modal.tucredito.features.1':
       '<strong>Executive Dashboard</strong>: Financial KPIs, interactive charts, and automatic delinquency alerts.',
     'modal.tucredito.features.2':
@@ -252,8 +235,6 @@ const translations = {
     'modal.tucredito.extra':
       'Demo available: User <strong>demo</strong> / Password <strong>demo</strong>. Deployed on Vercel with .NET 10 Backend.',
 
-    'modal.rssp.problem':
-      'Renal surgical simulation platform that creates an immersive, risk-free environment for training complex procedures. Surgeons and residents refine psychomotor skills on reactive 3D models with objective measurement of clinical performance.',
     'modal.rssp.features.1':
       '<strong>Total immersion</strong>: Interaction with tissues and instruments in a reactive 3D environment designed for renal surgery.',
     'modal.rssp.features.2':
@@ -441,7 +422,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
 
   const titleEl = document.getElementById('project-modal-title')
   const statusEl = document.getElementById('project-modal-status')
-  const problemEl = document.getElementById('project-modal-problem')
   const featuresEl = document.getElementById('project-modal-features')
   const techEl = document.getElementById('project-modal-tech')
 
@@ -454,7 +434,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     rssp: {
       title: 'Renal Surgical Simulation Platform',
       statusKey: 'projects.status.dev',
-      problemKey: 'modal.rssp.problem',
       featuresKeys: [
         'modal.rssp.features.1',
         'modal.rssp.features.2',
@@ -479,7 +458,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     logra: {
       title: 'Logra',
       statusKey: 'projects.status.finished',
-      problemKey: 'modal.logra.problem',
       featuresKeys: [
         'modal.logra.features.1',
         'modal.logra.features.2',
@@ -495,7 +473,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     arcadia: {
       title: 'Arcadia',
       statusKey: 'projects.status.finished',
-      problemKey: 'modal.arcadia.problem',
       featuresKeys: [
         'modal.arcadia.features.1',
         'modal.arcadia.features.2',
@@ -511,7 +488,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
     tucredito: {
       title: 'Tu Crédito',
       statusKey: 'projects.status.finished',
-      problemKey: 'modal.tucredito.problem',
       featuresKeys: [
         'modal.tucredito.features.1',
         'modal.tucredito.features.2',
@@ -578,7 +554,6 @@ document.querySelectorAll('.nav-links a').forEach(a => {
 
     titleEl.textContent = project.title
     statusEl.setAttribute('data-i18n', project.statusKey)
-    problemEl.setAttribute('data-i18n', project.problemKey)
 
     featuresEl.innerHTML = ''
     project.featuresKeys.forEach(key => {
