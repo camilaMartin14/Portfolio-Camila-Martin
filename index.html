@@ -7,14 +7,12 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Cami – Full Stack .NET Developer" />
   <meta property="og:description" content="Portfolio con proyectos en .NET, APIs REST y SQL Server." />
   <meta property="og:image" content="https://portfolio-camila-martin.vercel.app//LOGRA.jpg" />
   <meta property="og:url" content="https://portfolio-camila-martin.vercel.app" />
   <meta property="og:type" content="website" />
 
-  <!-- Estilos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -24,6 +22,7 @@
 </head>
 
 <body>
+  <!-- Encabezado / Navegación -->
   <header class="header">
     <nav class="nav container">
       <a href="#inicio" class="brand">
@@ -57,6 +56,8 @@
   </header>
 
   <main>
+
+    <!-- Sección Inicio -->
     <section id="inicio" class="hero container">
       <div class="hero-text hidden-scroll">
         <h1 class="title"><span id="user-name">Camila Martín</span></h1>
@@ -79,6 +80,7 @@
       </div>
     </section>
 
+    <!-- Sección Sobre Mí -->
     <section id="sobre-mi" class="about container">
       <div class="about-card hidden-scroll">
         <h2 class="section-title about-title hidden-scroll" data-i18n="about.title">Sobre mí</h2>
@@ -91,19 +93,22 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Sección Proyectos -->
     <div class="wave-divider-top">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
       </svg>
     </div>
+
     <section id="proyectos" class="projects">
       <div class="container">
         <h2 class="section-title hidden-scroll" data-i18n="projects.title">Proyectos Destacados</h2>
         <div class="project-carousel-container">
           <button class="project-prev-btn" aria-label="Anterior proyecto"><i class="fa-solid fa-chevron-left"></i></button>
+          
           <div class="project-carousel-track-container">
             <ul class="project-carousel-track">
+              
               <li class="project-card">
                 <article class="card">
                   <div class="card-image">
@@ -127,7 +132,6 @@
                   </div>
                   <div class="card-actions">
                     <div class="action-buttons-top">
-
                       <a href="https://renal-surgical-simulation-platform.vercel.app/" target="_blank" rel="noopener noreferrer" class="icon-btn medium" aria-label="Ver Demo" data-tooltip="Demo">
                         <i class="fa-solid fa-desktop"></i>
                       </a>
@@ -249,8 +253,10 @@
                   </div>
                 </article>
               </li>
+
             </ul>
           </div>
+          
           <button class="project-next-btn" aria-label="Siguiente proyecto"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
@@ -262,28 +268,29 @@
       </svg>
     </div>
 
+    <!-- Sección Experiencia Laboral -->
     <section id="trabajo-actual" class="current-role container">
       <h2 class="section-title experience-title hidden-scroll" data-i18n="current.title">Experiencia laboral</h2>
       <div class="experience-card hidden-scroll">
         <div class="experience-content">
           <div class="experience-body">
-          <h3 class="experience-role" data-i18n="current.role">Software Backend Developer Jr</h3>
-          <p class="experience-company meli-company" data-i18n="current.company">Mercado Libre</p>
-          <p class="experience-location" data-i18n="current.location">Híbrido · Córdoba, Argentina · Marzo 2026 – Actualidad</p>
-          <ul class="experience-list">
-            <li data-i18n="current.bullet1"></li>
-            <li data-i18n="current.bullet2"></li>
-          </ul>
-          <div class="tags experience-tags">
-            <span class="chip">Go (Gin, Goroutines)</span>
-            <span class="chip">Microservices Architecture</span>
-            <span class="chip">Domain-Driven Design</span>
+            <h3 class="experience-role" data-i18n="current.role">Software Backend Developer Jr</h3>
+            <p class="experience-company meli-company" data-i18n="current.company">Mercado Libre</p>
+            <p class="experience-location" data-i18n="current.location">Híbrido · Córdoba, Argentina · Marzo 2026 – Actualidad</p>
+            <ul class="experience-list">
+              <li data-i18n="current.bullet1"></li>
+              <li data-i18n="current.bullet2"></li>
+            </ul>
+            <div class="tags experience-tags">
+              <span class="chip">Go (Gin, Goroutines)</span>
+              <span class="chip">Microservices Architecture</span>
+              <span class="chip">Domain-Driven Design</span>
+            </div>
+          </div>
+          <div class="experience-logo">
+            <img src="images/MELI-logo.jpg" alt="Logo de Mercado Libre" class="meli-logo">
           </div>
         </div>
-        <div class="experience-logo">
-          <img src="images/MELI-logo.jpg" alt="Logo de Mercado Libre" class="meli-logo">
-        </div>
-      </div>
       </div>
     </section>
 
@@ -293,10 +300,12 @@
       </svg>
     </div>
 
+    <!-- Sección Stack Tecnológico -->
     <section id="stack" class="stack">
       <div class="container">
         <h2 class="section-title hidden-scroll" data-i18n="stack.title">Mi Stack Técnico</h2>
         <div class="stack-layout">
+          
           <div class="stack-group">
             <h3 class="group-title hidden-scroll">Backend & DB</h3>
             <div class="stack-grid">
@@ -311,6 +320,7 @@
               </div>
             </div>
           </div>
+
           <div class="stack-group">
             <h3 class="group-title hidden-scroll">Frontend</h3>
             <div class="stack-grid">
@@ -320,6 +330,7 @@
               <div class="stack-item hidden-scroll"><i class="devicon-typescript-plain colored"></i> <span>TypeScript</span></div>
             </div>
           </div>
+
           <div class="stack-group">
             <h3 class="group-title hidden-scroll" data-i18n="stack.tools">Herramientas</h3>
             <div class="stack-grid">
@@ -328,6 +339,7 @@
               <div class="stack-item hidden-scroll"><i class="fa-solid fa-rocket"></i> <span>Postman</span></div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -338,89 +350,90 @@
       </svg>
     </div>
     
-<section id="timeline" class="timeline">
-  <div class="container">
-  <h2 class="section-title hidden-scroll" data-i18n="timeline.title">Formación Académica</h2>
+    <!-- Sección Formación Académica -->
+    <section id="timeline" class="timeline">
+      <div class="container">
+        <h2 class="section-title hidden-scroll" data-i18n="timeline.title">Formación Académica</h2>
 
-  <div class="timeline-list">
+        <div class="timeline-list">
 
-    <div class="timeline-item hidden-scroll">
-      <div class="dot"></div>
-      <div class="content">
-        <div class="date" data-i18n="timeline.item1.date">Diciembre 2025 – Actualidad</div>
-        <div class="desc" data-i18n="timeline.item1.desc">
-          Finalicé el primer año de la Tecnicatura Universitaria en Programación (UTN) con un
-          <span class="resaltar">promedio general de 9.00</span>, aprobando la totalidad de las materias.
+          <div class="timeline-item hidden-scroll">
+            <div class="dot"></div>
+            <div class="content">
+              <div class="date" data-i18n="timeline.item1.date">Diciembre 2025 – Actualidad</div>
+              <div class="desc" data-i18n="timeline.item1.desc">
+                Finalicé el primer año de la Tecnicatura Universitaria en Programación (UTN) con un
+                <span class="resaltar">promedio general de 9.00</span>, aprobando la totalidad de las materias.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item hidden-scroll">
+            <div class="dot"></div>
+            <div class="content">
+              <div class="date" data-i18n="timeline.item2.date">Julio 2025 – Noviembre 2025</div>
+              <div class="desc" data-i18n="timeline.item2.desc1">
+                Segundo cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).
+              </div>
+              <div class="desc" data-i18n="timeline.item2.desc2">
+                En <span class="resaltar">Programación II</span> desarrollo APIs con
+                <span class="resaltar">.NET, C# y Entity Framework</span>, aplicando POO avanzada,
+                patrones de diseño, manejo de transacciones y consultas LINQ complejas.
+              </div>
+              <div class="desc" data-i18n="timeline.item2.desc3">
+                En <span class="resaltar">Bases de Datos II</span> trabajo con
+                <span class="resaltar">SQL Server avanzado</span>: procedimientos almacenados,
+                triggers, vistas, tablas temporales, consultas agregadas y subconsultas.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item hidden-scroll">
+            <div class="dot"></div>
+            <div class="content">
+              <div class="date" data-i18n="timeline.item3.date">Marzo 2025 – Julio 2025</div>
+              <div class="desc" data-i18n="timeline.item3.desc1">
+                Primer cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).
+              </div>
+              <div class="desc" data-i18n="timeline.item3.desc2">
+                En <span class="resaltar">Programación I</span> construí aplicaciones de escritorio con
+                <span class="resaltar">.NET Windows Forms</span>, aplicando POO desde sus fundamentos
+                hasta conceptos intermedios.
+              </div>
+              <div class="desc" data-i18n="timeline.item3.desc3">
+                En <span class="resaltar">Bases de Datos I</span> adquirí una base sólida en
+                <span class="resaltar">SQL Server</span>: normalización, modelado de datos,
+                definición de tablas y consultas fundamentales.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item hidden-scroll">
+            <div class="dot"></div>
+            <div class="content">
+              <div class="date" data-i18n="timeline.item4.date">Diciembre 2024 – Febrero 2025</div>
+              <div class="desc" data-i18n="timeline.item4.desc">
+                Preparación para el ingreso a la carrera, enfocada en algoritmos,
+                fundamentos de programación estructurada y resolución lógica de problemas.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item hidden-scroll">
+            <div class="dot"></div>
+            <div class="content">
+              <div class="date" data-i18n="timeline.item5.date">Julio 2024 – Noviembre 2024</div>
+              <div class="desc" data-i18n="timeline.item5.desc">
+                Primer acercamiento al desarrollo de software.
+                Estudio autodidacta de backend con <span class="resaltar">Java Spring Boot</span>
+                y bases de datos <span class="resaltar">MySQL</span> mediante cursos y material educativo online.
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-
-    <div class="timeline-item hidden-scroll">
-      <div class="dot"></div>
-      <div class="content">
-        <div class="date" data-i18n="timeline.item2.date">Julio 2025 – Noviembre 2025</div>
-        <div class="desc" data-i18n="timeline.item2.desc1">
-          Segundo cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).
-        </div>
-        <div class="desc" data-i18n="timeline.item2.desc2">
-          En <span class="resaltar">Programación II</span> desarrollo APIs con
-          <span class="resaltar">.NET, C# y Entity Framework</span>, aplicando POO avanzada,
-          patrones de diseño, manejo de transacciones y consultas LINQ complejas.
-        </div>
-        <div class="desc" data-i18n="timeline.item2.desc3">
-          En <span class="resaltar">Bases de Datos II</span> trabajo con
-          <span class="resaltar">SQL Server avanzado</span>: procedimientos almacenados,
-          triggers, vistas, tablas temporales, consultas agregadas y subconsultas.
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item hidden-scroll">
-      <div class="dot"></div>
-      <div class="content">
-        <div class="date" data-i18n="timeline.item3.date">Marzo 2025 – Julio 2025</div>
-        <div class="desc" data-i18n="timeline.item3.desc1">
-          Primer cuatrimestre de la Tecnicatura Universitaria en Programación (UTN).
-        </div>
-        <div class="desc" data-i18n="timeline.item3.desc2">
-          En <span class="resaltar">Programación I</span> construí aplicaciones de escritorio con
-          <span class="resaltar">.NET Windows Forms</span>, aplicando POO desde sus fundamentos
-          hasta conceptos intermedios.
-        </div>
-        <div class="desc" data-i18n="timeline.item3.desc3">
-          En <span class="resaltar">Bases de Datos I</span> adquirí una base sólida en
-          <span class="resaltar">SQL Server</span>: normalización, modelado de datos,
-          definición de tablas y consultas fundamentales.
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item hidden-scroll">
-      <div class="dot"></div>
-      <div class="content">
-        <div class="date" data-i18n="timeline.item4.date">Diciembre 2024 – Febrero 2025</div>
-        <div class="desc" data-i18n="timeline.item4.desc">
-          Preparación para el ingreso a la carrera, enfocada en algoritmos,
-          fundamentos de programación estructurada y resolución lógica de problemas.
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item hidden-scroll">
-      <div class="dot"></div>
-      <div class="content">
-        <div class="date" data-i18n="timeline.item5.date">Julio 2024 – Noviembre 2024</div>
-        <div class="desc" data-i18n="timeline.item5.desc">
-          Primer acercamiento al desarrollo de software.
-          Estudio autodidacta de backend con <span class="resaltar">Java Spring Boot</span>
-          y bases de datos <span class="resaltar">MySQL</span> mediante cursos y material educativo online.
-        </div>
-      </div>
-    </div>
-
-  </div>
-  </div>
-</section>
+    </section>
 
     <div class="wave-certificados">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -428,13 +441,15 @@
       </svg>
     </div>
 
+    <!-- Sección Certificados -->
     <section id="certificados" class="certificados">
       <div class="container">
-        <h2 class="section-title hidden-scroll">Certificados</h2>
+        <h2 class="section-title hidden-scroll" data-i18n="certificates.title">Certificados</h2>
         <div class="cert-carousel-container">
           <button class="cert-prev-btn" aria-label="Anterior certificado"><i class="fa-solid fa-chevron-left"></i></button>
           <div class="cert-carousel-track-container">
             <ul class="cert-carousel-track">
+              
               <!-- Image Item: C1 English -->
               <li class="cert-card">
                 <div class="cert-img-wrapper">
@@ -458,36 +473,42 @@
                 </div>
                 <p class="cert-title" data-i18n="certificates.dotnet.adv">.NET Advanced</p>
               </li>
+
               <li class="cert-card">
                 <div class="cert-img-wrapper">
                   <img src="images/dotnet-fundamentals.jpeg" alt=".NET Fundamentals" class="cert-img" loading="lazy">
                 </div>
                 <p class="cert-title" data-i18n="certificates.dotnet.fund">.NET Fundamentals</p>
               </li>
+
               <li class="cert-card">
                 <div class="cert-img-wrapper">
                   <img src="images/spring-boot-essential.jpeg" alt="SpringBoot Essentials" class="cert-img" loading="lazy">
                 </div>
                 <p class="cert-title" data-i18n="certificates.springboot.ess">SpringBoot Essentials</p>
               </li>
+
               <li class="cert-card">
                 <div class="cert-img-wrapper">
                   <img src="images/spring-boot-apis-todocode.png" alt="SpringBoot APIs" class="cert-img" loading="lazy">
                 </div>
                 <p class="cert-title" data-i18n="certificates.springboot.api">SpringBoot APIs</p>
               </li>
+
               <li class="cert-card">
                 <div class="cert-img-wrapper">
                   <img src="images/git-github-introduction-todocode.png" alt="GitHub Introduction TodoCode" class="cert-img" loading="lazy">
                 </div>
                 <p class="cert-title" data-i18n="certificates.github">GitHub Introduction</p>
               </li>
+
               <li class="cert-card">
                 <div class="cert-img-wrapper">
                   <img src="images/relational-databases-with-mysql.png" alt="Relational Databases with MySQL" class="cert-img" loading="lazy">
                 </div>
                 <p class="cert-title" data-i18n="certificates.sql">Relational Databases</p>
               </li>
+
             </ul>
           </div>
           <button class="cert-next-btn" aria-label="Siguiente certificado"><i class="fa-solid fa-chevron-right"></i></button>
@@ -497,6 +518,7 @@
 
   </main>
 
+  <!-- Pie de página / Contacto -->
   <footer class="footer">
     <div class="container">
       <h6 class="section-title hidden-scroll" data-i18n="contact.title">Contactame</h6>
@@ -511,6 +533,7 @@
     </div>
   </footer>
 
+  <!-- Modales -->
   <div id="project-modal" class="modal" aria-hidden="true">
     <div class="modal-backdrop" data-modal-close></div>
     <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
@@ -552,7 +575,7 @@
     </div>
   </div>
 
-  <!-- Image Modal for Certificates -->
+  <!-- Modal de Imagen para Certificados -->
   <div id="image-modal" class="modal" aria-hidden="true">
     <div class="modal-backdrop" data-image-modal-close></div>
     <div class="modal-content-image">

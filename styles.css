@@ -57,16 +57,16 @@ section[id] {
 :root {
   --clean-white: #f3f3f3;
   --soft-peach: #FFDAB9;
-  --muted-rose: #C59AA8; /* Slightly darker for better contrast */
-  --slate-gray: #4A585A; /* Darker for better text readability */
-  --pale-violet: #D1C5DE; /* Slightly darker for visible borders */
-  --desert-sand: #ffe18d;
-  --dot-color: #dcdcdc; /* Slightly more visible dots */
+  --muted-rose: #C59AA8; 
+  --slate-gray: #4A585A; 
+  --pale-violet: #D1C5DE; 
+  --desert-sand: #fee7aa;
+  --dot-color: #dcdcdc; 
 
   --bg: var(--clean-white);
   --alt-bg: #FFFFFF;
   --text: var(--slate-gray);
-  --text-secondary: #6B7A7D; /* Darker secondary text */
+  --text-secondary: #6B7A7D; 
 
   --card-bg: #FFFFFF;
   --border: var(--pale-violet);
@@ -200,7 +200,6 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   border-bottom: 0;
 }
 
-/* Dropdown Styles */
 .dropdown-item {
   position: relative;
   height: 100%;
@@ -447,7 +446,6 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
 
 .timeline {
   padding: 40px 0;
-  /* background: var(--bg); */
   position: relative;
 }
 
@@ -470,7 +468,6 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   position: relative;
 }
 
-/* Shine effect */
 .card::after {
   content: "";
   position: absolute;
@@ -485,7 +482,7 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  transition: none; /* Reset transition so it returns instantly */
+  transition: none; 
   pointer-events: none;
   z-index: 1;
 }
@@ -800,8 +797,8 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* Remove underline */
-  border-bottom: 1px solid var(--border); /* Ensure no text-decoration border */
+  text-decoration: none; 
+  border-bottom: 1px solid var(--border); 
 }
 
 .action-buttons-top .icon-btn.medium:hover {
@@ -811,7 +808,6 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   transform: translateY(-2px);
 }
 
-/* Tooltip Styles */
 [data-tooltip] {
   position: relative;
 }
@@ -844,7 +840,6 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   transform: translateX(-50%) translateY(-4px);
 }
 
-/* Dark Mode Overrides */
 html[data-theme="dark"] .project-card:hover .action-buttons-top .icon-btn.medium {
   border-color: var(--sunset-orange);
   color: var(--sunset-orange);
@@ -928,7 +923,6 @@ html[data-theme="dark"] .action-buttons-top .icon-btn.medium:hover {
 
 .stack {
   padding: 40px 0;
-  /* background: var(--bg); Removed duplicate background */
   position: relative;
   z-index: 10;
 }
@@ -991,7 +985,6 @@ html[data-theme="dark"] .action-buttons-top .icon-btn.medium:hover {
   }
 }
 
-/* Shine effect for stack items */
 .stack-item::after {
   content: "";
   position: absolute;
@@ -1292,7 +1285,7 @@ html[data-theme="dark"] .view-more-btn {
 }
 
 html[data-theme="dark"] .view-more-btn:hover {
-  background: rgba(191, 112, 138, 0.6); /* 60% de opacidad */
+  background: rgba(191, 112, 138, 0.6); 
   border-color: rgba(191, 112, 138, 0.6);
   color: #fff;
 }
@@ -1529,7 +1522,7 @@ body.modal-open, body.menu-open {
 .carousel-btn {
   width: 32px;
   height: 32px;
-  min-width: 32px; /* Override icon-btn min-width */
+  min-width: 32px; 
   border-radius: 50%;
   padding: 0;
   display: flex;
@@ -1549,7 +1542,7 @@ body.modal-open, body.menu-open {
 }
 
 html[data-theme="dark"] .carousel-btn:hover {
-  background: rgba(191, 112, 138, 0.6); /* 60% de opacidad */
+  background: rgba(191, 112, 138, 0.6); 
   border-color: rgba(191, 112, 138, 0.6);
   color: #fff;
   
@@ -1716,7 +1709,6 @@ html[data-theme="dark"] .modal-section-title {
   overflow: hidden;
   line-height: 0;
   margin-bottom: -1px;
-  /* background: var(--bg); */
 }
 
 .wave-stack-bottom svg {
@@ -1744,14 +1736,11 @@ html[data-theme="dark"] .card:hover .project-date {
   color: #FFFFFF;
 }
 
-/* Ensure smooth transition for inner card elements */
 .card-title, .card-desc, .project-date {
   transition: color 0.3s ease;
 }
 
-/* --- Mobile Improvements --- */
 @media (max-width: 768px) {
-  /* Header Simplificado */
   .header {
     height: 60px;
   }
@@ -1806,9 +1795,8 @@ html[data-theme="dark"] .card:hover .project-date {
     justify-content: center;
   }
 
-  /* High Priority: Hero Compacto y Jerarquizado */
   .hero {
-    padding: 30px 0 20px; /* Menos altura inicial */
+    padding: 30px 0 20px; 
     gap: 15px;
     min-height: auto;
   }
@@ -1816,14 +1804,7 @@ html[data-theme="dark"] .card:hover .project-date {
   .hero-photo {
     margin-top: 10px;
     margin-bottom: 15px;
-    order: -1; /* Foto arriba si se prefiere, pero el usuario pidió Nombre -> Rol -> CTA. 
-                  En diseño visual, a veces Foto -> Nombre es mejor. 
-                  Pero "Mejor jerarquía: nombre -> rol -> CTA/contacto".
-                  Vamos a respetar el orden del HTML (Texto primero) o forzarlo.
-                  En HTML está Texto primero, luego Foto.
-                  En mobile (max-width: 900px) hay un order: -1 para foto.
-                  Vamos a quitar ese order -1 para que el texto salga primero como pide el usuario.
-               */
+    order: -1; 
     order: 0; 
   }
 
@@ -1860,7 +1841,6 @@ html[data-theme="dark"] .card:hover .project-date {
     margin-bottom: 10px;
   }
 
-  /* Targets táctiles mejorados (44px min) */
   .contact-links {
     gap: 24px;
   }
@@ -1878,7 +1858,6 @@ html[data-theme="dark"] .card:hover .project-date {
     font-size: 28px;
   }
 
-  /* Cards optimizadas para scroll */
   .card {
     padding: 16px;
     border-radius: 12px;
@@ -1886,7 +1865,7 @@ html[data-theme="dark"] .card:hover .project-date {
   }
   
   .card-image img {
-    height: 160px; /* Imagen menos alta */
+    height: 160px; 
   }
   
   .card-content {
@@ -1901,14 +1880,14 @@ html[data-theme="dark"] .card:hover .project-date {
   .card-actions {
     flex-direction: column;
     gap: 12px;
-    align-items: stretch; /* Full width */
+    align-items: stretch; 
     margin-top: 15px;
   }
   
   .view-more-btn {
     width: 100%;
     justify-content: center;
-    padding: 14px; /* Más fácil de tocar */
+    padding: 14px; 
     font-size: 1rem;
     min-height: 48px;
   }
@@ -1921,7 +1900,6 @@ html[data-theme="dark"] .card:hover .project-date {
     padding: 5px;
   }
   
-  /* Textos respirables */
   .about-text, .card-desc, .timeline-item .desc, .modal-text, .modal-list {
     line-height: 1.75;
     margin-bottom: 20px;
@@ -1932,11 +1910,10 @@ html[data-theme="dark"] .card:hover .project-date {
     padding: 24px 20px;
   }
 
-  /* Timeline improvements */
   .timeline-item {
     gap: 15px;
     padding-bottom: 25px;
-    grid-template-columns: 20px 1fr; /* Más espacio para texto */
+    grid-template-columns: 20px 1fr; 
   }
   
   .timeline-list::before {
@@ -1949,9 +1926,8 @@ html[data-theme="dark"] .card:hover .project-date {
     left: 2px;
   }
 
-  /* Stack visual */
   .stack-group {
-    margin-bottom: 30px; /* Separación vertical de grupos */
+    margin-bottom: 30px; /
   }
 
   .stack-grid {
@@ -1969,7 +1945,7 @@ html[data-theme="dark"] .card:hover .project-date {
   }
   
   .stack-item i {
-    font-size: 36px; /* Íconos protagonistas */
+    font-size: 36px; 
     width: auto;
     margin-bottom: 5px;
   }
@@ -1978,7 +1954,6 @@ html[data-theme="dark"] .card:hover .project-date {
     font-size: 0.9rem;
   }
 
-  /* Modal Mobile Adjustments */
   .modal {
     padding: 0;
   }
@@ -2007,7 +1982,7 @@ html[data-theme="dark"] .card:hover .project-date {
   }
   
   .modal-close {
-    padding: 10px; /* Target táctil */
+    padding: 10px; 
     font-size: 24px;
   }
 }
@@ -2022,7 +1997,7 @@ html[data-theme="dark"] .card:hover .project-date {
   }
   
   .stack-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles pequeños */
+    grid-template-columns: repeat(2, 1fr); 
   }
   
   .hero-photo .avatar {
@@ -2031,13 +2006,12 @@ html[data-theme="dark"] .card:hover .project-date {
   }
 }
 
-/* Dropdown Menu Styles */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
-  background: var(--header-bg); /* Match navbar background */
+  background: var(--header-bg); 
   border: 1px solid var(--header-bg);
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -2053,7 +2027,7 @@ html[data-theme="dark"] .card:hover .project-date {
 .dropdown-menu li a {
   display: block;
   padding: 8px 16px;
-  color: var(--header-text); /* Match navbar text */
+  color: var(--header-text); 
   font-size: 0.9rem;
   white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease;
@@ -2061,7 +2035,7 @@ html[data-theme="dark"] .card:hover .project-date {
 }
 
 .dropdown-menu li a:hover {
-  background: rgba(255, 255, 255, 0.3); /* Subtle highlight */
+  background: rgba(255, 255, 255, 0.3); 
   color: var(--header-text);
   transform: none;
 }
@@ -2072,7 +2046,6 @@ html[data-theme="dark"] .card:hover .project-date {
   transform: translateX(-50%) translateY(0);
 }
 
-/* Certificados Section Styles */
 .wave-certificados {
   position: relative;
   top: 0;
@@ -2104,13 +2077,13 @@ html[data-theme="dark"] .card:hover .project-date {
 .cert-carousel-container {
   position: relative;
   margin-top: 30px;
-  padding: 0 60px; /* Increased space for buttons */
+  padding: 0 60px; 
 }
 
 .cert-carousel-track-container {
   overflow: hidden;
-  margin: 0 -10px; /* Counteract card padding/gap */
-  padding: 10px; /* Space for shadows */
+  margin: 0 -10px; 
+  padding: 10px; 
 }
 
 .cert-carousel-track {
@@ -2122,22 +2095,22 @@ html[data-theme="dark"] .card:hover .project-date {
 }
 
 .cert-card {
-  flex: 0 0 calc((100% - 80px) / 5); /* 5 items visible */
+  flex: 0 0 calc((100% - 80px) / 5); 
   position: relative;
   transition: all 0.3s ease;
   background: var(--card-bg);
-  border-radius: 14px; /* Match project cards */
+  border-radius: 14px; 
   border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
+  justify-content: center; 
   padding: 15px;
   cursor: pointer;
   height: auto;
-  min-height: 180px; /* Ensure consistent height */
-  overflow: hidden; /* For shine effect */
-  margin-right: 20px; /* Gap */
+  min-height: 180px; 
+  overflow: hidden; 
+  margin-right: 20px;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -2156,7 +2129,6 @@ html[data-theme="dark"] .card:hover .project-date {
   animation-delay: 0.5s;
 }
 
-/* Shine effect for cert cards */
 .cert-card::after {
   content: "";
   position: absolute;
@@ -2181,7 +2153,6 @@ html[data-theme="dark"] .card:hover .project-date {
   transition: left 1s ease-in-out;
 }
 
-/* Image Wrapper - Square 120px */
 .cert-img-wrapper {
   position: relative;
   width: 120px;
@@ -2223,7 +2194,7 @@ html[data-theme="dark"] .card:hover .project-date {
 .cert-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Fill the square */
+  object-fit: cover; 
 }
 
 .cert-title {
@@ -2235,16 +2206,14 @@ html[data-theme="dark"] .card:hover .project-date {
   line-height: 1.3;
 }
 
-/* Hover effects */
 .cert-card:hover {
   animation-play-state: paused;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   border-color: var(--accent);
-  background-color: var(--hover-lilac); /* Lila hover background */
+  background-color: var(--hover-lilac); 
   z-index: 10;
 }
 
-/* Navigation Buttons for Certificates */
 .cert-prev-btn,
 .cert-next-btn {
   position: absolute;
@@ -2281,10 +2250,9 @@ html[data-theme="dark"] .cert-next-btn:hover {
   border-color: rgba(191, 112, 138, 0.6);
 }
 
-/* Responsive Breakpoints for Certificates */
 @media (max-width: 900px) {
   .cert-card {
-    flex: 0 0 calc((100% - 40px) / 3); /* 3 items */
+    flex: 0 0 calc((100% - 40px) / 3); 
   }
 }
 
@@ -2293,21 +2261,20 @@ html[data-theme="dark"] .cert-next-btn:hover {
     padding: 0 40px;
   }
   .cert-card {
-    flex: 0 0 calc((100% - 20px) / 2); /* 2 items */
+    flex: 0 0 calc((100% - 20px) / 2); 
   }
   .cert-img-wrapper {
-    width: 100px; /* Slightly smaller on mobile */
+    width: 100px; 
     height: 100px;
   }
 }
 
 @media (max-width: 400px) {
   .cert-card {
-    flex: 0 0 100%; /* 1 item */
+    flex: 0 0 100%; 
   }
 }
 
-/* Projects Carousel */
 .project-carousel-container {
   position: relative;
   margin-top: 30px;
@@ -2316,8 +2283,8 @@ html[data-theme="dark"] .cert-next-btn:hover {
 
 .project-carousel-track-container {
   overflow: hidden;
-  margin: 0 -10px; /* Counteract padding */
-  padding: 10px; /* Space for shadows */
+  margin: 0 -10px; 
+  padding: 10px; 
 }
 
 .project-carousel-track {
@@ -2329,7 +2296,7 @@ html[data-theme="dark"] .cert-next-btn:hover {
 }
 
 .project-card {
-  flex: 0 0 calc((100% - 40px) / 3); /* 3 items visible */
+  flex: 0 0 calc((100% - 40px) / 3); 
   position: relative;
   margin-right: 20px;
   display: flex;
@@ -2342,7 +2309,6 @@ html[data-theme="dark"] .cert-next-btn:hover {
   width: 100%;
 }
 
-/* Navigation Buttons for Projects */
 .project-prev-btn,
 .project-next-btn {
   position: absolute;
@@ -2379,10 +2345,9 @@ html[data-theme="dark"] .project-next-btn:hover {
   border-color: rgba(191, 112, 138, 0.6);
 }
 
-/* Responsive Breakpoints for Projects */
 @media (max-width: 900px) {
   .project-card {
-    flex: 0 0 calc((100% - 20px) / 2); /* 2 items */
+    flex: 0 0 calc((100% - 20px) / 2); 
   }
 }
 
@@ -2391,13 +2356,11 @@ html[data-theme="dark"] .project-next-btn:hover {
     padding: 0 40px;
   }
   .project-card {
-    flex: 0 0 100%; /* 1 item */
-    margin-right: 20px; /* Keep margin for spacing even in single view if looping? or remove? */
+    flex: 0 0 100%; 
+    margin-right: 20px; 
   }
 }
 
-
-/* Image Modal Specifics */
 .modal-content-image {
   position: relative;
   max-width: 90vw;
@@ -2436,14 +2399,14 @@ html[data-theme="dark"] .project-next-btn:hover {
   border-radius: 50%;
   width: 32px;
   height: 32px;
-  padding: 0; /* Reset padding to ensure circle shape */
-  min-width: 32px; /* Prevent shrinking */
+  padding: 0; 
+  min-width: 32px; 
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  line-height: 1; /* Center vertically */
+  line-height: 1; 
   transition: all 0.2s ease;
   z-index: 10001;
 }

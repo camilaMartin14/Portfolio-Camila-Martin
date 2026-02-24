@@ -38,7 +38,7 @@ const translations = {
     'projects.logra.date': 'Dic 2025 - Ene 2026',
     'projects.arcadia.date': 'Sep 2025 - Dic 2025',
     'projects.tucredito.date': 'Ene 2026 - Feb 2026',
-    'projects.rssp.date': '2026 - Actualidad',
+    'projects.rssp.date': 'Feb 2026 - Actualidad',
 
     'stack.tools': 'Herramientas',
 
@@ -138,6 +138,7 @@ const translations = {
     'timeline.item5.desc':
       'Primer acercamiento al desarrollo de software. Estudio autodidacta de backend con <span class="resaltar">Java Spring Boot</span> y bases de datos <span class="resaltar">MySQL</span> mediante cursos y material educativo online.',
 
+    'certificates.title': 'Certificados',
     'certificates.c1': 'C1 English EF SET',
     'certificates.csharp': 'C# Basic HackerRank',
     'certificates.dotnet.adv': '.NET Advanced',
@@ -191,7 +192,7 @@ const translations = {
     'projects.logra.date': 'Dec 2025 - Jan 2026',
     'projects.arcadia.date': 'Sep 2025 - Dec 2025',
     'projects.tucredito.date': 'Jan 2026 - Feb 2026',
-    'projects.rssp.date': '2026 - Present',
+    'projects.rssp.date': 'Feb 2026 - Present',
 
     'stack.tools': 'Tools',
 
@@ -290,6 +291,7 @@ const translations = {
     'timeline.item5.desc':
       'First approach to software development. Self-taught backend study with <span class="resaltar">Java Spring Boot</span> and <span class="resaltar">MySQL</span> databases through courses and online learning material.',
 
+    'certificates.title': 'Certificates',
     'certificates.c1': 'C1 English EF SET',
     'certificates.csharp': 'C# Basic HackerRank',
     'certificates.dotnet.adv': '.NET Advanced',
