@@ -60,7 +60,7 @@ section[id] {
   --muted-rose: #C59AA8; /* Slightly darker for better contrast */
   --slate-gray: #4A585A; /* Darker for better text readability */
   --pale-violet: #D1C5DE; /* Slightly darker for visible borders */
-  --desert-sand: #F7E5B5;
+  --desert-sand: #ffe18d;
   --dot-color: #dcdcdc; /* Slightly more visible dots */
 
   --bg: var(--clean-white);
@@ -73,13 +73,15 @@ section[id] {
 
   --title-start: var(--soft-peach);
   --title-end: var(--muted-rose);
+  --hero-title-start: #ffc77e; 
+  --hero-title-end: #d49cbc;  
   --accent: var(--muted-rose);
 
-  --header-bg: var(--soft-peach);
-  --header-text: var(--slate-gray);
+  --header-bg: #f9cea9;
+  --header-text: #ffffff;
 
   --footer-bg: var(--desert-sand);
-  --footer-text: var(--slate-gray);
+  --footer-text: #ffffff;
 
   --hover-lilac: var(--pale-violet);
   --subtitle-hover: var(--soft-peach);
@@ -108,6 +110,8 @@ html[data-theme="dark"] {
 
   --title-start: var(--sunset-orange);
   --title-end: var(--dusty-pink);
+  --hero-title-start: var(--title-start);
+  --hero-title-end: var(--title-end);
   --accent: var(--deep-ochre);
 
   --soft-lilac-dark: #b7949f;
@@ -315,7 +319,7 @@ html[data-theme="dark"] { --hover-lilac: var(--soft-lilac) }
   font-size: 56px;
   line-height: 1.1;
   margin: 0;
-  background: linear-gradient(90deg, var(--title-start), var(--title-end));
+  background: linear-gradient(90deg, var(--hero-title-start), var(--hero-title-end));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
