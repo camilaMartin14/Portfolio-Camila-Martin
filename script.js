@@ -166,8 +166,14 @@ const translations = {
     'hero.location': '📍Córdoba, Argentina',
 
     'about.title': 'About me',
-    'about.summary':
-      '.NET backend developer focused on building simple, robust and maintainable solutions, with a strong interest in clean APIs, consistent data and collaborative teamwork.',
+    'about.text1':
+      'Second-year student of the University Technical Degree in Programming (UTN - Argentina).',
+    'about.text2':
+      'Currently part of the <span class="resaltar">Mercado Libre</span> team, where I design and implement scalable solutions using <span class="resaltar">Go</span>, under <span class="resaltar">microservices</span> architectures and <span class="resaltar">Domain-Driven Design (DDD)</span> principles.',
+    'about.text3':
+      'In parallel, I strengthen my technical profile through projects in the <span class="resaltar">.NET</span> ecosystem (<span class="resaltar">C#</span>, <span class="resaltar">ASP.NET Core</span>, <span class="resaltar">Entity Framework</span> and <span class="resaltar">SQL Server</span>).',
+    'about.text5':
+      'My main focus is building robust and maintainable software, always prioritizing <span class="resaltar">clean code</span> and solid <span class="resaltar">architecture</span> practices.',
     'current.title': 'Work Experience',
     'current.role': 'Software Backend Developer Jr',
     'current.company': 'Mercado Libre',
@@ -370,6 +376,7 @@ function init() {
   setupCertificatesCarousel()
   setupProjectsCarousel()
   setupImageModal()
+  setupCustomCursor()
 }
 
 document.addEventListener('DOMContentLoaded', init)
@@ -465,7 +472,9 @@ document.querySelectorAll('.nav-links a').forEach(a => {
         'SQL Server',
         'Clean Architecture'
       ],
-      images: ['images/RS1.jpg', 'images/RS2.jpg', 'images/RS3.jpg', 'images/RS4.jpg', 'images/RS5.jpg', 'images/RS6.jpg']
+      images: ['images/RS1.jpg', 'images/RS2.jpg', 'images/RS3.jpg', 'images/RS4.jpg', 'images/RS5.jpg', 'images/RS6.jpg'],
+      demoUrl: 'https://renal-surgical-simulation-platform.vercel.app/',
+      repoUrl: 'https://github.com/camilaMartin14/Renal-Surgical-Simulation-Platform--RSSP'
     },
     logra: {
       title: 'Logra',
@@ -668,6 +677,48 @@ document.querySelectorAll('.nav-links a').forEach(a => {
       renderCarousel()
     })
   }
+}
+
+function setupCustomCursor() {
+  if (window.matchMedia && window.matchMedia('(pointer: coarse)').matches) return
+
+  const cursor = document.getElementById('custom-cursor')
+  if (!cursor) return
+
+  document.body.classList.add('has-custom-cursor')
+
+  const move = (e) => {
+    const x = e.clientX
+    const y = e.clientY
+    cursor.style.left = x + 'px'
+    cursor.style.top = y + 'px'
+    cursor.style.opacity = '1'
+
+    const el = document.elementFromPoint(x, y)
+    let clickable = false
+    if (el) {
+      const tag = el.tagName
+      if (tag === 'A' || tag === 'BUTTON') {
+        clickable = true
+      } else if (el.closest('a,button,[role="button"]')) {
+        clickable = true
+      }
+    }
+    cursor.classList.toggle('is-clickable', clickable)
+  }
+
+  const hide = () => {
+    cursor.style.opacity = '0'
+  }
+
+  document.addEventListener('mousemove', move)
+  document.addEventListener('mouseleave', hide)
+  document.addEventListener('mousedown', () => {
+    cursor.classList.add('is-clicked')
+  })
+  document.addEventListener('mouseup', () => {
+    cursor.classList.remove('is-clicked')
+  })
 }
 
 function setupConfetti() {
