@@ -64,43 +64,42 @@ const translations = {
     'modal.carousel.imageAlt': 'Captura {index} de {project}',
     'modal.carousel.dotAlt': 'Ir a la captura {index}',
 
-    'modal.logra.features.1': '<strong>Planificación Diaria y Hábitos</strong>: Vista enfocada en el día actual con navegación intuitiva y categorización visual por colores.',
-    'modal.logra.features.2': '<strong>Interacción Fluida (Drag & Drop)</strong>: Reorganización nativa de tareas y notas para una experiencia de usuario ágil y moderna.',
-    'modal.logra.features.3': '<strong>Backend Robusto (.NET 8)</strong>: API RESTful con Clean Architecture, Patrón Repositorio y optimización de consultas (solución a N+1).',
-    'modal.logra.features.4': '<strong>Frontend Ligero (Vanilla JS)</strong>: SPA sin frameworks pesados, utilizando Módulos ES6+ y gestión de estado centralizada.',
-    'modal.logra.features.5': '<strong>Seguridad y Rendimiento</strong>: Autenticación JWT, validación de datos y proyección a DTOs para máxima eficiencia.',
+    'modal.logra.features.1': '<strong>Planificación Diaria</strong>: Interfaz intuitiva para organizar tu agenda día a día, con navegación fluida entre fechas y visualización clara del progreso personal.',
+    'modal.logra.features.2': '<strong>Gestión de Tareas</strong>: Sistema completo para crear, editar y categorizar tareas, permitiendo filtrar por estado (pendientes/completadas) para una organización eficiente.',
+    'modal.logra.features.3': '<strong>Monitor de Bienestar</strong>: Módulos integrados para el seguimiento de hábitos saludables, incluyendo registro de hidratación, horas de sueño, comidas y estado de ánimo diario.',
+    'modal.logra.features.4': '<strong>Sistema de Notas</strong>: Espacio dedicado para capturar ideas rápidas, reflexiones del día actual y recordatorios importantes para planificar la jornada siguiente.',
+    'modal.logra.features.5': '<strong>Autenticación Segura</strong>: Gestión de usuarios protegida con registro e inicio de sesión mediante tokens JWT, asegurando la privacidad de la información personal.',
+    'modal.logra.features.6': '<strong>Vista de Calendario</strong>: Visualización mensual de la actividad y planificación, con capacidad de generar reportes exportables en formato PDF.',
+    'modal.logra.features.7': '<strong>Backend Robusto</strong>: Arquitectura basada en una API RESTful con .NET 8 y Entity Framework, garantizando un rendimiento sólido y la integridad de los datos.',
     'modal.logra.extra': 'Estado: finalizado. Full Stack (.NET + Vanilla JS) desplegado y funcional.',
 
-    'modal.arcadia.features.1': '<strong>Catálogo y Filtros</strong>: Búsqueda avanzada y fichas detalladas pensadas para el usuario final.',
-    'modal.arcadia.features.2': '<strong>Gestión de Pedidos</strong>: Control transaccional del ciclo de vida de la compra y seguimiento de estados.',
-    'modal.arcadia.features.3': '<strong>Panel Administrativo (ABMC)</strong>: Gestión completa de libros, autores y editoriales con validaciones.',
-    'modal.arcadia.features.4': '<strong>Seguridad y Auth</strong>: Registro, login seguro y autorización basada en roles mediante JWT.',
-    'modal.arcadia.features.5': '<strong>Dashboard de Métricas</strong>: Visualización de datos de ventas para decisiones informadas.',
+    'modal.arcadia.features.1': '<strong>Catálogo Centralizado</strong>: Exploración de libros con fichas detalladas, filtros y navegación intuitiva para el usuario final.',
+    'modal.arcadia.features.2': '<strong>Gestión de Pedidos</strong>: Estandarización del flujo de venta, asegurando consistencia entre el stock real y las transacciones realizadas.',
+    'modal.arcadia.features.3': '<strong>Dashboard Analítico</strong>: Métricas en tiempo real sobre autores más vendidos, formas de pago y tipos de envío para la toma de decisiones.',
+    'modal.arcadia.features.4': '<strong>Seguridad Robusta</strong>: Autenticación y autorización mediante JWT con validaciones server-side para proteger el acceso y registro de usuarios.',
+    'modal.arcadia.features.5': '<strong>Administración Integral</strong>: ABMC completo para la gestión de libros, autores y editoriales, soportado por una arquitectura en capas.',
+    'modal.arcadia.features.6': '<strong>Infraestructura Escalable</strong>: Backend desarrollado en .NET Web API y SQL Server, diseñado para alta mantenibilidad y crecimiento futuro.',
     'modal.arcadia.extra': 'Roadmap: Integración con MinIO para portadas, perfiles de usuario y mejoras en transaccionalidad.',
 
-    'modal.tucredito.features.1':
-      '<strong>Dashboard Ejecutivo en Tiempo Real</strong>: Visualiza KPIs financieros (Capital, Interés, Morosidad) y gráficos interactivos de evolución.',
-    'modal.tucredito.features.2':
-      '<strong>Gestión 360° de Prestatarios</strong>: Perfil digital completo con integración directa a BCRA para evaluación crediticia y digitalización de documentos.',
-    'modal.tucredito.features.3':
-      '<strong>Motor de Préstamos Flexible</strong>: Simulador de créditos (Francés, Alemán, Americano), operaciones multi-moneda y control de cobranzas.',
-    'modal.tucredito.features.4':
-      '<strong>Seguridad Bancaria</strong>: Auditoría inmutable, autenticación robusta JWT y arquitectura Clean desacoplada.',
-    'modal.tucredito.features.5':
-      '<strong>Gestión Documental Segura</strong>: Almacenamiento de DNI, recibos y garantías utilizando MinIO (S3 Compatible).',
-    'modal.tucredito.extra':
-      'Demo disponible: Usuario <strong>demo</strong> / Contraseña <strong>demo</strong>. Despliegue en Vercel y Backend en .NET 10.',
+    'modal.tucredito.features.1': '<strong>Dashboard Ejecutivo 360°</strong>: Tablero de control en tiempo real con KPIs financieros críticos (Rentabilidad, Capital Pendiente, Morosidad %), proyecciones de flujo de caja semanal y análisis evolutivo de colocación y cobranzas.',
+    'modal.tucredito.features.2': '<strong>Motor de Simulación Multi-Sistema</strong>: Calculadora de préstamos avanzada con soporte para sistemas de amortización Francés, Alemán, Americano y Directo, permitiendo proyecciones exactas de cuotas, intereses y saldos.',
+    'modal.tucredito.features.3': '<strong>Evaluación de Riesgo Inteligente</strong>: Algoritmo de decisión automatizado que integra consultas al BCRA para verificar antecedentes, analiza la relación Cuota/Ingreso (regla del 30%) y sugiere montos máximos o rechazos justificados.',
+    'modal.tucredito.features.4': '<strong>Gestión Documental</strong>: Bóveda digital integrada (con soporte MinIO/S3) para la carga, validación y almacenamiento seguro de archivos (DNI, Recibos, Garantías) en formatos PDF e imágenes, vinculados directamente al perfil del cliente.',
+    'modal.tucredito.features.5': '<strong>Cobranzas Flexibles y Potentes</strong>: Módulo de caja que admite pagos parciales, cancelaciones totales anticipadas, refinanciación y aplicación automática de punitorios o descuentos, actualizando el estado del préstamo en tiempo real.',
+    'modal.tucredito.features.6': '<strong>Perfilamiento Completo de Prestatarios</strong>: Gestión integral de clientes y garantes con validaciones de identidad, historial de comportamiento de pago y restricciones de seguridad para preservar datos sensibles.',
+    'modal.tucredito.features.7': '<strong>Seguridad Corporativa</strong>: Arquitectura con autenticación vía JWT (JSON Web Tokens), encriptación de credenciales y roles de usuario para garantizar que solo el personal autorizado acceda a información sensible.',
+    'modal.tucredito.features.8': '<strong>Infraestructura Escalable</strong>: Backend en .NET 10 diseñado con Clean Architecture y Frontend en React 18 optimizado, asegurando alto rendimiento, mantenibilidad y una experiencia de usuario fluida.',
+    'modal.tucredito.extra': 'Demo disponible: Usuario <strong>demo</strong> / Contraseña <strong>demo</strong>. Despliegue en Vercel y Backend en .NET 10.',
 
-    'modal.rssp.features.1':
-      '<strong>Inmersión total</strong>: Interacción con tejidos y herramientas en un entorno 3D reactivo diseñado para cirugía renal.',
-    'modal.rssp.features.2':
-      '<strong>Feedback instantáneo</strong>: Cada movimiento genera métricas de precisión, exactitud y eficiencia durante la sesión.',
-    'modal.rssp.features.3':
-      '<strong>Gamificación clínica</strong>: Desafíos diseñados para entrenar estabilidad manual, ablación de tumores y control del instrumento.',
-    'modal.rssp.features.4':
-      '<strong>Motor de análisis</strong>: Backend en .NET 10 que registra sesiones, eventos y KPIs para evaluar el progreso a lo largo del tiempo.',
-    'modal.rssp.extra':
-      'Estado: en desarrollo. Demo técnica orientada al entrenamiento y evaluación de competencias quirúrgicas renales.',
+    'modal.rssp.features.1': '<strong>Telemetría en Tiempo Real</strong>: Registro continuo de eventos y muestras (posición, estado) durante cada intento, visualizable mediante mapas de calor.',
+    'modal.rssp.features.2': '<strong>Métricas de Precisión</strong>: El backend calcula puntajes detallados de Trayectoria, Suavidad y Precisión, además del conteo de errores y duración.',
+    'modal.rssp.features.3': '<strong>Panel de Resultados</strong>: Interfaz gráfica con filtros avanzados (por fecha, dificultad, juego) y gráficos de evolución para visualizar el progreso del usuario.',
+    'modal.rssp.features.4': '<strong>Reportes Exportables</strong>: Capacidad de generar y descargar informes detallados de las sesiones en formato PDF para revisión externa.',
+    'modal.rssp.features.5': '<strong>Sutura de Vena Renal</strong>: Práctica de sutura de alta precisión sobre la vena renal, evaluando la exactitud del trazo en un entorno virtual.',
+    'modal.rssp.features.6': '<strong>Control de Hemorragia</strong>: Escenario donde el usuario debe identificar y controlar puntos de sangrado, poniendo a prueba sus reflejos y tiempo de reacción.',
+    'modal.rssp.features.7': '<strong>Disección de Arteria</strong>: Desafío de estabilidad manual ("Steady Hand") que requiere diseccionar la arteria renal sin tocar los bordes del tejido circundante.',
+    'modal.rssp.features.8': '<strong>Ablación de Tumor</strong>: Procedimiento complejo para Cirujanos Jefes que consiste en eliminar un carcinoma de células renales preservando el máximo tejido sano posible.',
+    'modal.rssp.extra': 'Estado: en desarrollo. Demo técnica orientada al entrenamiento y evaluación de competencias quirúrgicas renales.',
 
     'stack.title': 'Mi Stack Técnico',
     'stack.languages': 'Lenguajes',
@@ -217,43 +216,42 @@ const translations = {
     'modal.carousel.next': 'Next',
     'modal.carousel.imageAlt': 'Screenshot {index} of {project}',
     'modal.carousel.dotAlt': 'Go to screenshot {index}',
-    'modal.logra.features.1': '<strong>Daily Planning & Habits</strong>: Focus view on the current day with intuitive navigation and visual color categorization.',
-    'modal.logra.features.2': '<strong>Fluid Interaction (Drag & Drop)</strong>: Native task and note reordering for an agile and modern user experience.',
-    'modal.logra.features.3': '<strong>Robust Backend (.NET 8)</strong>: RESTful API with Clean Architecture, Repository Pattern, and query optimization (N+1 solution).',
-    'modal.logra.features.4': '<strong>Lightweight Frontend (Vanilla JS)</strong>: SPA without heavy frameworks, using ES6+ Modules and centralized state management.',
-    'modal.logra.features.5': '<strong>Security & Performance</strong>: JWT authentication, data validation, and DTO projection for maximum efficiency.',
+    'modal.logra.features.1': '<strong>Daily Planning</strong>: Intuitive interface to organize your agenda day by day, with fluid navigation between dates and clear visualization of personal progress.',
+    'modal.logra.features.2': '<strong>Task Management</strong>: Complete system to create, edit and categorize tasks, allowing filtering by status (pending/completed) for efficient organization.',
+    'modal.logra.features.3': '<strong>Wellness Monitor</strong>: Integrated modules for tracking healthy habits, including hydration log, sleep hours, meals and daily mood.',
+    'modal.logra.features.4': '<strong>Notes System</strong>: Dedicated space to capture quick ideas, reflections of the current day and important reminders to plan the next day.',
+    'modal.logra.features.5': '<strong>Secure Authentication</strong>: Protected user management with registration and login via JWT tokens, ensuring the privacy of personal information.',
+    'modal.logra.features.6': '<strong>Calendar View</strong>: Monthly visualization of activity and planning, with the ability to generate exportable reports in PDF format.',
+    'modal.logra.features.7': '<strong>Robust Backend</strong>: Architecture based on a RESTful API with .NET 8 and Entity Framework, guaranteeing solid performance and data integrity.',
     'modal.logra.extra': 'Status: completed. Full Stack (.NET + Vanilla JS) deployed and functional.',
 
-    'modal.arcadia.features.1': '<strong>Catalog & Filters</strong>: Advanced search and detailed product pages designed for the end user.',
-    'modal.arcadia.features.2': '<strong>Order Management</strong>: Transactional control of the purchase lifecycle and status tracking.',
-    'modal.arcadia.features.3': '<strong>Admin Panel (CRUD)</strong>: Complete management of books, authors, and publishers with validations.',
-    'modal.arcadia.features.4': '<strong>Security & Auth</strong>: Registration, secure login, and role-based authorization using JWT.',
-    'modal.arcadia.features.5': '<strong>Metrics Dashboard</strong>: Visualization of sales data for informed decision-making.',
+    'modal.arcadia.features.1': '<strong>Centralized Catalog</strong>: Book exploration with detailed sheets, filters and intuitive navigation for the end user.',
+    'modal.arcadia.features.2': '<strong>Order Management</strong>: Standardization of the sales flow, ensuring consistency between real stock and transactions made.',
+    'modal.arcadia.features.3': '<strong>Analytical Dashboard</strong>: Real-time metrics on best-selling authors, payment methods and shipping types for decision making.',
+    'modal.arcadia.features.4': '<strong>Robust Security</strong>: Authentication and authorization via JWT with server-side validations to protect user access and registration.',
+    'modal.arcadia.features.5': '<strong>Integral Administration</strong>: Complete CRUD for the management of books, authors and publishers, supported by a layered architecture.',
+    'modal.arcadia.features.6': '<strong>Scalable Infrastructure</strong>: Backend developed in .NET Web API and SQL Server, designed for high maintainability and future growth.',
     'modal.arcadia.extra': 'Roadmap: Integration with MinIO for covers, user profiles, and transactional improvements.',
 
-    'modal.tucredito.features.1':
-      '<strong>Executive Dashboard</strong>: Financial KPIs, interactive charts, and automatic delinquency alerts.',
-    'modal.tucredito.features.2':
-      '<strong>360° Borrower Management</strong>: Complete digital profile with direct BCRA integration for credit evaluation and document digitization.',
-    'modal.tucredito.features.3':
-      '<strong>Flexible Loan Engine</strong>: Credit simulator (French, German, American), multi-currency operations, and collection control.',
-    'modal.tucredito.features.4':
-      '<strong>Banking Security</strong>: Immutable auditing, robust JWT authentication, and decoupled Clean Architecture.',
-    'modal.tucredito.features.5':
-      '<strong>Secure Document Management</strong>: Storage of IDs, receipts, and guarantees using MinIO (S3 Compatible).',
-    'modal.tucredito.extra':
-      'Demo available: User <strong>demo</strong> / Password <strong>demo</strong>. Deployed on Vercel with .NET 10 Backend.',
+    'modal.tucredito.features.1': '<strong>360° Executive Dashboard</strong>: Real-time control board with critical financial KPIs (Profitability, Outstanding Capital, Delinquency %), weekly cash flow projections and evolutionary analysis of placement and collections.',
+    'modal.tucredito.features.2': '<strong>Multi-System Simulation Engine</strong>: Advanced loan calculator with support for French, German, American and Direct amortization systems, allowing exact projections of installments, interest and balances.',
+    'modal.tucredito.features.3': '<strong>Intelligent Risk Assessment</strong>: Automated decision algorithm that integrates BCRA inquiries to verify background, analyzes the Installment/Income ratio (30% rule) and suggests maximum amounts or justified rejections.',
+    'modal.tucredito.features.4': '<strong>Document Management</strong>: Integrated digital vault (with MinIO/S3 support) for secure upload, validation and storage of files (ID, Receipts, Guarantees) in PDF and image formats, linked directly to the client profile.',
+    'modal.tucredito.features.5': '<strong>Flexible and Powerful Collections</strong>: Cashier module supporting partial payments, early total cancellations, refinancing and automatic application of penalties or discounts, updating loan status in real-time.',
+    'modal.tucredito.features.6': '<strong>Complete Borrower Profiling</strong>: Comprehensive management of clients and guarantors with identity validations, payment behavior history and security restrictions to preserve sensitive data.',
+    'modal.tucredito.features.7': '<strong>Corporate Security</strong>: Architecture with authentication via JWT (JSON Web Tokens), credential encryption and user roles to ensure only authorized personnel access sensitive information.',
+    'modal.tucredito.features.8': '<strong>Scalable Infrastructure</strong>: Backend in .NET 10 designed with Clean Architecture and Frontend in React 18 optimized, ensuring high performance, maintainability and a fluid user experience.',
+    'modal.tucredito.extra': 'Demo available: User <strong>demo</strong> / Password <strong>demo</strong>. Deployed on Vercel with .NET 10 Backend.',
 
-    'modal.rssp.features.1':
-      '<strong>Total immersion</strong>: Interaction with tissues and instruments in a reactive 3D environment designed for renal surgery.',
-    'modal.rssp.features.2':
-      '<strong>Instant feedback</strong>: Every movement is translated into precision, accuracy, and efficiency metrics during the session.',
-    'modal.rssp.features.3':
-      '<strong>Clinical gamification</strong>: Scenarios and challenges focused on training hand stability, tumor ablation, and instrument control.',
-    'modal.rssp.features.4':
-      '<strong>Analytics engine</strong>: .NET 10 backend logging sessions, events, and KPIs to track trainee progress over time.',
-    'modal.rssp.extra':
-      'Status: in development. Technical demo focused on training and assessing renal surgical competencies.',
+    'modal.rssp.features.1': '<strong>Real-Time Telemetry</strong>: Continuous recording of events and samples (position, status) during each attempt, visualizable via heat maps.',
+    'modal.rssp.features.2': '<strong>Precision Metrics</strong>: The backend calculates detailed scores for Trajectory, Smoothness and Precision, in addition to error count and duration.',
+    'modal.rssp.features.3': '<strong>Results Panel</strong>: Graphical interface with advanced filters (by date, difficulty, game) and evolution charts to visualize user progress.',
+    'modal.rssp.features.4': '<strong>Exportable Reports</strong>: Ability to generate and download detailed session reports in PDF format for external review.',
+    'modal.rssp.features.5': '<strong>Renal Vein Suture</strong>: High-precision suture practice on the renal vein, evaluating stroke accuracy in a virtual environment.',
+    'modal.rssp.features.6': '<strong>Hemorrhage Control</strong>: Scenario where the user must identify and control bleeding points, testing their reflexes and reaction time.',
+    'modal.rssp.features.7': '<strong>Artery Dissection</strong>: Manual stability challenge ("Steady Hand") requiring dissection of the renal artery without touching the surrounding tissue edges.',
+    'modal.rssp.features.8': '<strong>Tumor Ablation</strong>: Complex procedure for Chief Surgeons consisting of removing a renal cell carcinoma while preserving as much healthy tissue as possible.',
+    'modal.rssp.extra': 'Status: in development. Technical demo focused on training and assessing renal surgical competencies.',
 
     'stack.title': 'My Tech Stack',
     'stack.languages': 'Languages',
@@ -456,7 +454,11 @@ document.querySelectorAll('.nav-links a').forEach(a => {
         'modal.rssp.features.1',
         'modal.rssp.features.2',
         'modal.rssp.features.3',
-        'modal.rssp.features.4'
+        'modal.rssp.features.4',
+        'modal.rssp.features.5',
+        'modal.rssp.features.6',
+        'modal.rssp.features.7',
+        'modal.rssp.features.8'
       ],
       tech: [
         'React 18',
@@ -481,7 +483,9 @@ document.querySelectorAll('.nav-links a').forEach(a => {
         'modal.logra.features.2',
         'modal.logra.features.3',
         'modal.logra.features.4',
-        'modal.logra.features.5'
+        'modal.logra.features.5',
+        'modal.logra.features.6',
+        'modal.logra.features.7'
       ],
       tech: ['.NET 8 Web API', 'C#', 'SQL Server', 'Entity Framework Core', 'Vanilla JS (ES6+)', 'CSS3', 'JWT'],
       images: ['images/L1.png', 'images/L2.png', 'images/L3.png', 'images/L4.png', 'images/L5.png'],
@@ -496,7 +500,8 @@ document.querySelectorAll('.nav-links a').forEach(a => {
         'modal.arcadia.features.2',
         'modal.arcadia.features.3',
         'modal.arcadia.features.4',
-        'modal.arcadia.features.5'
+        'modal.arcadia.features.5',
+        'modal.arcadia.features.6'
       ],
       tech: ['.NET Web API', 'SQL Server', 'JWT', 'HTML', 'CSS', 'JavaScript'],
       images: ['images/A3.png', 'images/A2.png', 'images/A1.png', 'images/A4.png', 'images/A5.png', 'images/A6.png', 'images/A7.png'],
@@ -511,7 +516,10 @@ document.querySelectorAll('.nav-links a').forEach(a => {
         'modal.tucredito.features.2',
         'modal.tucredito.features.3',
         'modal.tucredito.features.4',
-        'modal.tucredito.features.5'
+        'modal.tucredito.features.5',
+        'modal.tucredito.features.6',
+        'modal.tucredito.features.7',
+        'modal.tucredito.features.8'
       ],
       tech: ['.NET 10 Web API', 'React 18', 'TypeScript', 'SQL Server', 'Tailwind CSS', 'MinIO', 'JWT'],
       images: ['images/TC1.png', 'images/TC2.png', 'images/TC3.png', 'images/TC4.png', 'images/TC5.png'],
